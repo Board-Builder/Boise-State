@@ -9,7 +9,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 100,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Perry",
       "address": "Gilbert, AZ"
@@ -19,7 +19,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2.5 / 200 · 247 rating 87 · QB #41 · AZ #16 · Listed: QB",
+    "miscNotes": "Committed 10/19/25 · 6-2.5 / 200 · 247 rating 87 · QB #41 · AZ #16 · Listed: QB",
     "links": {
       "s247": "https://247sports.com/Player/kael-snyder-46150670/"
     },
@@ -34,7 +34,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 101,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Corner Canyon",
       "address": "Draper, UT"
@@ -44,7 +44,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 205 · 247 rating 83 · QB #177 · UT #38 · Listed: QB",
+    "miscNotes": "Committed 6/15/26 · 6-0 / 205 · 247 rating 83 · QB #177 · UT #38 · Listed: QB",
     "links": {
       "s247": "https://247sports.com/Player/ryce-palepoi-46162462/"
     },
@@ -59,7 +59,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 102,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "St. Anthony's",
       "address": "Long Island City, NY"
@@ -69,7 +69,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 215 · 247 rating 87 · RB #68 · NY #3 · Listed: RB",
+    "miscNotes": "Committed 6/5/26 · 6-0 / 215 · 247 rating 87 · RB #68 · NY #3 · Listed: RB · 247 lists commitment: Boston College",
     "links": {
       "s247": "https://247sports.com/Player/xavier-bala-46149108/"
     },
@@ -84,7 +84,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 103,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Justin Northwest",
       "address": "Justin, TX"
@@ -94,7 +94,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 190 · 247 rating 86 · RB #95 · TX #148 · Listed: RB",
+    "miscNotes": "Committed 6/22/26 · 6-0 / 190 · 247 rating 86 · RB #95 · TX #148 · Listed: RB · 247 lists commitment: TCU",
     "links": {
       "s247": "https://247sports.com/Player/caris-sela-46165762/"
     },
@@ -109,7 +109,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 104,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Damien",
       "address": "La Verne, CA"
@@ -119,7 +119,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-10 / 175 · 247 rating 86 · RB #99 · CA #105 · Listed: RB",
+    "miscNotes": "Committed 5/19/26 · 5-10 / 175 · 247 rating 86 · RB #99 · CA #105 · Listed: RB",
     "links": {
       "s247": "https://247sports.com/Player/malachi-mcfarland-46161889/"
     },
@@ -134,7 +134,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 105,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Skyline",
       "address": "Salt Lake City, UT"
@@ -144,7 +144,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 205 · 247 rating 86 · RB #103 · UT #19 · Listed: RB",
+    "miscNotes": "Committed 6/19/26 · 6-1 / 205 · 247 rating 86 · RB #103 · UT #19 · Listed: RB · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/jonah-mailei-46162441/"
     },
@@ -159,7 +159,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 106,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Los Alamitos",
       "address": "Los Alamitos, CA"
@@ -169,7 +169,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 190 · 247 rating 85 · RB #201 · CA #123 · Listed: RB",
+    "miscNotes": "Committed 6/20/26 · 5-11 / 190 · 247 rating 85 · RB #201 · CA #123 · Listed: RB · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/kamden-tillis-46156264/"
     },
@@ -209,7 +209,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 108,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Cajon",
       "address": "San Bernardino, CA"
@@ -219,7 +219,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 195 · 247 rating NA · Listed: RB",
+    "miscNotes": "Committed 6/12/26 · 6-0 / 195 · 247 rating NA · Listed: RB · 247 lists commitment: San Jose State",
     "links": {
       "s247": "https://247sports.com/Player/maleek-nolley-46164211/"
     },
@@ -234,7 +234,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 109,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Arbor View",
       "address": "Las Vegas, NV"
@@ -244,7 +244,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 210 · 247 rating 89 · WR #50 · NV #3 · Listed: WR",
+    "miscNotes": "Committed 6/5/26 · 6-4 / 210 · 247 rating 89 · WR #50 · NV #3 · Listed: WR · 247 lists commitment: Texas A&M",
     "links": {
       "s247": "https://247sports.com/Player/damani-warren-46147365/"
     },
@@ -259,7 +259,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 110,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mount Vernon Presbyterian",
       "address": "Atlanta, GA"
@@ -269,7 +269,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 175 · 247 rating 89 · WR #59 · GA #49 · Listed: WR",
+    "miscNotes": "Committed 5/29/26 · 6-0 / 175 · 247 rating 89 · WR #59 · GA #49 · Listed: WR · 247 lists commitment: Georgia",
     "links": {
       "s247": "https://247sports.com/Player/taurean-rawlins-46164019/"
     },
@@ -284,7 +284,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 111,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Harrison",
       "address": "Kennesaw, GA"
@@ -294,7 +294,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-10 / 165 · 247 rating 88 · WR #86 · GA #73 · Listed: WR",
+    "miscNotes": "Committed 4/30/26 · 5-10 / 165 · 247 rating 88 · WR #86 · GA #73 · Listed: WR · 247 lists commitment: South Carolina",
     "links": {
       "s247": "https://247sports.com/Player/dj-huggins-46159642/"
     },
@@ -309,7 +309,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 112,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Valor Christian",
       "address": "Littleton, CO"
@@ -319,7 +319,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 185 · 247 rating 87 · WR #114 · CO #5 · Listed: WR",
+    "miscNotes": "Committed 5/4/26 · 6-3 / 185 · 247 rating 87 · WR #114 · CO #5 · Listed: WR · 247 lists commitment: Notre Dame",
     "links": {
       "s247": "https://247sports.com/Player/jackson-coleman-46156590/"
     },
@@ -334,7 +334,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 113,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Cathedral Catholic",
       "address": "San Diego, CA"
@@ -344,7 +344,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 195 · 247 rating 86 · WR #173 · CA #107 · Listed: WR",
+    "miscNotes": "Committed 5/29/26 · 6-1 / 195 · 247 rating 86 · WR #173 · CA #107 · Listed: WR · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/isaac-cook-46156985/"
     },
@@ -359,7 +359,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 114,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Southlake Carroll",
       "address": "Southlake, TX"
@@ -369,7 +369,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 180 · 247 rating 86 · WR #175 · TX #168 · Listed: WR",
+    "miscNotes": "Committed 3/7/26 · 6-2 / 180 · 247 rating 86 · WR #175 · TX #168 · Listed: WR · 247 lists commitment: California",
     "links": {
       "s247": "https://247sports.com/Player/blake-gunter-46157583/"
     },
@@ -384,7 +384,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 115,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Huntington Beach",
       "address": "Huntington Beach, CA"
@@ -394,7 +394,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 195 · 247 rating 86 · WR #141 · CA #110 · Listed: WR",
+    "miscNotes": "Committed 6/25/26 · 6-2 / 195 · 247 rating 86 · WR #141 · CA #110 · Listed: WR · 247 lists commitment: Wyoming",
     "links": {
       "s247": "https://247sports.com/Player/jimmel-champion-46158789/"
     },
@@ -409,7 +409,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 116,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lone Peak",
       "address": "American Fork, UT"
@@ -419,7 +419,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 190 · 247 rating 85 · WR #210 · UT #23 · Listed: WR",
+    "miscNotes": "Committed 6/5/26 · 6-5 / 190 · 247 rating 85 · WR #210 · UT #23 · Listed: WR · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/dillon-sykes-46154619/"
     },
@@ -434,7 +434,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 117,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Adrienne C. Nelson",
       "address": "Happy Valley, OR"
@@ -444,7 +444,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 180 · 247 rating 85 · WR #211 · OR #4 · Listed: WR",
+    "miscNotes": "Committed 6/5/26 · 6-3 / 180 · 247 rating 85 · WR #211 · OR #4 · Listed: WR · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/malachi-garlington-46161630/"
     },
@@ -459,7 +459,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 118,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Aledo",
       "address": "Aledo, TX"
@@ -469,7 +469,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 180 · 247 rating 84 · WR #218 · TX #215 · Listed: WR",
+    "miscNotes": "Committed 6/6/26 · 6-3 / 180 · 247 rating 84 · WR #218 · TX #215 · Listed: WR",
     "links": {
       "s247": "https://247sports.com/Player/kingston-parks-46146165/"
     },
@@ -484,7 +484,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 119,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Arbor View",
       "address": "Las Vegas, NV"
@@ -494,7 +494,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 165 · 247 rating NA · Listed: WR",
+    "miscNotes": "Committed 6/12/26 · 5-11 / 165 · 247 rating NA · Listed: WR · 247 lists commitment: UNLV",
     "links": {
       "s247": "https://247sports.com/Player/kai-cypher-46164366/"
     },
@@ -509,7 +509,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 120,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lennox",
       "address": "Lennox, SD"
@@ -519,7 +519,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 210 · 247 rating 90 · Natl #214 · TE #10 · SD #2 · Listed: TE",
+    "miscNotes": "Committed 4/6/26 · 6-5 / 210 · 247 rating 90 · Natl #214 · TE #10 · SD #2 · Listed: TE · 247 lists commitment: Minnesota",
     "links": {
       "s247": "https://247sports.com/Player/drake-mikkelsen-46158520/"
     },
@@ -534,7 +534,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 121,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Junipero Serra",
       "address": "San Mateo, CA"
@@ -544,7 +544,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 200 · 247 rating 88 · TE #31 · CA #57 · Listed: TE",
+    "miscNotes": "Committed 4/11/26 · 6-5 / 200 · 247 rating 88 · TE #31 · CA #57 · Listed: TE · 247 lists commitment: USC",
     "links": {
       "s247": "https://247sports.com/Player/jace-cannon-46155201/"
     },
@@ -559,7 +559,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 122,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Arbor View",
       "address": "Las Vegas, NV"
@@ -569,7 +569,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 220 · 247 rating 88 · TE #33 · NV #6 · Listed: TE",
+    "miscNotes": "Committed 4/11/26 · 6-5 / 220 · 247 rating 88 · TE #33 · NV #6 · Listed: TE · 247 lists commitment: UCLA",
     "links": {
       "s247": "https://247sports.com/Player/zac-fares-46149288/"
     },
@@ -609,7 +609,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 124,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "American Leadership Academy",
       "address": "Queen Creek, AZ"
@@ -619,7 +619,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3.5 / 230 · 247 rating 87 · TE #46 · AZ #22 · Listed: TE",
+    "miscNotes": "Committed 5/29/26 · 6-3.5 / 230 · 247 rating 87 · TE #46 · AZ #22 · Listed: TE · 247 lists commitment: Oklahoma State",
     "links": {
       "s247": "https://247sports.com/Player/talan-scott-46156636/"
     },
@@ -634,7 +634,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 125,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Wilton",
       "address": "Wilton, IA"
@@ -644,7 +644,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 195 · 247 rating 87 · TE #50 · IA #13 · Listed: TE",
+    "miscNotes": "Committed 6/7/26 · 6-5 / 195 · 247 rating 87 · TE #50 · IA #13 · Listed: TE",
     "links": {
       "s247": "https://247sports.com/Player/bryer-putman-46167719/"
     },
@@ -684,7 +684,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 127,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Servite",
       "address": "Anaheim, CA"
@@ -694,7 +694,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 280 · 247 rating 93 · Natl #86 · OT #11 · CA #9 · Listed: OT",
+    "miscNotes": "Committed 3/28/26 · 6-6 / 280 · 247 rating 93 · Natl #86 · OT #11 · CA #9 · Listed: OT · 247 lists commitment: USC",
     "links": {
       "s247": "https://247sports.com/Player/drew-fielder-46158447/"
     },
@@ -709,7 +709,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 128,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Turlock",
       "address": "Turlock, CA"
@@ -719,7 +719,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 290 · 247 rating 89 · OT #37 · CA #27 · Listed: OT",
+    "miscNotes": "Committed 6/12/26 · 6-6 / 290 · 247 rating 89 · OT #37 · CA #27 · Listed: OT · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/avery-michael-46157076/"
     },
@@ -734,7 +734,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 129,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mountain View",
       "address": "Mesa, AZ"
@@ -744,7 +744,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 270 · 247 rating 88 · OT #49 · AZ #12 · Listed: OT",
+    "miscNotes": "Committed 7/1/26 · 6-4 / 270 · 247 rating 88 · OT #49 · AZ #12 · Listed: OT · 247 lists commitment: Washington",
     "links": {
       "s247": "https://247sports.com/Player/tye-kennedy-46162261/"
     },
@@ -759,7 +759,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 130,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Antioch",
       "address": "Antioch, CA"
@@ -769,7 +769,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 285 · 247 rating 87 · OT #82 · CA #80 · Listed: OT",
+    "miscNotes": "Committed 5/22/26 · 6-6 / 285 · 247 rating 87 · OT #82 · CA #80 · Listed: OT · 247 lists commitment: Stanford",
     "links": {
       "s247": "https://247sports.com/Player/george-tyus-46158935/"
     },
@@ -784,7 +784,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 131,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Columbia",
       "address": "Nampa, ID"
@@ -794,7 +794,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5.5 / 250 · 247 rating 86 · OT #112 · ID #3 · Listed: OT",
+    "miscNotes": "Committed 6/20/26 · 6-5.5 / 250 · 247 rating 86 · OT #112 · ID #3 · Listed: OT",
     "links": {
       "s247": "https://247sports.com/Player/maxton-barnes-46159375/"
     },
@@ -809,7 +809,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 132,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Las Vegas Centennial",
       "address": "Las Vegas, NV"
@@ -819,7 +819,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 270 · 247 rating 86 · OT #114 · NV #13 · Listed: OT",
+    "miscNotes": "Committed 6/22/26 · 6-4 / 270 · 247 rating 86 · OT #114 · NV #13 · Listed: OT · 247 lists commitment: UNLV",
     "links": {
       "s247": "https://247sports.com/Player/laseth-bryant-46160867/"
     },
@@ -834,7 +834,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 133,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "De La Salle",
       "address": "Concord, CA"
@@ -844,7 +844,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 295 · 247 rating 85 · OT #118 · CA #135 · Listed: OT",
+    "miscNotes": "Committed 5/1/26 · 6-6 / 295 · 247 rating 85 · OT #118 · CA #135 · Listed: OT · 247 lists commitment: Stanford",
     "links": {
       "s247": "https://247sports.com/Player/clint-lundin-46158853/"
     },
@@ -859,7 +859,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 134,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Chandler",
       "address": "Chandler, AZ"
@@ -869,7 +869,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 255 · 247 rating 85 · OT #122 · AZ #32 · Listed: OT",
+    "miscNotes": "Committed 5/29/26 · 6-5 / 255 · 247 rating 85 · OT #122 · AZ #32 · Listed: OT · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/sire-stewart-46159321/"
     },
@@ -884,7 +884,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 135,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Inglemoor",
       "address": "Kenmore, WA"
@@ -894,7 +894,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 280 · 247 rating 85 · OT #126 · WA #16 · Listed: OT",
+    "miscNotes": "Committed 6/22/26 · 6-6 / 280 · 247 rating 85 · OT #126 · WA #16 · Listed: OT",
     "links": {
       "s247": "https://247sports.com/Player/ben-rainwater-46164690/"
     },
@@ -909,7 +909,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 136,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Kailua",
       "address": "Kailua, HI"
@@ -919,7 +919,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 275 · 247 rating 84 · OT #132 · HI #9 · Listed: OT",
+    "miscNotes": "Committed 5/29/26 · 6-6 / 275 · 247 rating 84 · OT #132 · HI #9 · Listed: OT · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/randolph-santiago-46163858/"
     },
@@ -934,7 +934,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 137,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Curtis",
       "address": "University Place, WA"
@@ -944,7 +944,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6.5 / 265 · 247 rating 87 · IOL #67 · WA #10 · Listed: IOL",
+    "miscNotes": "Committed 6/23/26 · 6-6.5 / 265 · 247 rating 87 · IOL #67 · WA #10 · Listed: IOL · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/rashaun-lavatai-46155595/"
     },
@@ -959,7 +959,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 138,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Prosper",
       "address": "Prosper, TX"
@@ -969,7 +969,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 275 · 247 rating 86 · IOL #86 · TX #166 · Listed: IOL",
+    "miscNotes": "Committed 4/27/26 · 6-3 / 275 · 247 rating 86 · IOL #86 · TX #166 · Listed: IOL · 247 lists commitment: South Carolina",
     "links": {
       "s247": "https://247sports.com/Player/will-endicott-46160366/"
     },
@@ -984,7 +984,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 139,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Coronado",
       "address": "Henderson, NV"
@@ -994,7 +994,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 348 · 247 rating 85 · IOL #105 · NV #15 · Listed: IOL",
+    "miscNotes": "Committed 6/5/26 · 6-6 / 348 · 247 rating 85 · IOL #105 · NV #15 · Listed: IOL · 247 lists commitment: UNLV",
     "links": {
       "s247": "https://247sports.com/Player/phoenix-pollard-46157532/"
     },
@@ -1009,7 +1009,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 140,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Placer",
       "address": "Auburn, CA"
@@ -1019,7 +1019,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 270 · 247 rating 85 · IOL #115 · CA #145 · Listed: IOL",
+    "miscNotes": "Committed 5/8/26 · 6-3 / 270 · 247 rating 85 · IOL #115 · CA #145 · Listed: IOL · 247 lists commitment: UCLA",
     "links": {
       "s247": "https://247sports.com/Player/gage-esty-46164078/"
     },
@@ -1034,7 +1034,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 141,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Millennium",
       "address": "Goodyear, AZ"
@@ -1044,7 +1044,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 325 · 247 rating 85 · IOL #120 · AZ #34 · Listed: IOL",
+    "miscNotes": "Committed 7/6/26 · 6-4 / 325 · 247 rating 85 · IOL #120 · AZ #34 · Listed: IOL · 247 lists commitment: Stanford",
     "links": {
       "s247": "https://247sports.com/Player/lauifi-tosi-46164842/"
     },
@@ -1184,7 +1184,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 147,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Liberty Ranch",
       "address": "Galt, CA"
@@ -1194,7 +1194,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 270 · 247 rating NA · Listed: IOL",
+    "miscNotes": "Committed 5/29/26 · 6-5 / 270 · 247 rating NA · Listed: IOL · 247 lists commitment: Nevada",
     "links": {
       "s247": "https://247sports.com/Player/deshaun-jackson-46164739/"
     },
@@ -1209,7 +1209,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 148,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Maple Mountain",
       "address": "Spanish Fork, UT"
@@ -1219,7 +1219,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 245 · 247 rating 93 · Natl #104 · Edge #13 · UT #2 · Listed: Edge",
+    "miscNotes": "Committed 7/2/26 · 6-3 / 245 · 247 rating 93 · Natl #104 · Edge #13 · UT #2 · Listed: Edge · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/uhila-wolfgramm-46152619/"
     },
@@ -1234,7 +1234,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 149,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Orem",
       "address": "Orem, UT"
@@ -1244,7 +1244,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4.5 / 233 · 247 rating 90 · Edge #22 · UT #3 · Listed: Edge",
+    "miscNotes": "Committed 11/29/25 · 6-4.5 / 233 · 247 rating 90 · Edge #22 · UT #3 · Listed: Edge · 247 lists commitment: Oklahoma",
     "links": {
       "s247": "https://247sports.com/Player/krew-jones-46143771/"
     },
@@ -1259,7 +1259,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 150,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Corner Canyon",
       "address": "Draper, UT"
@@ -1269,7 +1269,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 265 · 247 rating 89 · Edge #40 · UT #5 · Listed: Edge",
+    "miscNotes": "Committed 7/2/26 · 6-6 / 265 · 247 rating 89 · Edge #40 · UT #5 · Listed: Edge · 247 lists commitment: Fresno State",
     "links": {
       "s247": "https://247sports.com/Player/manase-brown-46160918/"
     },
@@ -1284,7 +1284,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 151,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "JSerra Catholic",
       "address": "San Juan Capistrano, CA"
@@ -1294,7 +1294,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 260 · 247 rating 89 · Edge #40 · CA #31 · Listed: Edge",
+    "miscNotes": "Committed 5/29/26 · 6-5 / 260 · 247 rating 89 · Edge #40 · CA #31 · Listed: Edge · 247 lists commitment: UCLA",
     "links": {
       "s247": "https://247sports.com/Player/godschoice-eboigbodin-46159650/"
     },
@@ -1309,7 +1309,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 152,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "College of San Mateo",
       "address": "San Mateo, CA"
@@ -1319,7 +1319,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 235 · 247 rating 89 · Natl #3 · Edge #1 · CA #2 · Listed: Edge · JUCO",
+    "miscNotes": "Committed 6/6/26 · 6-4 / 235 · 247 rating 89 · Natl #3 · Edge #1 · CA #2 · Listed: Edge · JUCO",
     "links": {
       "s247": "https://247sports.com/Player/beaux-sauve-46137676/"
     },
@@ -1334,7 +1334,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 153,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Rainier Beach",
       "address": "Seattle, WA"
@@ -1344,7 +1344,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-8 / 250 · 247 rating 88 · Edge #85 · WA #6 · Listed: Edge",
+    "miscNotes": "Committed 6/8/26 · 6-8 / 250 · 247 rating 88 · Edge #85 · WA #6 · Listed: Edge · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/achilles-reyna-46154487/"
     },
@@ -1359,7 +1359,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 154,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mullen",
       "address": "Denver, CO"
@@ -1369,7 +1369,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 252 · 247 rating 88 · Edge #53 · CO #3 · Listed: Edge",
+    "miscNotes": "Committed 6/19/26 · 6-3 / 252 · 247 rating 88 · Edge #53 · CO #3 · Listed: Edge · 247 lists commitment: Stanford",
     "links": {
       "s247": "https://247sports.com/Player/troy-mailo-46147113/"
     },
@@ -1384,7 +1384,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 155,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Valley Christian",
       "address": "San Jose, CA"
@@ -1394,7 +1394,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4.5 / 245 · 247 rating 88 · Edge #92 · CA #58 · Listed: Edge",
+    "miscNotes": "Committed 6/9/26 · 6-4.5 / 245 · 247 rating 88 · Edge #92 · CA #58 · Listed: Edge · 247 lists commitment: Minnesota",
     "links": {
       "s247": "https://247sports.com/Player/cameron-saunders-46159373/"
     },
@@ -1409,7 +1409,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 156,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lake Oswego",
       "address": "Lake Oswego, OR"
@@ -1419,7 +1419,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 250 · 247 rating 88 · Edge #63 · OR #2 · Listed: Edge",
+    "miscNotes": "Committed 6/12/26 · 6-6 / 250 · 247 rating 88 · Edge #63 · OR #2 · Listed: Edge · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/josh-christensen-46155573/"
     },
@@ -1434,7 +1434,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 157,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Timpview",
       "address": "Provo, UT"
@@ -1444,7 +1444,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1.5 / 225 · 247 rating 87 · Edge #64 · UT #9 · Listed: Edge",
+    "miscNotes": "Committed 6/19/26 · 6-1.5 / 225 · 247 rating 87 · Edge #64 · UT #9 · Listed: Edge · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/fui-vakapuna-46162507/"
     },
@@ -1459,7 +1459,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 158,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Whitehall Yearling",
       "address": "Columbus, OH"
@@ -1469,7 +1469,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 220 · 247 rating 87 · Edge #67 · OH #35 · Listed: Edge",
+    "miscNotes": "Committed 6/5/26 · 6-3 / 220 · 247 rating 87 · Edge #67 · OH #35 · Listed: Edge · 247 lists commitment: Michigan State",
     "links": {
       "s247": "https://247sports.com/Player/lawrence-kanneh-46166428/"
     },
@@ -1484,7 +1484,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 159,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Bingham",
       "address": "South Jordan, UT"
@@ -1494,7 +1494,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 230 · 247 rating 87 · Edge #70 · UT #10 · Listed: Edge",
+    "miscNotes": "Committed 6/19/26 · 6-3 / 230 · 247 rating 87 · Edge #70 · UT #10 · Listed: Edge · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/monson-tukuafu-46161675/"
     },
@@ -1509,7 +1509,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 160,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Newark",
       "address": "Newark, OH"
@@ -1519,7 +1519,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 205 · 247 rating 87 · Edge #71 · OH #36 · Listed: Edge",
+    "miscNotes": "Committed 6/2/26 · 6-3 / 205 · 247 rating 87 · Edge #71 · OH #36 · Listed: Edge · 247 lists commitment: Minnesota",
     "links": {
       "s247": "https://247sports.com/Player/roy-price-46155058/"
     },
@@ -1559,7 +1559,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 162,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Corner Canyon",
       "address": "Draper, UT"
@@ -1569,7 +1569,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 250 · 247 rating 87 · Edge #81 · UT #14 · Listed: Edge",
+    "miscNotes": "Committed 6/19/26 · 6-4 / 250 · 247 rating 87 · Edge #81 · UT #14 · Listed: Edge · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/jackson-west-46160922/"
     },
@@ -1584,7 +1584,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 163,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Lewiston",
       "address": "Lewiston, ID"
@@ -1594,7 +1594,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 265 · 247 rating 87 · Edge #88 · ID #1 · Listed: Edge",
+    "miscNotes": "Committed 6/7/26 · 6-4 / 265 · 247 rating 87 · Edge #88 · ID #1 · Listed: Edge",
     "links": {
       "s247": "https://247sports.com/Player/parker-bagley-46162764/"
     },
@@ -1609,7 +1609,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 164,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Laguna Beach",
       "address": "Laguna Beach, CA"
@@ -1619,7 +1619,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 210 · 247 rating 86 · Edge #97 · CA #104 · Listed: Edge",
+    "miscNotes": "Committed 5/30/26 · 6-5 / 210 · 247 rating 86 · Edge #97 · CA #104 · Listed: Edge",
     "links": {
       "s247": "https://247sports.com/Player/grayson-kazmouz-46165299/"
     },
@@ -1634,7 +1634,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 165,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Timpview",
       "address": "Provo, UT"
@@ -1644,7 +1644,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 240 · 247 rating 86 · Edge #106 · UT #18 · Listed: Edge",
+    "miscNotes": "Committed 6/7/26 · 6-3 / 240 · 247 rating 86 · Edge #106 · UT #18 · Listed: Edge · 247 lists commitment: Nebraska",
     "links": {
       "s247": "https://247sports.com/Player/maatoe-moe-46163147/"
     },
@@ -1659,7 +1659,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 166,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Orem",
       "address": "Orem, UT"
@@ -1669,7 +1669,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2.5 / 185 · 247 rating 85 · Edge #112 · UT #21 · Listed: Edge",
+    "miscNotes": "Committed 7/18/26 · 6-2.5 / 185 · 247 rating 85 · Edge #112 · UT #21 · Listed: Edge · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/jag-ioane-46152618/"
     },
@@ -1684,7 +1684,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 167,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Deer Valley",
       "address": "Antioch, CA"
@@ -1694,7 +1694,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2.5 / 245 · 247 rating 85 · Edge #118 · CA #136 · Listed: Edge",
+    "miscNotes": "Committed 5/29/26 · 6-2.5 / 245 · 247 rating 85 · Edge #118 · CA #136 · Listed: Edge · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/sonasi-maka-ii-46158742/"
     },
@@ -1709,7 +1709,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 168,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "West",
       "address": "Salt Lake City, UT"
@@ -1719,7 +1719,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 225 · 247 rating 84 · Edge #132 · UT #30 · Listed: Edge",
+    "miscNotes": "Committed 6/12/26 · 6-3 / 225 · 247 rating 84 · Edge #132 · UT #30 · Listed: Edge · 247 lists commitment: Arizona",
     "links": {
       "s247": "https://247sports.com/Player/dieter-lotulelei-46157221/"
     },
@@ -1734,7 +1734,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 169,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Herriman",
       "address": "Herriman, UT"
@@ -1744,7 +1744,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 235 · 247 rating 84 · Edge #133 · UT #31 · Listed: Edge",
+    "miscNotes": "Committed 6/2/26 · 6-4 / 235 · 247 rating 84 · Edge #133 · UT #31 · Listed: Edge · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/kemper-castro-46159261/"
     },
@@ -1759,7 +1759,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 170,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lehi",
       "address": "Lehi, UT"
@@ -1769,7 +1769,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 260 · 247 rating 84 · Edge #203 · UT #32 · Listed: Edge",
+    "miscNotes": "Committed 6/5/26 · 6-3 / 260 · 247 rating 84 · Edge #203 · UT #32 · Listed: Edge · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/tautai-meredith-46154796/"
     },
@@ -1784,7 +1784,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 171,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Shadow Ridge",
       "address": "Las Vegas, NV"
@@ -1794,7 +1794,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 235 · 247 rating 83 · Edge #146 · NV #20 · Listed: Edge",
+    "miscNotes": "Committed 6/5/26 · 6-3 / 235 · 247 rating 83 · Edge #146 · NV #20 · Listed: Edge · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/colton-richter-46159742/"
     },
@@ -1809,7 +1809,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 172,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mount Si",
       "address": "Snoqualmie, WA"
@@ -1819,7 +1819,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 215 · 247 rating 83 · Edge #184 · WA #23 · Listed: Edge",
+    "miscNotes": "Committed 6/5/26 · 6-4 / 215 · 247 rating 83 · Edge #184 · WA #23 · Listed: Edge · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/drenden-knaevelsrud-46157384/"
     },
@@ -1834,7 +1834,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 173,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Conroe Oak Ridge",
       "address": "Conroe, TX"
@@ -1844,7 +1844,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-6 / 245 · 247 rating 88 · DL #88 · TX #85 · Listed: DL",
+    "miscNotes": "Committed 6/24/26 · 6-6 / 245 · 247 rating 88 · DL #88 · TX #85 · Listed: DL · 247 lists commitment: Kansas State",
     "links": {
       "s247": "https://247sports.com/Player/finn-walker-46159175/"
     },
@@ -1859,7 +1859,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 174,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Cornerstone Christian",
       "address": "San Antonio, TX"
@@ -1869,7 +1869,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 260 · 247 rating 87 · DL #109 · TX #113 · Listed: DL",
+    "miscNotes": "Committed 6/2/26 · 6-2 / 260 · 247 rating 87 · DL #109 · TX #113 · Listed: DL · 247 lists commitment: Arizona",
     "links": {
       "s247": "https://247sports.com/Player/ahzan-bacote-46161695/"
     },
@@ -1884,7 +1884,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 175,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Granger",
       "address": "Salt Lake City, UT"
@@ -1894,7 +1894,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 290 · 247 rating 87 · DL #118 · UT #11 · Listed: DL",
+    "miscNotes": "Committed 5/20/26 · 6-3 / 290 · 247 rating 87 · DL #118 · UT #11 · Listed: DL · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/maaimoa-havili-46167045/"
     },
@@ -1909,7 +1909,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 176,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Skyline",
       "address": "Salt Lake City, UT"
@@ -1919,7 +1919,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 315 · 247 rating 87 · DL #120 · UT #13 · Listed: DL",
+    "miscNotes": "Committed 5/22/26 · 6-2 / 315 · 247 rating 87 · DL #120 · UT #13 · Listed: DL · 247 lists commitment: Penn State",
     "links": {
       "s247": "https://247sports.com/Player/aniti-paiva-46161730/"
     },
@@ -1934,7 +1934,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 177,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Junipero Serra",
       "address": "San Mateo, CA"
@@ -1944,7 +1944,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 275 · 247 rating 86 · DL #122 · CA #81 · Listed: DL",
+    "miscNotes": "Committed 6/12/26 · 6-1 / 275 · 247 rating 86 · DL #122 · CA #81 · Listed: DL · 247 lists commitment: Minnesota",
     "links": {
       "s247": "https://247sports.com/Player/lemani-fehoko-46140961/"
     },
@@ -1959,7 +1959,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 178,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "St. John Bosco",
       "address": "Bellflower, CA"
@@ -1969,7 +1969,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 280 · 247 rating 86 · DL #129 · CA #86 · Listed: DL",
+    "miscNotes": "Committed 5/31/26 · 6-2 / 280 · 247 rating 86 · DL #129 · CA #86 · Listed: DL",
     "links": {
       "s247": "https://247sports.com/Player/kekoa-peko-46142061/"
     },
@@ -1984,7 +1984,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 179,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Dooly County",
       "address": "Vienna, GA"
@@ -1994,7 +1994,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 280 · 247 rating 86 · DL #157 · GA #154 · Listed: DL",
+    "miscNotes": "Committed 6/20/26 · 6-2 / 280 · 247 rating 86 · DL #157 · GA #154 · Listed: DL · 247 lists commitment: Western Michigan",
     "links": {
       "s247": "https://247sports.com/Player/charles-nance-46161500/"
     },
@@ -2009,7 +2009,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 180,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Compton Centennial",
       "address": "Compton, CA"
@@ -2019,7 +2019,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 270 · 247 rating 86 · DL #163 · CA #114 · Listed: DL",
+    "miscNotes": "Committed 6/12/26 · 6-5 / 270 · 247 rating 86 · DL #163 · CA #114 · Listed: DL · 247 lists commitment: Arizona State",
     "links": {
       "s247": "https://247sports.com/Player/magic-haynes-46167306/"
     },
@@ -2034,7 +2034,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 181,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Anaheim Western",
       "address": "Anaheim, CA"
@@ -2044,7 +2044,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 285 · 247 rating 84 · DL #198 · CA #168 · Listed: DL",
+    "miscNotes": "Committed 6/12/26 · 6-3 / 285 · 247 rating 84 · DL #198 · CA #168 · Listed: DL · 247 lists commitment: Vanderbilt",
     "links": {
       "s247": "https://247sports.com/Player/hunter-eligon-46158103/"
     },
@@ -2059,7 +2059,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 182,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "West",
       "address": "Salt Lake City, UT"
@@ -2069,7 +2069,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 265 · 247 rating NA · Listed: DL",
+    "miscNotes": "Committed 8/5/26 · 6-3 / 265 · 247 rating NA · Listed: DL · 247 lists commitment: San Jose State",
     "links": {
       "s247": "https://247sports.com/Player/ilivai-taiese-46161022/"
     },
@@ -2109,7 +2109,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 184,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mililani",
       "address": "Mililani, HI"
@@ -2119,7 +2119,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 200 · 247 rating 93 · Natl #84 · LB #6 · HI #1 · Listed: LB",
+    "miscNotes": "Committed 6/3/26 · 6-3 / 200 · 247 rating 93 · Natl #84 · LB #6 · HI #1 · Listed: LB · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/toa-satele-46145646/"
     },
@@ -2134,7 +2134,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 185,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Olympus",
       "address": "Salt Lake City, UT"
@@ -2144,7 +2144,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3.5 / 215 · 247 rating 87 · LB #84 · UT #12 · Listed: LB",
+    "miscNotes": "Committed 1/24/26 · 6-3.5 / 215 · 247 rating 87 · LB #84 · UT #12 · Listed: LB · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/sam-ngata-46157095/"
     },
@@ -2159,7 +2159,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 186,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Helix",
       "address": "La Mesa, CA"
@@ -2169,7 +2169,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 205 · 247 rating 86 · LB #103 · CA #96 · Listed: LB",
+    "miscNotes": "Committed 5/29/26 · 6-1 / 205 · 247 rating 86 · LB #103 · CA #96 · Listed: LB · 247 lists commitment: Fresno State",
     "links": {
       "s247": "https://247sports.com/Player/jeremy-davis-46164728/"
     },
@@ -2184,7 +2184,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 187,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Kamehameha Kapalama",
       "address": "Honolulu, HI"
@@ -2194,7 +2194,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 207 · 247 rating 86 · LB #107 · HI #4 · Listed: LB",
+    "miscNotes": "Committed 6/19/26 · 6-1 / 207 · 247 rating 86 · LB #107 · HI #4 · Listed: LB · 247 lists commitment: TCU",
     "links": {
       "s247": "https://247sports.com/Player/linkin-apana-46157846/"
     },
@@ -2209,7 +2209,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 188,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Stansbury",
       "address": "Tooele, UT"
@@ -2219,7 +2219,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 215 · 247 rating 85 · LB #135 · UT #22 · Listed: LB",
+    "miscNotes": "Committed 4/10/26 · 6-1 / 215 · 247 rating 85 · LB #135 · UT #22 · Listed: LB · 247 lists commitment: West Virginia",
     "links": {
       "s247": "https://247sports.com/Player/broncs-baker-46155019/"
     },
@@ -2234,7 +2234,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 189,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Willamette",
       "address": "Eugene, OR"
@@ -2244,7 +2244,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 217 · 247 rating 84 · LB #164 · OR #8 · Listed: LB",
+    "miscNotes": "Committed 6/16/26 · 6-2 / 217 · 247 rating 84 · LB #164 · OR #8 · Listed: LB · 247 lists commitment: Oregon State",
     "links": {
       "s247": "https://247sports.com/Player/kawai-chamberlin-46150513/"
     },
@@ -2259,7 +2259,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 190,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Williams Field",
       "address": "Gilbert, AZ"
@@ -2269,7 +2269,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2.5 / 195 · 247 rating 84 · LB #168 · AZ #44 · Listed: LB",
+    "miscNotes": "Committed 6/17/26 · 6-2.5 / 195 · 247 rating 84 · LB #168 · AZ #44 · Listed: LB · 247 lists commitment: Yale",
     "links": {
       "s247": "https://247sports.com/Player/almasi-glenn-46159900/"
     },
@@ -2334,7 +2334,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 193,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Bishop Gorman",
       "address": "Las Vegas, NV"
@@ -2344,7 +2344,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3.5 / 185 · 247 rating 94 · Natl #61 · CB #5 · NV #1 · Listed: CB",
+    "miscNotes": "Committed 7/1/26 · 6-3.5 / 185 · 247 rating 94 · Natl #61 · CB #5 · NV #1 · Listed: CB · 247 lists commitment: Oregon",
     "links": {
       "s247": "https://247sports.com/Player/hayden-stepp-46147446/"
     },
@@ -2359,7 +2359,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 194,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Bishop Gorman",
       "address": "Las Vegas, NV"
@@ -2369,7 +2369,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0.5 / 170 · 247 rating 90 · Natl #211 · CB #25 · NV #2 · Listed: CB",
+    "miscNotes": "Committed 6/12/26 · 6-0.5 / 170 · 247 rating 90 · Natl #211 · CB #25 · NV #2 · Listed: CB · 247 lists commitment: California",
     "links": {
       "s247": "https://247sports.com/Player/kamil-loud-46153753/"
     },
@@ -2384,7 +2384,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 195,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Crean Lutheran",
       "address": "Irvine, CA"
@@ -2394,7 +2394,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 175 · 247 rating 88 · CB #49 · CA #34 · Listed: CB",
+    "miscNotes": "Committed 7/2/26 · 6-3 / 175 · 247 rating 88 · CB #49 · CA #34 · Listed: CB · 247 lists commitment: Arizona",
     "links": {
       "s247": "https://247sports.com/Player/evan-mack-46154204/"
     },
@@ -2434,7 +2434,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 197,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Denton Ryan",
       "address": "Denton, TX"
@@ -2444,7 +2444,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 167 · 247 rating 87 · CB #70 · TX #93 · Listed: CB",
+    "miscNotes": "Committed 6/13/26 · 5-11 / 167 · 247 rating 87 · CB #70 · TX #93 · Listed: CB · 247 lists commitment: Arkansas",
     "links": {
       "s247": "https://247sports.com/Player/john-catlin-iv-46161841/"
     },
@@ -2459,7 +2459,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 198,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Huntington Beach",
       "address": "Huntington Beach, CA"
@@ -2469,7 +2469,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 170 · 247 rating 87 · CB #87 · CA #77 · Listed: CB",
+    "miscNotes": "Committed 6/7/26 · 6-0 / 170 · 247 rating 87 · CB #87 · CA #77 · Listed: CB · 247 lists commitment: Arizona State",
     "links": {
       "s247": "https://247sports.com/Player/dylin-bruce-46155369/"
     },
@@ -2484,7 +2484,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 199,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Rancho Cucamonga",
       "address": "Rancho Cucamonga, CA"
@@ -2494,7 +2494,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0.5 / 160 · 247 rating 86 · CB #110 · CA #89 · Listed: CB",
+    "miscNotes": "Committed 6/19/26 · 6-0.5 / 160 · 247 rating 86 · CB #110 · CA #89 · Listed: CB · 247 lists commitment: Oregon State",
     "links": {
       "s247": "https://247sports.com/Player/nathaniel-mensah-46154894/"
     },
@@ -2509,7 +2509,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 200,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "St. Pius X-St. Matthias Academy",
       "address": "Downey, CA"
@@ -2519,7 +2519,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 160 · 247 rating 86 · CB #119 · CA #100 · Listed: CB",
+    "miscNotes": "Committed 6/19/26 · 6-0 / 160 · 247 rating 86 · CB #119 · CA #100 · Listed: CB · 247 lists commitment: Oregon State",
     "links": {
       "s247": "https://247sports.com/Player/johnny-mcneil-46158457/"
     },
@@ -2534,7 +2534,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 201,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Desert Mountain",
       "address": "Scottsdale, AZ"
@@ -2544,7 +2544,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 165 · 247 rating 86 · CB #122 · AZ #25 · Listed: CB",
+    "miscNotes": "Committed 6/7/26 · 5-11 / 165 · 247 rating 86 · CB #122 · AZ #25 · Listed: CB",
     "links": {
       "s247": "https://247sports.com/Player/hassan-smith-46162805/"
     },
@@ -2559,7 +2559,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 202,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Inglewood",
       "address": "Inglewood, CA"
@@ -2569,7 +2569,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11.5 / 175 · 247 rating 83 · CB #160 · CA #204 · Listed: CB",
+    "miscNotes": "Committed 6/10/26 · 5-11.5 / 175 · 247 rating 83 · CB #160 · CA #204 · Listed: CB · 247 lists commitment: Washington State",
     "links": {
       "s247": "https://247sports.com/Player/noah-clark-46157739/"
     },
@@ -2584,7 +2584,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 203,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Junipero Serra",
       "address": "Gardena, CA"
@@ -2594,7 +2594,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 185 · 247 rating 90 · Natl #171 · S #13 · CA #15 · Listed: S",
+    "miscNotes": "Committed 4/12/26 · 6-0 / 185 · 247 rating 90 · Natl #171 · S #13 · CA #15 · Listed: S · 247 lists commitment: UCLA",
     "links": {
       "s247": "https://247sports.com/Player/pole-moala-46154623/"
     },
@@ -2609,7 +2609,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 204,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Corona Centennial",
       "address": "Corona, CA"
@@ -2619,7 +2619,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 188 · 247 rating 88 · S #54 · CA #46 · Listed: S",
+    "miscNotes": "Committed 6/20/26 · 5-11 / 188 · 247 rating 88 · S #54 · CA #46 · Listed: S · 247 lists commitment: Washington",
     "links": {
       "s247": "https://247sports.com/Player/jaden-walk-green-46154955/"
     },
@@ -2634,7 +2634,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 205,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Syracuse",
       "address": "Syracuse, UT"
@@ -2644,7 +2644,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 185 · 247 rating 86 · S #118 · UT #16 · Listed: S",
+    "miscNotes": "Committed 6/19/26 · 6-2 / 185 · 247 rating 86 · S #118 · UT #16 · Listed: S · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/kaleb-hall-46164678/"
     },
@@ -2659,7 +2659,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 206,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Eaglecrest",
       "address": "Aurora, CO"
@@ -2669,7 +2669,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 170 · 247 rating 86 · S #142 · CO #9 · Listed: S",
+    "miscNotes": "Committed 6/22/26 · 6-1 / 170 · 247 rating 86 · S #142 · CO #9 · Listed: S",
     "links": {
       "s247": "https://247sports.com/Player/jayden-bradley-46167312/"
     },
@@ -2684,7 +2684,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 207,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Valencia",
       "address": "Valencia, CA"
@@ -2694,7 +2694,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 165 · 247 rating 86 · S #144 · CA #117 · Listed: S",
+    "miscNotes": "Committed 6/27/26 · 6-1 / 165 · 247 rating 86 · S #144 · CA #117 · Listed: S · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/caysen-badawi-46165006/"
     },
@@ -2709,7 +2709,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 208,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "San Diego",
       "address": "San Diego, CA"
@@ -2719,7 +2719,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 180 · 247 rating 85 · S #160 · CA #126 · Listed: S",
+    "miscNotes": "Committed 6/4/26 · 6-1 / 180 · 247 rating 85 · S #160 · CA #126 · Listed: S · 247 lists commitment: San Diego State",
     "links": {
       "s247": "https://247sports.com/Player/kye-cooper-46151871/"
     },
@@ -2734,7 +2734,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 209,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Corona Centennial",
       "address": "Corona, CA"
@@ -2744,7 +2744,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 170 · 247 rating 84 · S #182 · CA #166 · Listed: S",
+    "miscNotes": "Committed 6/12/26 · 6-1 / 170 · 247 rating 84 · S #182 · CA #166 · Listed: S · 247 lists commitment: UNLV",
     "links": {
       "s247": "https://247sports.com/Player/brett-smith-46154957/"
     },
@@ -2759,7 +2759,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 210,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Buchanan",
       "address": "Clovis, CA"
@@ -2769,7 +2769,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-4 / 200 · 247 rating 84 · S #183 · CA #179 · Listed: S",
+    "miscNotes": "Committed 6/14/26 · 6-4 / 200 · 247 rating 84 · S #183 · CA #179 · Listed: S · 247 lists commitment: Fresno State",
     "links": {
       "s247": "https://247sports.com/Player/grant-moser-46159612/"
     },
@@ -2809,7 +2809,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 212,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "St. Thomas More",
       "address": "Oakdale, CT"
@@ -2819,7 +2819,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 205 · 247 rating NA · Listed: S",
+    "miscNotes": "Committed 6/21/26 · 6-1 / 205 · 247 rating NA · Listed: S · 247 lists commitment: James Madison",
     "links": {
       "s247": "https://247sports.com/Player/george-richards-46167105/"
     },
@@ -2834,7 +2834,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 213,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Davis",
       "address": "Kaysville, UT"
@@ -2844,7 +2844,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 195 · 247 rating 93 · Natl #82 · ATH #8 · UT #1 · Listed: ATH",
+    "miscNotes": "Committed 6/26/26 · 6-2 / 195 · 247 rating 93 · Natl #82 · ATH #8 · UT #1 · Listed: ATH · 247 lists commitment: Oklahoma",
     "links": {
       "s247": "https://247sports.com/Player/bode-sparrow-46143770/"
     },
@@ -2859,7 +2859,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 214,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Davis",
       "address": "Kaysville, UT"
@@ -2869,7 +2869,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "5-11 / 185 · 247 rating 90 · ATH #18 · UT #4 · Listed: ATH",
+    "miscNotes": "Committed 6/19/26 · 5-11 / 185 · 247 rating 90 · ATH #18 · UT #4 · Listed: ATH · 247 lists commitment: Utah",
     "links": {
       "s247": "https://247sports.com/Player/jaxton-itaaehau-46160892/"
     },
@@ -2884,7 +2884,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 215,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Timberline",
       "address": "Lacey, WA"
@@ -2894,7 +2894,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 180 · 247 rating 88 · ATH #60 · WA #7 · Listed: ATH",
+    "miscNotes": "Committed 12/24/25 · 6-1 / 180 · 247 rating 88 · ATH #60 · WA #7 · Listed: ATH · 247 lists commitment: Washington",
     "links": {
       "s247": "https://247sports.com/Player/maurice-williams-46142087/"
     },
@@ -2909,7 +2909,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 216,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Las Vegas Centennial",
       "address": "Las Vegas, NV"
@@ -2919,7 +2919,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 190 · 247 rating 88 · ATH #70 · NV #7 · Listed: ATH",
+    "miscNotes": "Committed 5/31/26 · 6-2 / 190 · 247 rating 88 · ATH #70 · NV #7 · Listed: ATH · 247 lists commitment: Minnesota",
     "links": {
       "s247": "https://247sports.com/Player/maxwell-miles-46149471/"
     },
@@ -2934,7 +2934,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 217,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Puyallup",
       "address": "Puyallup, WA"
@@ -2944,7 +2944,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-5 / 180 · 247 rating 87 · ATH #75 · WA #9 · Listed: ATH",
+    "miscNotes": "Committed 6/2/26 · 6-5 / 180 · 247 rating 87 · ATH #75 · WA #9 · Listed: ATH",
     "links": {
       "s247": "https://247sports.com/Player/jisaiah-mitchell-46147310/"
     },
@@ -2959,7 +2959,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 218,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Salem Hills",
       "address": "Salem, UT"
@@ -2969,7 +2969,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 181 · 247 rating 86 · ATH #90 · UT #15 · Listed: ATH",
+    "miscNotes": "Committed 7/6/26 · 6-3 / 181 · 247 rating 86 · ATH #90 · UT #15 · Listed: ATH · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/peyton-higginson-46149856/"
     },
@@ -2984,7 +2984,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 219,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "San Clemente",
       "address": "San Clemente, CA"
@@ -2994,7 +2994,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 190 · 247 rating 85 · ATH #115 · CA #143 · Listed: ATH",
+    "miscNotes": "Committed 6/18/26 · 6-1 / 190 · 247 rating 85 · ATH #115 · CA #143 · Listed: ATH · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/jaxson-rex-46158844/"
     },
@@ -3009,7 +3009,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 220,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Shakopee",
       "address": "Shakopee, MN"
@@ -3019,7 +3019,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 215 · 247 rating 85 · ATH #82 · MN #13 · Listed: ATH",
+    "miscNotes": "Committed 6/19/26 · 6-3 / 215 · 247 rating 85 · ATH #82 · MN #13 · Listed: ATH · 247 lists commitment: UNLV",
     "links": {
       "s247": "https://247sports.com/Player/jaylen-fitzgerald-46155725/"
     },
@@ -3034,7 +3034,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 221,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mountain Ridge",
       "address": "Herriman, UT"
@@ -3044,7 +3044,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 215 · 247 rating 84 · ATH #126 · UT #29 · Listed: ATH",
+    "miscNotes": "Committed 3/30/26 · 6-2 / 215 · 247 rating 84 · ATH #126 · UT #29 · Listed: ATH · 247 lists commitment: BYU",
     "links": {
       "s247": "https://247sports.com/Player/tytan-dejong-46147761/"
     },
@@ -3059,7 +3059,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 222,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Junipero Serra",
       "address": "San Mateo, CA"
@@ -3069,7 +3069,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0 / 165 · 247 rating 84 · ATH #130 · CA #162 · Listed: ATH",
+    "miscNotes": "Committed 6/12/26 · 6-0 / 165 · 247 rating 84 · ATH #130 · CA #162 · Listed: ATH · 247 lists commitment: California",
     "links": {
       "s247": "https://247sports.com/Player/jeovanni-henley-46148322/"
     },
@@ -3084,7 +3084,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 223,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Mesa",
       "address": "Mesa, AZ"
@@ -3094,7 +3094,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 175 · 247 rating 84 · ATH #135 · AZ #45 · Listed: ATH",
+    "miscNotes": "Committed 6/13/26 · 6-1 / 175 · 247 rating 84 · ATH #135 · AZ #45 · Listed: ATH · 247 lists commitment: Arizona State",
     "links": {
       "s247": "https://247sports.com/Player/kingston-anetema-46147996/"
     },
@@ -3159,7 +3159,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 226,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lincoln",
       "address": "Tacoma, WA"
@@ -3169,7 +3169,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1.5 / 175 · 247 rating NA · Listed: ATH",
+    "miscNotes": "Committed 7/2/26 · 6-1.5 / 175 · 247 rating NA · Listed: ATH · 247 lists commitment: Eastern Washington",
     "links": {
       "s247": "https://247sports.com/Player/elijah-carney-46149890/"
     },
@@ -3184,7 +3184,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 227,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Wilsonville",
       "address": "Wilsonville, OR"
@@ -3194,7 +3194,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-2 / 205 · 247 rating NA · Listed: ATH",
+    "miscNotes": "Committed 6/23/26 · 6-2 / 205 · 247 rating NA · Listed: ATH · 247 lists commitment: New Mexico",
     "links": {
       "s247": "https://247sports.com/Player/ben-wiepert-46164484/"
     },
@@ -3209,7 +3209,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 228,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Grand Saline",
       "address": "Grand Saline, TX"
@@ -3219,7 +3219,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-3 / 170 · 247 rating NA · Listed: ATH",
+    "miscNotes": "Committed 6/12/26 · 6-3 / 170 · 247 rating NA · Listed: ATH · 247 lists commitment: North Texas",
     "links": {
       "s247": "https://247sports.com/Player/kolton-prox-46156714/"
     },
@@ -3259,7 +3259,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2027,
     "grade": null,
     "order": 230,
-    "status": "OFFERED",
+    "status": "ELSEWHERE",
     "school": {
       "name": "Lewis & Clark",
       "address": "Spokane, WA"
@@ -3269,7 +3269,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-1 / 215 · 247 rating NA · Listed: P",
+    "miscNotes": "Committed 6/26/26 · 6-1 / 215 · 247 rating NA · Listed: P · 247 lists commitment: Montana",
     "links": {
       "s247": "https://247sports.com/Player/jackson-spitz-46168350/"
     },
@@ -3309,7 +3309,7 @@ const _SEED_PROSPECTS = [
     "classYear": 2028,
     "grade": null,
     "order": 301,
-    "status": "OFFERED",
+    "status": "COMMITTED",
     "school": {
       "name": "Willamette",
       "address": "Eugene, OR"
@@ -3319,7 +3319,7 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "6-0.5 / 185 · 247 rating 86 · QB #47 · OR #3 · Listed: QB",
+    "miscNotes": "Committed 3/16/26 · 6-0.5 / 185 · 247 rating 86 · QB #47 · OR #3 · Listed: QB",
     "links": {
       "s247": "https://247sports.com/Player/zeke-thomas-46151666/"
     },
