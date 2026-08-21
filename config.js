@@ -1,5 +1,3858 @@
 /* School config — Boise State. Everything school-specific lives in this file.
    The app itself (app.js) is school-agnostic. */
+const _SEED_PROSPECTS = [
+  {
+    "id": "bs27-01",
+    "name": "Kael Snyder",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 100,
+    "status": "OFFERED",
+    "school": {
+      "name": "Perry",
+      "address": "Gilbert, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2.5 / 200 · 247 rating 87 · QB #41 · AZ #16 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/kael-snyder-46150670/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-02",
+    "name": "Ryce Palepoi",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 101,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 205 · 247 rating 83 · QB #177 · UT #38 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/ryce-palepoi-46162462/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-03",
+    "name": "Xavier Bala",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 102,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Anthony's",
+      "address": "Long Island City, NY"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 215 · 247 rating 87 · RB #68 · NY #3 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/xavier-bala-46149108/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-04",
+    "name": "Caris Sela",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 103,
+    "status": "OFFERED",
+    "school": {
+      "name": "Justin Northwest",
+      "address": "Justin, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 190 · 247 rating 86 · RB #95 · TX #148 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/caris-sela-46165762/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-05",
+    "name": "Malachi McFarland",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 104,
+    "status": "OFFERED",
+    "school": {
+      "name": "Damien",
+      "address": "La Verne, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-10 / 175 · 247 rating 86 · RB #99 · CA #105 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/malachi-mcfarland-46161889/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-06",
+    "name": "Jonah Mailei",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 105,
+    "status": "OFFERED",
+    "school": {
+      "name": "Skyline",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 205 · 247 rating 86 · RB #103 · UT #19 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/jonah-mailei-46162441/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-07",
+    "name": "Kamden Tillis",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 106,
+    "status": "OFFERED",
+    "school": {
+      "name": "Los Alamitos",
+      "address": "Los Alamitos, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 190 · 247 rating 85 · RB #201 · CA #123 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/kamden-tillis-46156264/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-08",
+    "name": "Camden Morton",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 107,
+    "status": "OFFERED",
+    "school": {
+      "name": "Creekside",
+      "address": "St. Johns, FL"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-9 / 170 · 247 rating NA · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/camden-morton-46146199/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-09",
+    "name": "Maleek Nolley",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 108,
+    "status": "OFFERED",
+    "school": {
+      "name": "Cajon",
+      "address": "San Bernardino, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 195 · 247 rating NA · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/maleek-nolley-46164211/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-10",
+    "name": "Damani Warren",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 109,
+    "status": "OFFERED",
+    "school": {
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 210 · 247 rating 89 · WR #50 · NV #3 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/damani-warren-46147365/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-11",
+    "name": "Taurean Rawlins",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 110,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mount Vernon Presbyterian",
+      "address": "Atlanta, GA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 175 · 247 rating 89 · WR #59 · GA #49 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/taurean-rawlins-46164019/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-12",
+    "name": "DJ Huggins",
+    "jersey": "—",
+    "positionGroup": "WR_SLOT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 111,
+    "status": "OFFERED",
+    "school": {
+      "name": "Harrison",
+      "address": "Kennesaw, GA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-10 / 165 · 247 rating 88 · WR #86 · GA #73 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/dj-huggins-46159642/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-13",
+    "name": "Jackson Coleman",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 112,
+    "status": "OFFERED",
+    "school": {
+      "name": "Valor Christian",
+      "address": "Littleton, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 185 · 247 rating 87 · WR #114 · CO #5 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/jackson-coleman-46156590/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-14",
+    "name": "Isaac Cook",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 113,
+    "status": "OFFERED",
+    "school": {
+      "name": "Cathedral Catholic",
+      "address": "San Diego, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 195 · 247 rating 86 · WR #173 · CA #107 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/isaac-cook-46156985/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-15",
+    "name": "Blake Gunter",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 114,
+    "status": "OFFERED",
+    "school": {
+      "name": "Southlake Carroll",
+      "address": "Southlake, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 180 · 247 rating 86 · WR #175 · TX #168 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/blake-gunter-46157583/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-16",
+    "name": "Jimmel Champion",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 115,
+    "status": "OFFERED",
+    "school": {
+      "name": "Huntington Beach",
+      "address": "Huntington Beach, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 195 · 247 rating 86 · WR #141 · CA #110 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/jimmel-champion-46158789/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-17",
+    "name": "Dillon Sykes",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 116,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lone Peak",
+      "address": "American Fork, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 190 · 247 rating 85 · WR #210 · UT #23 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/dillon-sykes-46154619/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-18",
+    "name": "Malachi Garlington",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 117,
+    "status": "OFFERED",
+    "school": {
+      "name": "Adrienne C. Nelson",
+      "address": "Happy Valley, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 180 · 247 rating 85 · WR #211 · OR #4 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/malachi-garlington-46161630/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-19",
+    "name": "Kingston Parks",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 118,
+    "status": "OFFERED",
+    "school": {
+      "name": "Aledo",
+      "address": "Aledo, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 180 · 247 rating 84 · WR #218 · TX #215 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/kingston-parks-46146165/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-20",
+    "name": "Kai Cypher",
+    "jersey": "—",
+    "positionGroup": "WR_SLOT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 119,
+    "status": "OFFERED",
+    "school": {
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 165 · 247 rating NA · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/kai-cypher-46164366/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-21",
+    "name": "Drake Mikkelsen",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 120,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lennox",
+      "address": "Lennox, SD"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 210 · 247 rating 90 · Natl #214 · TE #10 · SD #2 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/drake-mikkelsen-46158520/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-22",
+    "name": "Jace Cannon",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 121,
+    "status": "OFFERED",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 200 · 247 rating 88 · TE #31 · CA #57 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/jace-cannon-46155201/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-23",
+    "name": "Zac Fares",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 122,
+    "status": "OFFERED",
+    "school": {
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 220 · 247 rating 88 · TE #33 · NV #6 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/zac-fares-46149288/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-24",
+    "name": "Matthew Schimberg",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 123,
+    "status": "OFFERED",
+    "school": {
+      "name": "Grandview",
+      "address": "Aurora, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 235 · 247 rating 87 · TE #43 · CO #6 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/matthew-schimberg-46158418/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-25",
+    "name": "Talan Scott",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 124,
+    "status": "OFFERED",
+    "school": {
+      "name": "American Leadership Academy",
+      "address": "Queen Creek, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3.5 / 230 · 247 rating 87 · TE #46 · AZ #22 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/talan-scott-46156636/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-26",
+    "name": "Bryer Putman",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 125,
+    "status": "OFFERED",
+    "school": {
+      "name": "Wilton",
+      "address": "Wilton, IA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 195 · 247 rating 87 · TE #50 · IA #13 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/bryer-putman-46167719/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-27",
+    "name": "Landon Wolny",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 126,
+    "status": "OFFERED",
+    "school": {
+      "name": "Community School of Naples",
+      "address": "Naples, FL"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 205 · 247 rating 84 · TE #84 · FL #200 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/landon-wolny-46142395/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-28",
+    "name": "Drew Fielder",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 127,
+    "status": "OFFERED",
+    "school": {
+      "name": "Servite",
+      "address": "Anaheim, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 280 · 247 rating 93 · Natl #86 · OT #11 · CA #9 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/drew-fielder-46158447/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-29",
+    "name": "Avery Michael",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 128,
+    "status": "OFFERED",
+    "school": {
+      "name": "Turlock",
+      "address": "Turlock, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 290 · 247 rating 89 · OT #37 · CA #27 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/avery-michael-46157076/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-30",
+    "name": "Tye Kennedy",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 129,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mountain View",
+      "address": "Mesa, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 270 · 247 rating 88 · OT #49 · AZ #12 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/tye-kennedy-46162261/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-31",
+    "name": "George Tyus",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 130,
+    "status": "OFFERED",
+    "school": {
+      "name": "Antioch",
+      "address": "Antioch, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 285 · 247 rating 87 · OT #82 · CA #80 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/george-tyus-46158935/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-32",
+    "name": "Maxton Barnes",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 131,
+    "status": "OFFERED",
+    "school": {
+      "name": "Columbia",
+      "address": "Nampa, ID"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5.5 / 250 · 247 rating 86 · OT #112 · ID #3 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/maxton-barnes-46159375/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-33",
+    "name": "Laseth Bryant",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 132,
+    "status": "OFFERED",
+    "school": {
+      "name": "Las Vegas Centennial",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 270 · 247 rating 86 · OT #114 · NV #13 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/laseth-bryant-46160867/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-34",
+    "name": "Clint Lundin",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 133,
+    "status": "OFFERED",
+    "school": {
+      "name": "De La Salle",
+      "address": "Concord, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 295 · 247 rating 85 · OT #118 · CA #135 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/clint-lundin-46158853/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-35",
+    "name": "Sire Stewart",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 134,
+    "status": "OFFERED",
+    "school": {
+      "name": "Chandler",
+      "address": "Chandler, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 255 · 247 rating 85 · OT #122 · AZ #32 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/sire-stewart-46159321/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-36",
+    "name": "Ben Rainwater",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 135,
+    "status": "OFFERED",
+    "school": {
+      "name": "Inglemoor",
+      "address": "Kenmore, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 280 · 247 rating 85 · OT #126 · WA #16 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/ben-rainwater-46164690/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-37",
+    "name": "Randolph Santiago",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 136,
+    "status": "OFFERED",
+    "school": {
+      "name": "Kailua",
+      "address": "Kailua, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 275 · 247 rating 84 · OT #132 · HI #9 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/randolph-santiago-46163858/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-38",
+    "name": "Rashaun Lavata'i",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 137,
+    "status": "OFFERED",
+    "school": {
+      "name": "Curtis",
+      "address": "University Place, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6.5 / 265 · 247 rating 87 · IOL #67 · WA #10 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/rashaun-lavatai-46155595/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-39",
+    "name": "Will Endicott",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 138,
+    "status": "OFFERED",
+    "school": {
+      "name": "Prosper",
+      "address": "Prosper, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 275 · 247 rating 86 · IOL #86 · TX #166 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/will-endicott-46160366/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-40",
+    "name": "Phoenix Pollard",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 139,
+    "status": "OFFERED",
+    "school": {
+      "name": "Coronado",
+      "address": "Henderson, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 348 · 247 rating 85 · IOL #105 · NV #15 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/phoenix-pollard-46157532/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-41",
+    "name": "Gage Esty",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 140,
+    "status": "OFFERED",
+    "school": {
+      "name": "Placer",
+      "address": "Auburn, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 270 · 247 rating 85 · IOL #115 · CA #145 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/gage-esty-46164078/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-42",
+    "name": "Lauifi Tosi",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 141,
+    "status": "OFFERED",
+    "school": {
+      "name": "Millennium",
+      "address": "Goodyear, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 325 · 247 rating 85 · IOL #120 · AZ #34 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/lauifi-tosi-46164842/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-43",
+    "name": "Elias Fineanganofo",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 142,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bingham",
+      "address": "South Jordan, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 300 · 247 rating 83 · IOL #151 · UT #37 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/elias-fineanganofo-46156775/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-44",
+    "name": "Titus Lopati",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 143,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 295 · 247 rating 83 · IOL #157 · UT #39 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/titus-lopati-46159662/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-45",
+    "name": "David Kauvaka",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 144,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mater Dei",
+      "address": "Santa Ana, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 305 · 247 rating 82 · IOL #173 · CA #227 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/david-kauvaka-46158772/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-46",
+    "name": "Saik Fiataugaluia",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 145,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 365 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/saik-fiataugaluia-46158589/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-47",
+    "name": "Kacyn Page",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 146,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lehi",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 325 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/kacyn-page-46153453/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-48",
+    "name": "Deshaun Jackson",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 147,
+    "status": "OFFERED",
+    "school": {
+      "name": "Liberty Ranch",
+      "address": "Galt, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 270 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/deshaun-jackson-46164739/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-49",
+    "name": "Uhila Wolfgramm",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 148,
+    "status": "OFFERED",
+    "school": {
+      "name": "Maple Mountain",
+      "address": "Spanish Fork, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 245 · 247 rating 93 · Natl #104 · Edge #13 · UT #2 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/uhila-wolfgramm-46152619/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-50",
+    "name": "Krew Jones",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 149,
+    "status": "OFFERED",
+    "school": {
+      "name": "Orem",
+      "address": "Orem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4.5 / 233 · 247 rating 90 · Edge #22 · UT #3 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/krew-jones-46143771/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-51",
+    "name": "Manase Brown",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 150,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 265 · 247 rating 89 · Edge #40 · UT #5 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/manase-brown-46160918/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-52",
+    "name": "Godschoice Eboigbodin",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 151,
+    "status": "OFFERED",
+    "school": {
+      "name": "JSerra Catholic",
+      "address": "San Juan Capistrano, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 260 · 247 rating 89 · Edge #40 · CA #31 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/godschoice-eboigbodin-46159650/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-53",
+    "name": "Beaux Sauve",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 152,
+    "status": "OFFERED",
+    "school": {
+      "name": "College of San Mateo",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 235 · 247 rating 89 · Natl #3 · Edge #1 · CA #2 · Listed: Edge · JUCO",
+    "links": {
+      "s247": "https://247sports.com/Player/beaux-sauve-46137676/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-54",
+    "name": "Achilles Reyna",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 153,
+    "status": "OFFERED",
+    "school": {
+      "name": "Rainier Beach",
+      "address": "Seattle, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-8 / 250 · 247 rating 88 · Edge #85 · WA #6 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/achilles-reyna-46154487/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-55",
+    "name": "Troy Mailo",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 154,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mullen",
+      "address": "Denver, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 252 · 247 rating 88 · Edge #53 · CO #3 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/troy-mailo-46147113/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-56",
+    "name": "Cameron Saunders",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 155,
+    "status": "OFFERED",
+    "school": {
+      "name": "Valley Christian",
+      "address": "San Jose, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4.5 / 245 · 247 rating 88 · Edge #92 · CA #58 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/cameron-saunders-46159373/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-57",
+    "name": "Josh Christensen",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 156,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lake Oswego",
+      "address": "Lake Oswego, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 250 · 247 rating 88 · Edge #63 · OR #2 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/josh-christensen-46155573/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-58",
+    "name": "Fui Vakapuna",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 157,
+    "status": "OFFERED",
+    "school": {
+      "name": "Timpview",
+      "address": "Provo, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1.5 / 225 · 247 rating 87 · Edge #64 · UT #9 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/fui-vakapuna-46162507/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-59",
+    "name": "Lawrence Kanneh",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 158,
+    "status": "OFFERED",
+    "school": {
+      "name": "Whitehall Yearling",
+      "address": "Columbus, OH"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 220 · 247 rating 87 · Edge #67 · OH #35 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/lawrence-kanneh-46166428/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-60",
+    "name": "Monson Tukuafu",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 159,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bingham",
+      "address": "South Jordan, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 230 · 247 rating 87 · Edge #70 · UT #10 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/monson-tukuafu-46161675/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-61",
+    "name": "Roy Price",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 160,
+    "status": "OFFERED",
+    "school": {
+      "name": "Newark",
+      "address": "Newark, OH"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 205 · 247 rating 87 · Edge #71 · OH #36 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/roy-price-46155058/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-62",
+    "name": "Alexander Coey",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 161,
+    "status": "OFFERED",
+    "school": {
+      "name": "Conroe",
+      "address": "Conroe, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 235 · 247 rating 87 · Edge #78 · TX #117 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/alexander-coey-46155780/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-63",
+    "name": "Jackson West",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 162,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 250 · 247 rating 87 · Edge #81 · UT #14 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/jackson-west-46160922/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-64",
+    "name": "Parker Bagley",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 163,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lewiston",
+      "address": "Lewiston, ID"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 265 · 247 rating 87 · Edge #88 · ID #1 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/parker-bagley-46162764/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-65",
+    "name": "Grayson Kazmouz",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 164,
+    "status": "OFFERED",
+    "school": {
+      "name": "Laguna Beach",
+      "address": "Laguna Beach, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 210 · 247 rating 86 · Edge #97 · CA #104 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/grayson-kazmouz-46165299/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-66",
+    "name": "Ma'atoe Moe",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 165,
+    "status": "OFFERED",
+    "school": {
+      "name": "Timpview",
+      "address": "Provo, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 240 · 247 rating 86 · Edge #106 · UT #18 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/maatoe-moe-46163147/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-67",
+    "name": "Jag Ioane",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 166,
+    "status": "OFFERED",
+    "school": {
+      "name": "Orem",
+      "address": "Orem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2.5 / 185 · 247 rating 85 · Edge #112 · UT #21 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/jag-ioane-46152618/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-68",
+    "name": "Sonasi Maka II",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 167,
+    "status": "OFFERED",
+    "school": {
+      "name": "Deer Valley",
+      "address": "Antioch, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2.5 / 245 · 247 rating 85 · Edge #118 · CA #136 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/sonasi-maka-ii-46158742/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-69",
+    "name": "Dieter Lotulelei",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 168,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 225 · 247 rating 84 · Edge #132 · UT #30 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/dieter-lotulelei-46157221/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-70",
+    "name": "Kemper Castro",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 169,
+    "status": "OFFERED",
+    "school": {
+      "name": "Herriman",
+      "address": "Herriman, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 235 · 247 rating 84 · Edge #133 · UT #31 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/kemper-castro-46159261/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-71",
+    "name": "Tautai Meredith",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 170,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lehi",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 260 · 247 rating 84 · Edge #203 · UT #32 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/tautai-meredith-46154796/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-72",
+    "name": "Colton Richter",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 171,
+    "status": "OFFERED",
+    "school": {
+      "name": "Shadow Ridge",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 235 · 247 rating 83 · Edge #146 · NV #20 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/colton-richter-46159742/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-73",
+    "name": "Drenden Knaevelsrud",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 172,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mount Si",
+      "address": "Snoqualmie, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 215 · 247 rating 83 · Edge #184 · WA #23 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/drenden-knaevelsrud-46157384/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-74",
+    "name": "Finn Walker",
+    "jersey": "—",
+    "positionGroup": "DE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 173,
+    "status": "OFFERED",
+    "school": {
+      "name": "Conroe Oak Ridge",
+      "address": "Conroe, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-6 / 245 · 247 rating 88 · DL #88 · TX #85 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/finn-walker-46159175/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-75",
+    "name": "Ahzan Bacote",
+    "jersey": "—",
+    "positionGroup": "DE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 174,
+    "status": "OFFERED",
+    "school": {
+      "name": "Cornerstone Christian",
+      "address": "San Antonio, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 260 · 247 rating 87 · DL #109 · TX #113 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/ahzan-bacote-46161695/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-76",
+    "name": "Maa'imoa Havili",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 175,
+    "status": "OFFERED",
+    "school": {
+      "name": "Granger",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 290 · 247 rating 87 · DL #118 · UT #11 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/maaimoa-havili-46167045/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-77",
+    "name": "Aniti Paiva",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 176,
+    "status": "OFFERED",
+    "school": {
+      "name": "Skyline",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 315 · 247 rating 87 · DL #120 · UT #13 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/aniti-paiva-46161730/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-78",
+    "name": "Lemani Fehoko",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 177,
+    "status": "OFFERED",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 275 · 247 rating 86 · DL #122 · CA #81 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/lemani-fehoko-46140961/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-79",
+    "name": "Kekoa Peko",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 178,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. John Bosco",
+      "address": "Bellflower, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 280 · 247 rating 86 · DL #129 · CA #86 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/kekoa-peko-46142061/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-80",
+    "name": "Charles Nance",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 179,
+    "status": "OFFERED",
+    "school": {
+      "name": "Dooly County",
+      "address": "Vienna, GA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 280 · 247 rating 86 · DL #157 · GA #154 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/charles-nance-46161500/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-81",
+    "name": "Magic Haynes",
+    "jersey": "—",
+    "positionGroup": "DE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 180,
+    "status": "OFFERED",
+    "school": {
+      "name": "Compton Centennial",
+      "address": "Compton, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 270 · 247 rating 86 · DL #163 · CA #114 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/magic-haynes-46167306/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-82",
+    "name": "Hunter Eligon",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 181,
+    "status": "OFFERED",
+    "school": {
+      "name": "Anaheim Western",
+      "address": "Anaheim, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 285 · 247 rating 84 · DL #198 · CA #168 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/hunter-eligon-46158103/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-83",
+    "name": "Ilivai Taiese",
+    "jersey": "—",
+    "positionGroup": "DE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 182,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 265 · 247 rating NA · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/ilivai-taiese-46161022/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-84",
+    "name": "Augustine Irek",
+    "jersey": "—",
+    "positionGroup": "DE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 183,
+    "status": "OFFERED",
+    "school": {
+      "name": "NFL Academy",
+      "address": "London, EN"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-7 / 260 · 247 rating NA · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/augustine-irek-46161970/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-85",
+    "name": "Toa Satele",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 184,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mililani",
+      "address": "Mililani, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 200 · 247 rating 93 · Natl #84 · LB #6 · HI #1 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/toa-satele-46145646/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-86",
+    "name": "Sam Ngata",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 185,
+    "status": "OFFERED",
+    "school": {
+      "name": "Olympus",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3.5 / 215 · 247 rating 87 · LB #84 · UT #12 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/sam-ngata-46157095/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-87",
+    "name": "Jeremy Davis",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 186,
+    "status": "OFFERED",
+    "school": {
+      "name": "Helix",
+      "address": "La Mesa, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 205 · 247 rating 86 · LB #103 · CA #96 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/jeremy-davis-46164728/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-88",
+    "name": "Linkin Apana",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 187,
+    "status": "OFFERED",
+    "school": {
+      "name": "Kamehameha Kapalama",
+      "address": "Honolulu, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 207 · 247 rating 86 · LB #107 · HI #4 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/linkin-apana-46157846/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-89",
+    "name": "Broncs Baker",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 188,
+    "status": "OFFERED",
+    "school": {
+      "name": "Stansbury",
+      "address": "Tooele, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 215 · 247 rating 85 · LB #135 · UT #22 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/broncs-baker-46155019/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-90",
+    "name": "Kawai Chamberlin",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 189,
+    "status": "OFFERED",
+    "school": {
+      "name": "Willamette",
+      "address": "Eugene, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 217 · 247 rating 84 · LB #164 · OR #8 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/kawai-chamberlin-46150513/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-91",
+    "name": "Almasi Glenn",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 190,
+    "status": "OFFERED",
+    "school": {
+      "name": "Williams Field",
+      "address": "Gilbert, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2.5 / 195 · 247 rating 84 · LB #168 · AZ #44 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/almasi-glenn-46159900/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-92",
+    "name": "Philip Wilson III",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 191,
+    "status": "OFFERED",
+    "school": {
+      "name": "Oxnard Pacifica",
+      "address": "Oxnard, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 205 · 247 rating 83 · LB #175 · CA #196 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/philip-wilson-iii-46151737/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-93",
+    "name": "TJ Alualu",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 192,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Louis",
+      "address": "Honolulu, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 200 · 247 rating 83 · LB #178 · HI #13 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/tj-alualu-46151275/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-94",
+    "name": "Hayden Stepp",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 193,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3.5 / 185 · 247 rating 94 · Natl #61 · CB #5 · NV #1 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/hayden-stepp-46147446/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-95",
+    "name": "Kamil Loud",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 194,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 170 · 247 rating 90 · Natl #211 · CB #25 · NV #2 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/kamil-loud-46153753/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-96",
+    "name": "Evan Mack",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 195,
+    "status": "OFFERED",
+    "school": {
+      "name": "Crean Lutheran",
+      "address": "Irvine, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 175 · 247 rating 88 · CB #49 · CA #34 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/evan-mack-46154204/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-97",
+    "name": "Jernaro Gilford Jr.",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 196,
+    "status": "OFFERED",
+    "school": {
+      "name": "Saline",
+      "address": "Saline, MI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 170 · 247 rating 88 · CB #53 · MI #11 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/jernaro-gilford-jr-46147364/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-98",
+    "name": "John Catlin IV",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 197,
+    "status": "OFFERED",
+    "school": {
+      "name": "Denton Ryan",
+      "address": "Denton, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 167 · 247 rating 87 · CB #70 · TX #93 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/john-catlin-iv-46161841/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-99",
+    "name": "Dylin Bruce",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 198,
+    "status": "OFFERED",
+    "school": {
+      "name": "Huntington Beach",
+      "address": "Huntington Beach, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 170 · 247 rating 87 · CB #87 · CA #77 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/dylin-bruce-46155369/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-100",
+    "name": "Nathaniel Mensah",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 199,
+    "status": "OFFERED",
+    "school": {
+      "name": "Rancho Cucamonga",
+      "address": "Rancho Cucamonga, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 160 · 247 rating 86 · CB #110 · CA #89 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/nathaniel-mensah-46154894/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-101",
+    "name": "Johnny McNeil",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 200,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Pius X-St. Matthias Academy",
+      "address": "Downey, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 160 · 247 rating 86 · CB #119 · CA #100 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/johnny-mcneil-46158457/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-102",
+    "name": "Hassan Smith",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 201,
+    "status": "OFFERED",
+    "school": {
+      "name": "Desert Mountain",
+      "address": "Scottsdale, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 165 · 247 rating 86 · CB #122 · AZ #25 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/hassan-smith-46162805/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-103",
+    "name": "Noah Clark",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 202,
+    "status": "OFFERED",
+    "school": {
+      "name": "Inglewood",
+      "address": "Inglewood, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11.5 / 175 · 247 rating 83 · CB #160 · CA #204 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/noah-clark-46157739/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-104",
+    "name": "Pole Moala",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 203,
+    "status": "OFFERED",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "Gardena, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 185 · 247 rating 90 · Natl #171 · S #13 · CA #15 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/pole-moala-46154623/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-105",
+    "name": "Jaden Walk-Green",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 204,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 188 · 247 rating 88 · S #54 · CA #46 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/jaden-walk-green-46154955/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-106",
+    "name": "Kaleb Hall",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 205,
+    "status": "OFFERED",
+    "school": {
+      "name": "Syracuse",
+      "address": "Syracuse, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 185 · 247 rating 86 · S #118 · UT #16 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/kaleb-hall-46164678/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-107",
+    "name": "Jayden Bradley",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 206,
+    "status": "OFFERED",
+    "school": {
+      "name": "Eaglecrest",
+      "address": "Aurora, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 170 · 247 rating 86 · S #142 · CO #9 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/jayden-bradley-46167312/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-108",
+    "name": "Caysen Badawi",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 207,
+    "status": "OFFERED",
+    "school": {
+      "name": "Valencia",
+      "address": "Valencia, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 165 · 247 rating 86 · S #144 · CA #117 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/caysen-badawi-46165006/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-109",
+    "name": "Kye Cooper",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 208,
+    "status": "OFFERED",
+    "school": {
+      "name": "San Diego",
+      "address": "San Diego, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 180 · 247 rating 85 · S #160 · CA #126 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/kye-cooper-46151871/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-110",
+    "name": "Brett Smith",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 209,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 170 · 247 rating 84 · S #182 · CA #166 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/brett-smith-46154957/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-111",
+    "name": "Grant Moser",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 210,
+    "status": "OFFERED",
+    "school": {
+      "name": "Buchanan",
+      "address": "Clovis, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 200 · 247 rating 84 · S #183 · CA #179 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/grant-moser-46159612/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-112",
+    "name": "Uatesoni Pifeleti",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 211,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Francis",
+      "address": "Mountain View, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 190 · 247 rating NA · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/uatesoni-pifeleti-46161714/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-113",
+    "name": "George Richards",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 212,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Thomas More",
+      "address": "Oakdale, CT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 205 · 247 rating NA · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/george-richards-46167105/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-114",
+    "name": "Bode Sparrow",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 213,
+    "status": "OFFERED",
+    "school": {
+      "name": "Davis",
+      "address": "Kaysville, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 195 · 247 rating 93 · Natl #82 · ATH #8 · UT #1 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/bode-sparrow-46143770/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-115",
+    "name": "Jaxton Itaaehau",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 214,
+    "status": "OFFERED",
+    "school": {
+      "name": "Davis",
+      "address": "Kaysville, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 185 · 247 rating 90 · ATH #18 · UT #4 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jaxton-itaaehau-46160892/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-116",
+    "name": "Maurice Williams",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 215,
+    "status": "OFFERED",
+    "school": {
+      "name": "Timberline",
+      "address": "Lacey, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 180 · 247 rating 88 · ATH #60 · WA #7 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/maurice-williams-46142087/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-117",
+    "name": "Maxwell Miles",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 216,
+    "status": "OFFERED",
+    "school": {
+      "name": "Las Vegas Centennial",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 190 · 247 rating 88 · ATH #70 · NV #7 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/maxwell-miles-46149471/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-118",
+    "name": "J'Isaiah Mitchell",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 217,
+    "status": "OFFERED",
+    "school": {
+      "name": "Puyallup",
+      "address": "Puyallup, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 180 · 247 rating 87 · ATH #75 · WA #9 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jisaiah-mitchell-46147310/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-119",
+    "name": "Peyton Higginson",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 218,
+    "status": "OFFERED",
+    "school": {
+      "name": "Salem Hills",
+      "address": "Salem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 181 · 247 rating 86 · ATH #90 · UT #15 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/peyton-higginson-46149856/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-120",
+    "name": "Jaxson Rex",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 219,
+    "status": "OFFERED",
+    "school": {
+      "name": "San Clemente",
+      "address": "San Clemente, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 190 · 247 rating 85 · ATH #115 · CA #143 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jaxson-rex-46158844/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-121",
+    "name": "Jaylen Fitzgerald",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 220,
+    "status": "OFFERED",
+    "school": {
+      "name": "Shakopee",
+      "address": "Shakopee, MN"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 215 · 247 rating 85 · ATH #82 · MN #13 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jaylen-fitzgerald-46155725/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-122",
+    "name": "Tytan DeJong",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 221,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mountain Ridge",
+      "address": "Herriman, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 215 · 247 rating 84 · ATH #126 · UT #29 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/tytan-dejong-46147761/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-123",
+    "name": "Jeovanni Henley",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 222,
+    "status": "OFFERED",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 165 · 247 rating 84 · ATH #130 · CA #162 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jeovanni-henley-46148322/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-124",
+    "name": "Kingston Anetema",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 223,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mesa",
+      "address": "Mesa, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 175 · 247 rating 84 · ATH #135 · AZ #45 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/kingston-anetema-46147996/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-125",
+    "name": "Houston Lillard Jr.",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 224,
+    "status": "OFFERED",
+    "school": {
+      "name": "Tualatin",
+      "address": "Tualatin, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-9 / 155 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/houston-lillard-jr-46164729/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-126",
+    "name": "Mose Kalepo",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 225,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bellevue",
+      "address": "Bellevue, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 215 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/mose-kalepo-46164043/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-127",
+    "name": "Elijah Carney",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 226,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lincoln",
+      "address": "Tacoma, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1.5 / 175 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/elijah-carney-46149890/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-128",
+    "name": "Ben Wiepert",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 227,
+    "status": "OFFERED",
+    "school": {
+      "name": "Wilsonville",
+      "address": "Wilsonville, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 205 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/ben-wiepert-46164484/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-129",
+    "name": "Kolton Prox",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 228,
+    "status": "OFFERED",
+    "school": {
+      "name": "Grand Saline",
+      "address": "Grand Saline, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 170 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/kolton-prox-46156714/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-130",
+    "name": "Peyton Shaw",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 229,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mansfield",
+      "address": "Mansfield, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-10 / 160 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/peyton-shaw-46157578/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-131",
+    "name": "Jackson Spitz",
+    "jersey": "—",
+    "positionGroup": "P",
+    "classYear": 2027,
+    "grade": null,
+    "order": 230,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lewis & Clark",
+      "address": "Spokane, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 215 · 247 rating NA · Listed: P",
+    "links": {
+      "s247": "https://247sports.com/Player/jackson-spitz-46168350/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-01",
+    "name": "Hunter Fujikawa",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 300,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mililani",
+      "address": "Mililani, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 200 · 247 rating 90 · Natl #234 · QB #13 · HI #2 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/hunter-fujikawa-46151384/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-02",
+    "name": "Zeke Thomas",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 301,
+    "status": "OFFERED",
+    "school": {
+      "name": "Willamette",
+      "address": "Eugene, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 185 · 247 rating 86 · QB #47 · OR #3 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/zeke-thomas-46151666/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-03",
+    "name": "Brodie Scheinberg",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 302,
+    "status": "OFFERED",
+    "school": {
+      "name": "Davis",
+      "address": "Kaysville, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 195 · 247 rating 86 · QB #48 · UT #13 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/brodie-scheinberg-46151030/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-04",
+    "name": "Ace Amina",
+    "jersey": "—",
+    "positionGroup": "QB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 303,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 180 · 247 rating 85 · QB #63 · NV #8 · Listed: QB",
+    "links": {
+      "s247": "https://247sports.com/Player/ace-amina-46150781/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-05",
+    "name": "Micah Rhodes",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 304,
+    "status": "OFFERED",
+    "school": {
+      "name": "Klein Oak",
+      "address": "Spring, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-9.5 / 180 · 247 rating 90 · Natl #135 · RB #8 · TX #18 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/micah-rhodes-46147811/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-06",
+    "name": "Quincey Clay",
+    "jersey": "—",
+    "positionGroup": "WR_SLOT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 305,
+    "status": "OFFERED",
+    "school": {
+      "name": "Capital",
+      "address": "Boise, ID"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 170 · 247 rating 90 · Natl #152 · WR #22 · ID #1 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/quincey-clay-46162489/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-07",
+    "name": "Eli Mortensen",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 306,
+    "status": "OFFERED",
+    "school": {
+      "name": "Skyridge",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 180 · 247 rating 88 · WR #42 · UT #8 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/eli-mortensen-46160974/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-08",
+    "name": "Monson Vaenuku",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 307,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 200 · 247 rating NA · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/monson-vaenuku-46157180/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-09",
+    "name": "Presley DeLance",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 308,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lake Oswego",
+      "address": "Lake Oswego, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 230 · 247 rating 90 · Natl #85 · TE #4 · OR #1 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/presley-delance-46167008/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-10",
+    "name": "Samiu Taukiuvea",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2028,
+    "grade": null,
+    "order": 309,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 270 · 247 rating 90 · Natl #112 · OT #14 · UT #5 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/samiu-taukiuvea-46156375/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-11",
+    "name": "Kaisen Garrett",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 310,
+    "status": "OFFERED",
+    "school": {
+      "name": "Las Vegas Centennial",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 260 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/kaisen-garrett-46164153/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-12",
+    "name": "Major Stokes",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 311,
+    "status": "OFFERED",
+    "school": {
+      "name": "Orem",
+      "address": "Orem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5.5 / 240 · 247 rating 91 · Natl #32 · Edge #8 · UT #3 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/major-stokes-46151043/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-13",
+    "name": "Takeshi Savery",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 312,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 245 · 247 rating 87 · Edge #49 · UT #12 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/takeshi-savery-46157220/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-14",
+    "name": "Samuel Chien-Tauvao",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 313,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 290 · 247 rating 88 · DL #51 · UT #9 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/samuel-chien-tauvao-46157718/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-15",
+    "name": "Julian Bruno",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 314,
+    "status": "OFFERED",
+    "school": {
+      "name": "Grant Union",
+      "address": "Sacramento, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 220 · 247 rating 88 · LB #30 · CA #37 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/julian-bruno-46156479/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-16",
+    "name": "Jordan Slye Jr.",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 315,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bishop Mora Salesian",
+      "address": "Los Angeles, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 170 · 247 rating 87 · CB #55 · CA #42 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/jordan-slye-jr-46153205/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-17",
+    "name": "Markel Newell",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 316,
+    "status": "OFFERED",
+    "school": {
+      "name": "Puyallup",
+      "address": "Puyallup, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-9.5 / 190 · 247 rating 86 · S #46 · WA #9 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/markel-newell-46153829/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-18",
+    "name": "Jayden Cumbee",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 317,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bingham",
+      "address": "South Jordan, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 185 · 247 rating 86 · S #51 · UT #14 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/jayden-cumbee-46159597/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-19",
+    "name": "Gaige Weddle",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 318,
+    "status": "OFFERED",
+    "school": {
+      "name": "Rancho Bernardo",
+      "address": "San Diego, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 175 · 247 rating 90 · Natl #189 · ATH #10 · CA #14 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/gaige-weddle-46153692/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-20",
+    "name": "Kaicen Carter",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 319,
+    "status": "OFFERED",
+    "school": {
+      "name": "Federal Way",
+      "address": "Federal Way, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 220 · 247 rating 88 · ATH #33 · WA #6 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/kaicen-carter-46155175/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-21",
+    "name": "RJ Ward",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 320,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bellevue",
+      "address": "Bellevue, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 200 · 247 rating 86 · ATH #56 · WA #10 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/rj-ward-46155902/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-22",
+    "name": "Leofatu Filipe",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 321,
+    "status": "OFFERED",
+    "school": {
+      "name": "Thurston",
+      "address": "Springfield, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 230 · 247 rating 86 · ATH #63 · OR #5 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/leofatu-filipe-46168360/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-23",
+    "name": "Amosa Masaniai",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 322,
+    "status": "OFFERED",
+    "school": {
+      "name": "Emerald Ridge",
+      "address": "Puyallup, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0 / 200 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/amosa-masaniai-46158501/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  }
+];
+
 const _STAFF_GROUPS = [
   {
     label: "Coaches",
@@ -82,7 +3935,7 @@ window.BOARD_CONFIG = {
   /* Board admins — HC + GM to start (same pattern as the other schools;
      one-line change to add a Chief-of-Staff equivalent or testers). */
   boardAdmins: ["Danielson HC", "Brandon Jones GM"],
-  seedProspects: [],
+  seedProspects: _SEED_PROSPECTS,
   staffPassword: "Recruit26", // legacy fallback — unused while staffAuth is set
   /* Shared cloud board — same Supabase project as the other schools; data is
      namespaced per school so nothing crosses over. */
