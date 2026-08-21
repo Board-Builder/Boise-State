@@ -1,891 +1,15 @@
-/* School config — Kansas State. Everything school-specific lives in this file.
-   The app itself (app.js) is school-agnostic.
-   Staff: 2026 K-State football staff under HC Collin Klein (source: WIBW 12/26/25). */
-
-/* Seed board: 2027 commits + 2027/2028 offer board (247Sports, pulled 8/14/26) */
+/* School config — Boise State. Everything school-specific lives in this file.
+   The app itself (app.js) is school-agnostic. */
 const _SEED_PROSPECTS = [
   {
-    "id": "ks27-01",
-    "name": "Joshua Vilmael",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 100,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Fort Bend Travis",
-      "address": "Richmond, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/15/26 · 6-2.5 / 186 · 247 rating 90 · Listed: CB",
-    "links": {
-      "s247": "https://247sports.com/Player/joshua-vilmael-46159055/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-02",
-    "name": "Cooper Ohnmacht",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 101,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Great Bend",
-      "address": "Great Bend, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/7/26 · 6-0 / 185 · 247 rating 90 · Listed: S",
-    "links": {
-      "s247": "https://247sports.com/Player/cooper-ohnmacht-46157307/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-03",
-    "name": "Bra'jon Melancon",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 102,
-    "status": "COMMITTED",
-    "school": {
-      "name": "North Iberville",
-      "address": "Rosedale, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/13/26 · 6-0 / 170 · 247 rating 89 · Listed: CB",
-    "links": {
-      "s247": "https://247sports.com/Player/brajon-melancon-46165745/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-04",
-    "name": "Dawayne Jones",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 103,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Booker T. Washington",
-      "address": "Tulsa, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/28/26 · 6-3 / 265 · 247 rating 89 · Listed: DL",
-    "links": {
-      "s247": "https://247sports.com/Player/dawayne-jones-46147331/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-05",
-    "name": "Ben Hynek",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 104,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Stanley",
-      "address": "Stanley, ND"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/20/26 · 6-6 / 240 · 247 rating 89 · Listed: TE",
-    "links": {},
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-06",
-    "name": "Colton McComb",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 105,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Edmond Memorial",
-      "address": "Edmond, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/4/26 · 6-2 / 200 · 247 rating 89 · Listed: LB",
-    "links": {
-      "s247": "https://247sports.com/Player/colton-mccomb-46155703/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-07",
-    "name": "Cameron Kruse",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 106,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Page",
-      "address": "Franklin, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/28/26 · 6-2 / 195 · 247 rating 88 · Listed: QB",
-    "links": {
-      "s247": "https://247sports.com/Player/cameron-kruse-46162966/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-08",
-    "name": "Sedrick Marsh",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 107,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Waxahachie",
-      "address": "Waxahachie, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/10/26 · 6-5 / 230 · 247 rating 88 · Listed: Edge",
-    "links": {
-      "s247": "https://247sports.com/Player/sedrick-marsh-46158719/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-09",
-    "name": "Finn Walker",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 108,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Conroe Oak Ridge",
-      "address": "Conroe, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/24/26 · 6-6 / 245 · 247 rating 88 · Listed: DL",
-    "links": {
-      "s247": "https://247sports.com/Player/finn-walker-46159175/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-10",
-    "name": "Joseph Graves",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 109,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Booker T. Washington",
-      "address": "Tulsa, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/18/26 · 6-2 / 310 · 247 rating 87 · Listed: DL",
-    "links": {
-      "s247": "https://247sports.com/Player/joseph-graves-46151690/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-11",
-    "name": "Brooklyn Maxey",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 110,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Carrollwood Day",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/17/26 · 6-2 / 215 · 247 rating 87 · Listed: ATH",
-    "links": {
-      "s247": "https://247sports.com/Player/brooklyn-maxey-46164107/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-12",
-    "name": "Laron Baker Jr.",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 111,
-    "status": "COMMITTED",
-    "school": {
-      "name": "East St. Louis",
-      "address": "East St. Louis, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/23/26 · 5-10 / 172 · 247 rating 87 · Listed: WR",
-    "links": {
-      "s247": "https://247sports.com/Player/laron-baker-jr-46145802/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-13",
-    "name": "Ashton Stark",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 112,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Lutcher",
-      "address": "Lutcher, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/17/26 · 5-9.5 / 158 · 247 rating 87 · Listed: WR",
-    "links": {
-      "s247": "https://247sports.com/Player/ashton-stark-46164266/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-14",
-    "name": "Correll Buckhalter Jr.",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 113,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Liberty Christian",
-      "address": "Argyle, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/7/26 · 5-10 / 185 · 247 rating 87 · Listed: RB",
-    "links": {
-      "s247": "https://247sports.com/Player/correll-buckhalter-jr-46155810/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-15",
-    "name": "London Goggans",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 114,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/3/26 · 6-0 / 180 · 247 rating 87 · Listed: S",
-    "links": {
-      "s247": "https://247sports.com/Player/london-goggans-46157831/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-16",
-    "name": "David Rushing",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 115,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Salpointe Catholic",
-      "address": "Tucson, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/20/26 · 6-0.5 / 165 · 247 rating 87 · Listed: WR",
-    "links": {
-      "s247": "https://247sports.com/Player/david-rushing-46159969/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-17",
-    "name": "Logan Davis",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 116,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Fort Bend Ridge Point",
-      "address": "Missouri City, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 5/31/26 · 6-0 / 180 · 247 rating 87 · Listed: CB",
-    "links": {
-      "s247": "https://247sports.com/Player/logan-davis-46167116/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-18",
-    "name": "Brayden Harris",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 117,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Jackson",
-      "address": "Jackson, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 5/31/26 · 6-5.5 / 270 · 247 rating 87 · Listed: OT",
-    "links": {
-      "s247": "https://247sports.com/Player/brayden-harris-46158709/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-19",
-    "name": "Jalen Price",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 118,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Cedar Hill",
-      "address": "Cedar Hill, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/24/26 · 6-3 / 250 · 247 rating 86 · Listed: Edge",
-    "links": {
-      "s247": "https://247sports.com/Player/jalen-price-46162633/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-20",
-    "name": "Jeron Allen II",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 119,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Cedar Hill",
-      "address": "Cedar Hill, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/15/26 · 6-3 / 240 · 247 rating 86 · Listed: Edge",
-    "links": {
-      "s247": "https://247sports.com/Player/jeron-allen-ii-46159086/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-21",
-    "name": "Bryson Dossett",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 120,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Fort Bend Ridge Point",
-      "address": "Missouri City, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 5/22/26 · 5-10 / 170 · 247 rating 86 · Listed: S",
-    "links": {
-      "s247": "https://247sports.com/Player/bryson-dossett-46150553/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-22",
-    "name": "Anitoni Tahi",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 121,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/29/26 · 6-2 / 312 · 247 rating 86 · Listed: DL",
-    "links": {
-      "s247": "https://247sports.com/Player/anitoni-tahi-46151438/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-23",
-    "name": "Jack Clayborne",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 122,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Northeastern Oklahoma A&M",
-      "address": "Miami, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/26/26 · 6-8 / 330 · 247 rating 86 · Listed: OT",
-    "links": {
-      "s247": "https://247sports.com/Player/jack-clayborne-46161414/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-24",
-    "name": "George Murray III",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 123,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Apalachee",
-      "address": "Winder, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 6/2/26 · 5-10 / 175 · 247 rating 85 · Listed: CB",
-    "links": {
-      "s247": "https://247sports.com/Player/george-murray-iii-46166998/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-25",
-    "name": "Kelvin Eiwo",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 124,
-    "status": "COMMITTED",
-    "school": {
-      "name": "The Colony",
-      "address": "The Colony, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 5/31/26 · 6-3 / 305 · 247 rating 85 · Listed: IOL",
-    "links": {
-      "s247": "https://247sports.com/Player/kelvin-eiwo-46150508/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-26",
-    "name": "Giacamo SanFilippo",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 125,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Bishop Moore Catholic",
-      "address": "Orlando, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 4/19/26 · 6-1 / 224 · 247 rating 85 · Listed: LB",
-    "links": {
-      "s247": "https://247sports.com/Player/giacamo-sanfilippo-46165251/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "ks27-27",
-    "name": "Canaan Smith",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 126,
-    "status": "COMMITTED",
-    "school": {
-      "name": "Prestonwood Christian",
-      "address": "Plano, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "Committed 3/16/26 · 6-2 / 295 · 247 rating 84 · Listed: IOL",
-    "links": {
-      "s247": "https://247sports.com/Player/canaan-smith-46165295/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-001",
-    "name": "Jake Nawrot",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 300,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "John Hersey",
-      "address": "Arlington Heights, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 200 · 247 rating 94 · Listed: QB · 247 lists commitment: Kentucky",
-    "links": {
-      "s247": "https://247sports.com/Player/jake-nawrot-46154682/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-002",
-    "name": "Will Mencl",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 301,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Chandler",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 200 · 247 rating 94 · Listed: QB · 247 lists commitment: Oregon",
-    "links": {
-      "s247": "https://247sports.com/Player/will-mencl-46156781/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-003",
-    "name": "Kavian Bryant",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 302,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Palestine Westwood",
-      "address": "Palestine, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 190 · 247 rating 93 · Listed: QB · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/kavian-bryant-46145096/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-004",
-    "name": "Colton Nussmeier",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 303,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Archbishop Rummel",
-      "address": "Metairie, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 195 · 247 rating 90 · Listed: QB · 247 lists commitment: Georgia",
-    "links": {
-      "s247": "https://247sports.com/Player/colton-nussmeier-46146658/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-005",
-    "name": "Braylen Warren",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 304,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Omaha Westside",
-      "address": "Omaha, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · 247 rating 90 · Listed: QB · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/braylen-warren-46152790/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-006",
-    "name": "Blake Roskopf",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 305,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 235 · 247 rating 90 · Listed: QB · 247 lists commitment: Washington",
-    "links": {
-      "s247": "https://247sports.com/Player/blake-roskopf-46155022/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-007",
-    "name": "Carson White",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 306,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Iowa Colony",
-      "address": "Iowa Colony, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 207 · 247 rating 89 · Listed: QB · 247 lists commitment: Oklahoma State",
-    "links": {
-      "s247": "https://247sports.com/Player/carson-white-46143662/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-008",
-    "name": "Dane Weber",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 307,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Chaparral",
-      "address": "Temecula, CA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0.5 / 220 · 247 rating 88 · Listed: QB · 247 lists commitment: California",
-    "links": {
-      "s247": "https://247sports.com/Player/dane-weber-46155270/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-009",
+    "id": "bs27-01",
     "name": "Kael Snyder",
     "jersey": "—",
     "positionGroup": "QB",
     "classYear": 2027,
     "grade": null,
-    "order": 308,
-    "status": "ELSEWHERE",
+    "order": 100,
+    "status": "COMMITTED",
     "school": {
       "name": "Perry",
       "address": "Gilbert, AZ"
@@ -895,846 +19,246 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 200 · 247 rating 87 · Listed: QB · 247 lists commitment: Boise State",
+    "miscNotes": "Committed 10/19/25 · 6-2.5 / 200 · 247 rating 87 · QB #41 · AZ #16 · Listed: QB",
     "links": {
       "s247": "https://247sports.com/Player/kael-snyder-46150670/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-010",
-    "name": "DJ Hunter",
+    "id": "bs27-02",
+    "name": "Ryce Palepoi",
     "jersey": "—",
     "positionGroup": "QB",
     "classYear": 2027,
     "grade": null,
-    "order": 309,
-    "status": "ELSEWHERE",
+    "order": 101,
+    "status": "COMMITTED",
     "school": {
-      "name": "Buford",
-      "address": "Buford, GA"
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · 247 rating 87 · Listed: QB · 247 lists commitment: James Madison",
+    "miscNotes": "Committed 6/15/26 · 6-0 / 205 · 247 rating 83 · QB #177 · UT #38 · Listed: QB",
     "links": {
-      "s247": "https://247sports.com/Player/dj-hunter-46150725/"
+      "s247": "https://247sports.com/Player/ryce-palepoi-46162462/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-011",
-    "name": "Brayden Santibanez",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 310,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Collierville",
-      "address": "Collierville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 205 · 247 rating 85 · Listed: QB · 247 lists commitment: Iowa",
-    "links": {
-      "s247": "https://247sports.com/Player/brayden-santibanez-46165172/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-012",
-    "name": "Gary Walker",
+    "id": "bs27-03",
+    "name": "Xavier Bala",
     "jersey": "—",
     "positionGroup": "RB",
     "classYear": 2027,
     "grade": null,
-    "order": 311,
+    "order": 102,
     "status": "ELSEWHERE",
+    "school": {
+      "name": "St. Anthony's",
+      "address": "Long Island City, NY"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-0 / 215 · 247 rating 87 · RB #68 · NY #3 · Listed: RB · 247 lists commitment: Boston College",
+    "links": {
+      "s247": "https://247sports.com/Player/xavier-bala-46149108/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-04",
+    "name": "Caris Sela",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 103,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Justin Northwest",
+      "address": "Justin, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/22/26 · 6-0 / 190 · 247 rating 86 · RB #95 · TX #148 · Listed: RB · 247 lists commitment: TCU",
+    "links": {
+      "s247": "https://247sports.com/Player/caris-sela-46165762/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-05",
+    "name": "Malachi McFarland",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 104,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Damien",
+      "address": "La Verne, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/19/26 · 5-10 / 175 · 247 rating 86 · RB #99 · CA #105 · Listed: RB",
+    "links": {
+      "s247": "https://247sports.com/Player/malachi-mcfarland-46161889/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-06",
+    "name": "Jonah Mailei",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 105,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Skyline",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-1 / 205 · 247 rating 86 · RB #103 · UT #19 · Listed: RB · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/jonah-mailei-46162441/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-07",
+    "name": "Kamden Tillis",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 106,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Los Alamitos",
+      "address": "Los Alamitos, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/20/26 · 5-11 / 190 · 247 rating 85 · RB #201 · CA #123 · Listed: RB · 247 lists commitment: San Diego State",
+    "links": {
+      "s247": "https://247sports.com/Player/kamden-tillis-46156264/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-08",
+    "name": "Camden Morton",
+    "jersey": "—",
+    "positionGroup": "RB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 107,
+    "status": "OFFERED",
     "school": {
       "name": "Creekside",
-      "address": "Fairburn, GA"
+      "address": "St. Johns, FL"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 200 · 247 rating 91 · Listed: RB · 247 lists commitment: Clemson",
+    "miscNotes": "5-9 / 170 · 247 rating NA · Listed: RB",
     "links": {
-      "s247": "https://247sports.com/Player/gary-walker-46163000/"
+      "s247": "https://247sports.com/Player/camden-morton-46146199/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-013",
-    "name": "CaDarius McMiller",
+    "id": "bs27-09",
+    "name": "Maleek Nolley",
     "jersey": "—",
     "positionGroup": "RB",
     "classYear": 2027,
     "grade": null,
-    "order": 312,
+    "order": 108,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Tyler High",
-      "address": "Tyler, TX"
+      "name": "Cajon",
+      "address": "San Bernardino, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 196 · 247 rating 90 · Listed: RB · 247 lists commitment: Oregon",
+    "miscNotes": "Committed 6/12/26 · 6-0 / 195 · 247 rating NA · Listed: RB · 247 lists commitment: San Jose State",
     "links": {
-      "s247": "https://247sports.com/Player/cadarius-mcmiller-46144140/"
+      "s247": "https://247sports.com/Player/maleek-nolley-46164211/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-014",
-    "name": "Daylon Gordon",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 313,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Wylie",
-      "address": "Wylie, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 195 · 247 rating 90 · Listed: RB · 247 lists commitment: Texas State",
-    "links": {
-      "s247": "https://247sports.com/Player/daylon-gordon-46157348/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-015",
-    "name": "Ty Keys",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 314,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Poplarville",
-      "address": "Poplarville, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · 247 rating 90 · Listed: RB · 247 lists commitment: Miami",
-    "links": {
-      "s247": "https://247sports.com/Player/ty-keys-46145046/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-016",
-    "name": "Kingston Miles",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 315,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Mary's",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 195 · 247 rating 90 · Listed: RB · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/kingston-miles-46157912/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-017",
-    "name": "Amarri Irvin",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 316,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 220 · 247 rating 89 · Listed: RB · 247 lists commitment: Virginia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/amarri-irvin-46142805/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-018",
-    "name": "Javian Jones-Priest",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 317,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Arlington Martin",
-      "address": "Arlington, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 194 · 247 rating 89 · Listed: RB · 247 lists commitment: Virginia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/javian-jones-priest-46159699/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-019",
-    "name": "Aymaud Sykes",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 318,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grant",
-      "address": "Dry Prong, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 175 · 247 rating 88 · Listed: RB · 247 lists commitment: Tulane",
-    "links": {
-      "s247": "https://247sports.com/Player/aymaud-sykes-46165391/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-020",
-    "name": "Noah Roberts",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 319,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 200 · 247 rating 88 · Listed: RB · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/noah-roberts-46151437/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-021",
-    "name": "Jayshon Gibson",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 320,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Richland",
-      "address": "North Richland Hills, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 185 · 247 rating 88 · Listed: RB · 247 lists commitment: UCLA",
-    "links": {
-      "s247": "https://247sports.com/Player/jayshon-gibson-46150802/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-022",
-    "name": "Tylek Lewis",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 321,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Zachary",
-      "address": "Zachary, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 210 · 247 rating 88 · Listed: RB · 247 lists commitment: Syracuse",
-    "links": {
-      "s247": "https://247sports.com/Player/tylek-lewis-46145110/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-023",
-    "name": "Triston Willis",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 322,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "C.E. King",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 195 · 247 rating 88 · Listed: RB · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/triston-willis-46153677/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-024",
-    "name": "Arwin Jackson",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 323,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Miami Carol City",
-      "address": "Opa Locka, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 170 · 247 rating 87 · Listed: RB · 247 lists commitment: Appalachian State",
-    "links": {
-      "s247": "https://247sports.com/Player/arwin-jackson-46146895/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-025",
-    "name": "TJ Lewis",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 324,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bolingbrook",
-      "address": "Bolingbrook, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 215 · 247 rating 87 · Listed: RB · 247 lists commitment: Oklahoma State",
-    "links": {
-      "s247": "https://247sports.com/Player/tj-lewis-46155479/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-026",
-    "name": "Taye Reich",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 325,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Moorhead",
-      "address": "Moorhead, MN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 200 · 247 rating 87 · Listed: RB · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/taye-reich-46150424/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-027",
-    "name": "Victor Scott",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 326,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lancaster",
-      "address": "Lancaster, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 195 · 247 rating 87 · Listed: RB · 247 lists commitment: North Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/victor-scott-46145117/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-028",
-    "name": "Jeremiah Stonewall",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 327,
-    "status": "OFFERED",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 86 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jeremiah-stonewall-46153370/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-029",
-    "name": "Mikel Stephen",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 328,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lipscomb Academy",
-      "address": "Nashville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 185 · 247 rating 86 · Listed: RB · 247 lists commitment: Duke",
-    "links": {
-      "s247": "https://247sports.com/Player/mikel-stephen-46151588/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-030",
-    "name": "Kylonn Haynie",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 329,
-    "status": "OFFERED",
-    "school": {
-      "name": "Omaha Central",
-      "address": "Omaha, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 200 · 247 rating 86 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kylonn-haynie-46148733/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-031",
-    "name": "Mason Ball",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 330,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Jacksonville",
-      "address": "Jacksonville, AR"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11.5 / 185 · 247 rating 86 · Listed: RB · 247 lists commitment: Kentucky",
-    "links": {
-      "s247": "https://247sports.com/Player/mason-ball-46155652/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-032",
-    "name": "Jamarin Simmons",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 331,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Amos P. Godby",
-      "address": "Tallahassee, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 165 · 247 rating 98 · Listed: WR · 247 lists commitment: Clemson",
-    "links": {
-      "s247": "https://247sports.com/Player/jamarin-simmons-46150455/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-033",
-    "name": "Eric McFarland III",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 332,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-8 / 177 · 247 rating 94 · Listed: WR · 247 lists commitment: Texas A&M",
-    "links": {
-      "s247": "https://247sports.com/Player/eric-mcfarland-iii-46148083/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-034",
-    "name": "Briceson Thrower Jr.",
+    "id": "bs27-10",
+    "name": "Damani Warren",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 333,
+    "order": 109,
     "status": "ELSEWHERE",
     "school": {
-      "name": "North Forney",
-      "address": "Forney, TX"
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 185 · 247 rating 91 · Listed: WR · 247 lists commitment: Texas",
+    "miscNotes": "Committed 6/5/26 · 6-4 / 210 · 247 rating 89 · WR #50 · NV #3 · Listed: WR · 247 lists commitment: Texas A&M",
     "links": {
-      "s247": "https://247sports.com/Player/briceson-thrower-jr-46155048/"
+      "s247": "https://247sports.com/Player/damani-warren-46147365/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-035",
-    "name": "Tre Moore",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 334,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Pflugerville Weiss",
-      "address": "Pflugerville, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 200 · 247 rating 90 · Listed: WR · 247 lists commitment: Washington",
-    "links": {
-      "s247": "https://247sports.com/Player/tre-moore-46143523/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-036",
-    "name": "Quentin Burrell",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 335,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mount Carmel",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 200 · 247 rating 90 · Listed: WR · 247 lists commitment: Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/quentin-burrell-46139675/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-037",
-    "name": "Julian Caldwell",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 336,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Argyle",
-      "address": "Argyle, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 185 · 247 rating 90 · Listed: WR · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/julian-caldwell-46151294/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-038",
-    "name": "Jabari Watkins",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 337,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Thomas County Central",
-      "address": "Thomasville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 185 · 247 rating 90 · Listed: WR · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/jabari-watkins-46154730/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-039",
-    "name": "Dontay Tyson",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 338,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Peoria",
-      "address": "Peoria, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · 247 rating 90 · Listed: WR · 247 lists commitment: Washington",
-    "links": {
-      "s247": "https://247sports.com/Player/dontay-tyson-46151181/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-040",
-    "name": "Trey Haralson",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 339,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Tyler High",
-      "address": "Tyler, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 180 · 247 rating 89 · Listed: WR · 247 lists commitment: SMU",
-    "links": {
-      "s247": "https://247sports.com/Player/trey-haralson-46144141/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-041",
-    "name": "Jaiden Kelly-Murray",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 340,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Oceanside Collegiate Academy",
-      "address": "Mount Pleasant, SC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 170 · 247 rating 89 · Listed: WR · 247 lists commitment: Colorado",
-    "links": {
-      "s247": "https://247sports.com/Player/jaiden-kelly-murray-46151857/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-042",
-    "name": "Jordan Christie",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 341,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Southwest DeKalb",
-      "address": "Decatur, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 190 · 247 rating 89 · Listed: WR · 247 lists commitment: Liberty",
-    "links": {
-      "s247": "https://247sports.com/Player/jordan-christie-46151855/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-043",
+    "id": "bs27-11",
     "name": "Taurean Rawlins",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 342,
+    "order": 110,
     "status": "ELSEWHERE",
     "school": {
       "name": "Mount Vernon Presbyterian",
@@ -1745,296 +269,46 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 89 · Listed: WR · 247 lists commitment: Georgia",
+    "miscNotes": "Committed 5/29/26 · 6-0 / 175 · 247 rating 89 · WR #59 · GA #49 · Listed: WR · 247 lists commitment: Georgia",
     "links": {
       "s247": "https://247sports.com/Player/taurean-rawlins-46164019/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-044",
-    "name": "Jeremiah Douglas",
+    "id": "bs27-12",
+    "name": "DJ Huggins",
     "jersey": "—",
     "positionGroup": "WR_SLOT",
     "classYear": 2027,
     "grade": null,
-    "order": 343,
+    "order": 111,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Crandall",
-      "address": "Crandall, TX"
+      "name": "Harrison",
+      "address": "Kennesaw, GA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 170 · 247 rating 88 · Listed: WR · 247 lists commitment: Vanderbilt",
+    "miscNotes": "Committed 4/30/26 · 5-10 / 165 · 247 rating 88 · WR #86 · GA #73 · Listed: WR · 247 lists commitment: South Carolina",
     "links": {
-      "s247": "https://247sports.com/Player/jeremiah-douglas-46145101/"
+      "s247": "https://247sports.com/Player/dj-huggins-46159642/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-045",
-    "name": "Jaden Baldwin",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 344,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11.5 / 180 · 247 rating 88 · Listed: WR · 247 lists commitment: Pittsburgh",
-    "links": {
-      "s247": "https://247sports.com/Player/jaden-baldwin-46145701/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-046",
-    "name": "Jaiden Fields",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 345,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hutto",
-      "address": "Hutto, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 88 · Listed: WR · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/jaiden-fields-46156704/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-047",
-    "name": "Kobe Haynes",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 346,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Whitney",
-      "address": "Whitney, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 205 · 247 rating 88 · Listed: WR · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/kobe-haynes-46150053/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-048",
-    "name": "Kyron Brown",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 347,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Amarillo Palo Duro",
-      "address": "Amarillo, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 185 · 247 rating 88 · Listed: WR · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/kyron-brown-46165287/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-049",
-    "name": "Brock Burrus",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 348,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Kell",
-      "address": "Marietta, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 190 · 247 rating 87 · Listed: WR · 247 lists commitment: West Virginia",
-    "links": {
-      "s247": "https://247sports.com/Player/brock-burrus-46154520/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-050",
-    "name": "Antayvious Ellis",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 349,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Millard South",
-      "address": "Omaha, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 87 · Listed: WR · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/antayvious-ellis-46142374/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-051",
-    "name": "Brody Knowles",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 350,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Southlake Carroll",
-      "address": "Southlake, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 190 · 247 rating 87 · Listed: WR · 247 lists commitment: Illinois",
-    "links": {
-      "s247": "https://247sports.com/Player/brody-knowles-46153338/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-052",
-    "name": "Trey Smith",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 351,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Williams Field",
-      "address": "Gilbert, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 165 · 247 rating 87 · Listed: WR · 247 lists commitment: Arizona",
-    "links": {
-      "s247": "https://247sports.com/Player/trey-smith-46155030/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-053",
-    "name": "Donovan McNabb Jr.",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 352,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Brophy College Preparatory",
-      "address": "Phoenix, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 160 · 247 rating 87 · Listed: WR · 247 lists commitment: UNLV",
-    "links": {
-      "s247": "https://247sports.com/Player/donovan-mcnabb-jr-46150805/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-054",
-    "name": "Austin Coles",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 353,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Thomas Aquinas",
-      "address": "Fort Lauderdale, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 195 · 247 rating 87 · Listed: WR · 247 lists commitment: Kentucky",
-    "links": {
-      "s247": "https://247sports.com/Player/austin-coles-46154221/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-055",
+    "id": "bs27-13",
     "name": "Jackson Coleman",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 354,
+    "order": 112,
     "status": "ELSEWHERE",
     "school": {
       "name": "Valor Christian",
@@ -2045,274 +319,299 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 185 · 247 rating 87 · Listed: WR · 247 lists commitment: Notre Dame",
+    "miscNotes": "Committed 5/4/26 · 6-3 / 185 · 247 rating 87 · WR #114 · CO #5 · Listed: WR · 247 lists commitment: Notre Dame",
     "links": {
       "s247": "https://247sports.com/Player/jackson-coleman-46156590/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-056",
-    "name": "Maliek Brown",
+    "id": "bs27-14",
+    "name": "Isaac Cook",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 355,
+    "order": 113,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Tyler Chapel Hill",
-      "address": "Tyler, TX"
+      "name": "Cathedral Catholic",
+      "address": "San Diego, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 185 · 247 rating 87 · Listed: WR · 247 lists commitment: Kansas",
+    "miscNotes": "Committed 5/29/26 · 6-1 / 195 · 247 rating 86 · WR #173 · CA #107 · Listed: WR · 247 lists commitment: San Diego State",
     "links": {
-      "s247": "https://247sports.com/Player/maliek-brown-46158921/"
+      "s247": "https://247sports.com/Player/isaac-cook-46156985/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-057",
-    "name": "Braylon Deal",
+    "id": "bs27-15",
+    "name": "Blake Gunter",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 356,
+    "order": 114,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Garland Naaman Forest",
-      "address": "Garland, TX"
+      "name": "Southlake Carroll",
+      "address": "Southlake, TX"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 185 · 247 rating 87 · Listed: WR · 247 lists commitment: TCU",
+    "miscNotes": "Committed 3/7/26 · 6-2 / 180 · 247 rating 86 · WR #175 · TX #168 · Listed: WR · 247 lists commitment: California",
     "links": {
-      "s247": "https://247sports.com/Player/braylon-deal-46161629/"
+      "s247": "https://247sports.com/Player/blake-gunter-46157583/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-058",
-    "name": "Roscoe Hayes",
+    "id": "bs27-16",
+    "name": "Jimmel Champion",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 357,
+    "order": 115,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Westlake",
-      "address": "Atlanta, GA"
+      "name": "Huntington Beach",
+      "address": "Huntington Beach, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 170 · 247 rating 86 · Listed: WR · 247 lists commitment: West Virginia",
+    "miscNotes": "Committed 6/25/26 · 6-2 / 195 · 247 rating 86 · WR #141 · CA #110 · Listed: WR · 247 lists commitment: Wyoming",
     "links": {
-      "s247": "https://247sports.com/Player/roscoe-hayes-46147294/"
+      "s247": "https://247sports.com/Player/jimmel-champion-46158789/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-059",
-    "name": "Zy Tassin",
+    "id": "bs27-17",
+    "name": "Dillon Sykes",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 358,
+    "order": 116,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Crestview",
-      "address": "Crestview, FL"
+      "name": "Lone Peak",
+      "address": "American Fork, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 190 · 247 rating 86 · Listed: WR · 247 lists commitment: Wake Forest",
+    "miscNotes": "Committed 6/5/26 · 6-5 / 190 · 247 rating 85 · WR #210 · UT #23 · Listed: WR · 247 lists commitment: Utah",
     "links": {
-      "s247": "https://247sports.com/Player/zy-tassin-46150338/"
+      "s247": "https://247sports.com/Player/dillon-sykes-46154619/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-060",
-    "name": "Jordan Donahoo",
+    "id": "bs27-18",
+    "name": "Malachi Garlington",
     "jersey": "—",
     "positionGroup": "WR_OUT",
     "classYear": 2027,
     "grade": null,
-    "order": 359,
+    "order": 117,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Oviedo",
-      "address": "Oviedo, FL"
+      "name": "Adrienne C. Nelson",
+      "address": "Happy Valley, OR"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 185 · 247 rating 86 · Listed: WR · 247 lists commitment: Ohio State",
+    "miscNotes": "Committed 6/5/26 · 6-3 / 180 · 247 rating 85 · WR #211 · OR #4 · Listed: WR · 247 lists commitment: Oregon",
     "links": {
-      "s247": "https://247sports.com/Player/jordan-donahoo-46164180/"
+      "s247": "https://247sports.com/Player/malachi-garlington-46161630/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-061",
-    "name": "Trysten Shaw",
+    "id": "bs27-19",
+    "name": "Kingston Parks",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 118,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Aledo",
+      "address": "Aledo, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/6/26 · 6-3 / 180 · 247 rating 84 · WR #218 · TX #215 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/kingston-parks-46146165/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-20",
+    "name": "Kai Cypher",
     "jersey": "—",
     "positionGroup": "WR_SLOT",
     "classYear": 2027,
     "grade": null,
-    "order": 360,
+    "order": 119,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Mansfield Timberview",
-      "address": "Arlington, TX"
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 160 · 247 rating 86 · Listed: WR · 247 lists commitment: Tulsa",
+    "miscNotes": "Committed 6/12/26 · 5-11 / 165 · 247 rating NA · Listed: WR · 247 lists commitment: UNLV",
     "links": {
-      "s247": "https://247sports.com/Player/trysten-shaw-46155778/"
+      "s247": "https://247sports.com/Player/kai-cypher-46164366/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-062",
-    "name": "Jordan Walley",
+    "id": "bs27-21",
+    "name": "Drake Mikkelsen",
     "jersey": "—",
-    "positionGroup": "WR_SLOT",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 361,
+    "order": 120,
     "status": "ELSEWHERE",
     "school": {
-      "name": "D'Iberville",
-      "address": "D'Iberville, MS"
+      "name": "Lennox",
+      "address": "Lennox, SD"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 160 · 247 rating 86 · Listed: WR · 247 lists commitment: Minnesota",
+    "miscNotes": "Committed 4/6/26 · 6-5 / 210 · 247 rating 90 · Natl #214 · TE #10 · SD #2 · Listed: TE · 247 lists commitment: Minnesota",
     "links": {
-      "s247": "https://247sports.com/Player/jordan-walley-46164108/"
+      "s247": "https://247sports.com/Player/drake-mikkelsen-46158520/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-063",
-    "name": "Derrick Martin",
+    "id": "bs27-22",
+    "name": "Jace Cannon",
     "jersey": "—",
-    "positionGroup": "WR_SLOT",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 362,
+    "order": 121,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Lewisville",
-      "address": "Lewisville, TX"
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 170 · unrated · Listed: WR · 247 lists commitment: Missouri State",
+    "miscNotes": "Committed 4/11/26 · 6-5 / 200 · 247 rating 88 · TE #31 · CA #57 · Listed: TE · 247 lists commitment: USC",
     "links": {
-      "s247": "https://247sports.com/Player/derrick-martin-46153280/"
+      "s247": "https://247sports.com/Player/jace-cannon-46155201/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-064",
-    "name": "Khalil Ferguson",
+    "id": "bs27-23",
+    "name": "Zac Fares",
     "jersey": "—",
-    "positionGroup": "WR_OUT",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 363,
+    "order": 122,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Arbor View",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 4/11/26 · 6-5 / 220 · 247 rating 88 · TE #33 · NV #6 · Listed: TE · 247 lists commitment: UCLA",
+    "links": {
+      "s247": "https://247sports.com/Player/zac-fares-46149288/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-24",
+    "name": "Matthew Schimberg",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 123,
     "status": "OFFERED",
     "school": {
-      "name": "Loudoun Sports Academy",
-      "address": "Leesburg, VA"
+      "name": "Grandview",
+      "address": "Aurora, CO"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 190 · unrated · Listed: WR · uncommitted",
+    "miscNotes": "6-6 / 235 · 247 rating 87 · TE #43 · CO #6 · Listed: TE",
     "links": {
-      "s247": "https://247sports.com/Player/khalil-ferguson-46166629/"
+      "s247": "https://247sports.com/Player/matthew-schimberg-46158418/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-065",
-    "name": "Jacob Lockett",
+    "id": "bs27-25",
+    "name": "Talan Scott",
     "jersey": "—",
-    "positionGroup": "WR_OUT",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 364,
+    "order": 124,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Blue Valley",
-      "address": "Stilwell, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 170 · unrated · Listed: WR · 247 lists commitment: Old Dominion",
-    "links": {
-      "s247": "https://247sports.com/Player/jacob-lockett-46147871/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-066",
-    "name": "Gavin Brown",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 365,
-    "status": "OFFERED",
-    "school": {
-      "name": "Queen Creek",
+      "name": "American Leadership Academy",
       "address": "Queen Creek, AZ"
     },
     "birthday": "",
@@ -2320,271 +619,121 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 150 · unrated · Listed: WR · uncommitted",
+    "miscNotes": "Committed 5/29/26 · 6-3.5 / 230 · 247 rating 87 · TE #46 · AZ #22 · Listed: TE · 247 lists commitment: Oklahoma State",
     "links": {
-      "s247": "https://247sports.com/Player/gavin-brown-46151849/"
+      "s247": "https://247sports.com/Player/talan-scott-46156636/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-067",
-    "name": "Kaeden Penny",
+    "id": "bs27-26",
+    "name": "Bryer Putman",
     "jersey": "—",
-    "positionGroup": "OL_SWING",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 366,
-    "status": "ELSEWHERE",
+    "order": 125,
+    "status": "COMMITTED",
     "school": {
-      "name": "Bixby",
-      "address": "Bixby, OK"
+      "name": "Wilton",
+      "address": "Wilton, IA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 280 · 247 rating 98 · Listed: OT · 247 lists commitment: Oklahoma",
+    "miscNotes": "Committed 6/7/26 · 6-5 / 195 · 247 rating 87 · TE #50 · IA #13 · Listed: TE",
     "links": {
-      "s247": "https://247sports.com/Player/kaeden-penny-46151261/"
+      "s247": "https://247sports.com/Player/bryer-putman-46167719/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-068",
-    "name": "Kennedy Brown",
+    "id": "bs27-27",
+    "name": "Landon Wolny",
     "jersey": "—",
-    "positionGroup": "OL_SWING",
+    "positionGroup": "TE",
     "classYear": 2027,
     "grade": null,
-    "order": 367,
-    "status": "ELSEWHERE",
+    "order": 126,
+    "status": "OFFERED",
     "school": {
-      "name": "Kingwood",
-      "address": "Kingwood, TX"
+      "name": "Community School of Naples",
+      "address": "Naples, FL"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 285 · 247 rating 94 · Listed: OT · 247 lists commitment: Texas A&M",
+    "miscNotes": "6-4 / 205 · 247 rating 84 · TE #84 · FL #200 · Listed: TE",
     "links": {
-      "s247": "https://247sports.com/Player/kennedy-brown-46152521/"
+      "s247": "https://247sports.com/Player/landon-wolny-46142395/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-069",
-    "name": "Jake Hildebrand",
+    "id": "bs27-28",
+    "name": "Drew Fielder",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 368,
+    "order": 127,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
+      "name": "Servite",
+      "address": "Anaheim, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5.5 / 311 · 247 rating 93 · Listed: OT · 247 lists commitment: Arizona State",
+    "miscNotes": "Committed 3/28/26 · 6-6 / 280 · 247 rating 93 · Natl #86 · OT #11 · CA #9 · Listed: OT · 247 lists commitment: USC",
     "links": {
-      "s247": "https://247sports.com/Player/jake-hildebrand-46150822/"
+      "s247": "https://247sports.com/Player/drew-fielder-46158447/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-070",
-    "name": "Cooper Hackett",
+    "id": "bs27-29",
+    "name": "Avery Michael",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 369,
+    "order": 128,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Fort Gibson",
-      "address": "Fort Gibson, OK"
+      "name": "Turlock",
+      "address": "Turlock, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-6.5 / 250 · 247 rating 92 · Listed: OT · 247 lists commitment: Oklahoma",
+    "miscNotes": "Committed 6/12/26 · 6-6 / 290 · 247 rating 89 · OT #37 · CA #27 · Listed: OT · 247 lists commitment: Oregon",
     "links": {
-      "s247": "https://247sports.com/Player/cooper-hackett-46156728/"
+      "s247": "https://247sports.com/Player/avery-michael-46157076/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-071",
-    "name": "Niko Kampas",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 370,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "NFL Academy",
-      "address": "London, EN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7.5 / 294 · 247 rating 90 · Listed: OT · 247 lists commitment: Tennessee",
-    "links": {
-      "s247": "https://247sports.com/Player/niko-kampas-46159217/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-072",
-    "name": "Jackson Roper",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 371,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cherry Creek",
-      "address": "Englewood, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 305 · 247 rating 90 · Listed: OT · 247 lists commitment: UCLA",
-    "links": {
-      "s247": "https://247sports.com/Player/jackson-roper-46153223/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-073",
-    "name": "Timi Aliu",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 372,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Locust Grove",
-      "address": "Locust Grove, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 295 · 247 rating 90 · Listed: OT · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/timi-aliu-46161065/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-074",
-    "name": "Mason Halliman",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 373,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lincoln-Way East",
-      "address": "Frankfort, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 275 · 247 rating 89 · Listed: OT · 247 lists commitment: Illinois",
-    "links": {
-      "s247": "https://247sports.com/Player/mason-halliman-46155221/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-075",
-    "name": "Mason Joshua",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 374,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Forney",
-      "address": "Forney, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 268 · 247 rating 89 · Listed: OT · 247 lists commitment: Arizona",
-    "links": {
-      "s247": "https://247sports.com/Player/mason-joshua-46161064/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-076",
-    "name": "Benjamin Lowther",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 375,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Peoria Centennial",
-      "address": "Peoria, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 335 · 247 rating 88 · Listed: OT · 247 lists commitment: Stanford",
-    "links": {
-      "s247": "https://247sports.com/Player/benjamin-lowther-46149593/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-077",
+    "id": "bs27-30",
     "name": "Tye Kennedy",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 376,
+    "order": 129,
     "status": "ELSEWHERE",
     "school": {
       "name": "Mountain View",
@@ -2595,3674 +744,74 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 270 · 247 rating 88 · Listed: OT · 247 lists commitment: Washington",
+    "miscNotes": "Committed 7/1/26 · 6-4 / 270 · 247 rating 88 · OT #49 · AZ #12 · Listed: OT · 247 lists commitment: Washington",
     "links": {
       "s247": "https://247sports.com/Player/tye-kennedy-46162261/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-078",
-    "name": "Matt Erickson",
+    "id": "bs27-31",
+    "name": "George Tyus",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 377,
+    "order": 130,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Millard North",
-      "address": "Omaha, NE"
+      "name": "Antioch",
+      "address": "Antioch, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-8 / 280 · 247 rating 88 · Listed: OT · 247 lists commitment: Nebraska",
+    "miscNotes": "Committed 5/22/26 · 6-6 / 285 · 247 rating 87 · OT #82 · CA #80 · Listed: OT · 247 lists commitment: Stanford",
     "links": {
-      "s247": "https://247sports.com/Player/matt-erickson-46150898/"
+      "s247": "https://247sports.com/Player/george-tyus-46158935/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-079",
-    "name": "Reed Gerken",
+    "id": "bs27-32",
+    "name": "Maxton Barnes",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 378,
-    "status": "ELSEWHERE",
+    "order": 131,
+    "status": "COMMITTED",
     "school": {
-      "name": "Perrysburg",
-      "address": "Perrysburg, OH"
+      "name": "Columbia",
+      "address": "Nampa, ID"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 305 · 247 rating 88 · Listed: OT · 247 lists commitment: Kentucky",
+    "miscNotes": "Committed 6/20/26 · 6-5.5 / 250 · 247 rating 86 · OT #112 · ID #3 · Listed: OT",
     "links": {
-      "s247": "https://247sports.com/Player/reed-gerken-46148203/"
+      "s247": "https://247sports.com/Player/maxton-barnes-46159375/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-080",
-    "name": "Hudson Ingalsbe",
+    "id": "bs27-33",
+    "name": "Laseth Bryant",
     "jersey": "—",
     "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 379,
+    "order": 132,
     "status": "ELSEWHERE",
     "school": {
-      "name": "White Plains",
-      "address": "Anniston, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 277 · 247 rating 88 · Listed: OT · 247 lists commitment: North Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/hudson-ingalsbe-46165472/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-081",
-    "name": "Josiah Wallace",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 380,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Glenbard West",
-      "address": "Glen Ellyn, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-8 / 300 · 247 rating 88 · Listed: OT · 247 lists commitment: Northwestern",
-    "links": {
-      "s247": "https://247sports.com/Player/josiah-wallace-46158394/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-082",
-    "name": "Corey Laga",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 381,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lemont",
-      "address": "Lemont, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 250 · 247 rating 88 · Listed: OT · 247 lists commitment: Vanderbilt",
-    "links": {
-      "s247": "https://247sports.com/Player/corey-laga-46162587/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-083",
-    "name": "Koen Hinzman",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 382,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hudson Area",
-      "address": "Hudson, MI"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 285 · 247 rating 87 · Listed: OT · 247 lists commitment: Iowa State",
-    "links": {
-      "s247": "https://247sports.com/Player/koen-hinzman-46164004/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-084",
-    "name": "RJ Clem",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 383,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Logansport",
-      "address": "Logansport, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 265 · 247 rating 87 · Listed: OT · 247 lists commitment: Wake Forest",
-    "links": {
-      "s247": "https://247sports.com/Player/rj-clem-46159574/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-085",
-    "name": "Teagan Parizek",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 384,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hendersonville",
-      "address": "Hendersonville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 295 · 247 rating 87 · Listed: OT · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/teagan-parizek-46167345/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-086",
-    "name": "Tyson Ross",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 385,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Andover",
-      "address": "Andover, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 285 · 247 rating 87 · Listed: OT · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/tyson-ross-46161904/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-087",
-    "name": "Caleb Siler",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 386,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Gunter",
-      "address": "Gunter, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-8 / 290 · 247 rating 87 · Listed: OT · 247 lists commitment: Northwestern",
-    "links": {
-      "s247": "https://247sports.com/Player/caleb-siler-46163939/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-088",
-    "name": "Joseph Hamer",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 387,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lakeville South",
-      "address": "Lakeville, MN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 295 · 247 rating 86 · Listed: OT · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/joseph-hamer-46158419/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-089",
-    "name": "Jaylen Hill",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 388,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lanett",
-      "address": "Lanett, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 295 · 247 rating 86 · Listed: OT · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/jaylen-hill-46162004/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-090",
-    "name": "Ty Greene",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 389,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Houston Stratford",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 290 · 247 rating 86 · Listed: OT · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/ty-greene-46164276/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-091",
-    "name": "Gavin Ericson-Staton",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 390,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Montini Catholic",
-      "address": "Lombard, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 270 · 247 rating 86 · Listed: OT · 247 lists commitment: Illinois",
-    "links": {
-      "s247": "https://247sports.com/Player/gavin-ericson-staton-46159091/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-092",
-    "name": "Sonny Mullen",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 391,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Troy",
-      "address": "Troy, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 280 · 247 rating 86 · Listed: OT · 247 lists commitment: Oklahoma State",
-    "links": {
-      "s247": "https://247sports.com/Player/sonny-mullen-46166839/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-093",
-    "name": "Brendan Meaney",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 392,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Janesville",
-      "address": "Janesville, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 260 · 247 rating 85 · Listed: OT · 247 lists commitment: Wake Forest",
-    "links": {
-      "s247": "https://247sports.com/Player/brendan-meaney-46162080/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-094",
-    "name": "Zyion Wesley",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 393,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Edna Karr",
-      "address": "New Orleans, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 275 · 247 rating 85 · Listed: OT · 247 lists commitment: Mississippi State",
-    "links": {
-      "s247": "https://247sports.com/Player/zyion-wesley-46156279/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-095",
-    "name": "Jonathan Toney",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 394,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "West Laurens",
-      "address": "Dublin, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 268 · 247 rating 85 · Listed: OT · 247 lists commitment: Memphis",
-    "links": {
-      "s247": "https://247sports.com/Player/jonathan-toney-46159660/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-096",
-    "name": "Henry Frazier",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 395,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Rogers",
-      "address": "Rogers, AR"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 290 · 247 rating 85 · Listed: OT · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/henry-frazier-46165568/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-097",
-    "name": "Nick Vecrumba",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 396,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Brownsburg",
-      "address": "Brownsburg, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 285 · 247 rating 85 · Listed: OT · 247 lists commitment: Kansas",
-    "links": {
-      "s247": "https://247sports.com/Player/nick-vecrumba-46155677/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-098",
-    "name": "Avery Timms",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 397,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Killeen",
-      "address": "Killeen, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 290 · 247 rating 82 · Listed: OT · 247 lists commitment: North Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/avery-timms-46153299/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-099",
-    "name": "Brandon Hebert",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2027,
-    "grade": null,
-    "order": 398,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Shore",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 282 · unrated · Listed: OT · 247 lists commitment: Princeton",
-    "links": {
-      "s247": "https://247sports.com/Player/brandon-hebert-46164605/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-100",
-    "name": "Peyton Miller",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 399,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Anna",
-      "address": "Anna, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 290 · 247 rating 91 · Listed: IOL · 247 lists commitment: Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/peyton-miller-46144299/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-101",
-    "name": "Kyler Kuhn",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 400,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Pius X",
-      "address": "Kansas City, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · 247 rating 90 · Listed: IOL · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/kyler-kuhn-46155294/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-102",
-    "name": "Gus Corsair",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 401,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hays",
-      "address": "Hays, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 285 · 247 rating 90 · Listed: IOL · 247 lists commitment: Oregon",
-    "links": {
-      "s247": "https://247sports.com/Player/gus-corsair-46150698/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-103",
-    "name": "Will Slagle",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 402,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grinnell",
-      "address": "Grinnell, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 280 · 247 rating 89 · Listed: IOL · 247 lists commitment: Iowa State",
-    "links": {
-      "s247": "https://247sports.com/Player/will-slagle-46151966/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-104",
-    "name": "Keyon Hemphill-Woods",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 403,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Columbus",
-      "address": "Columbus, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 275 · 247 rating 89 · Listed: IOL · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/keyon-hemphill-woods-46154227/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-105",
-    "name": "DaJohn Yarborough",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 404,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 340 · 247 rating 89 · Listed: IOL · 247 lists commitment: California",
-    "links": {
-      "s247": "https://247sports.com/Player/dajohn-yarborough-46155167/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-106",
-    "name": "Jaiden Thompson",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 405,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Rockmart",
-      "address": "Rockmart, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 290 · 247 rating 88 · Listed: IOL · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/jaiden-thompson-46149614/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-107",
-    "name": "Lincoln Mageo",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 406,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Oceanside",
-      "address": "Oceanside, CA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 280 · 247 rating 88 · Listed: IOL · 247 lists commitment: Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/lincoln-mageo-46147045/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-108",
-    "name": "Barrett Kitrell",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 407,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Ashland-Greenwood",
-      "address": "Ashland, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 270 · 247 rating 88 · Listed: IOL · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/barrett-kitrell-46161834/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-109",
-    "name": "Dylan Mota",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 408,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Patrick",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 270 · 247 rating 88 · Listed: IOL · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/dylan-mota-46164183/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-110",
-    "name": "Shavezz Dixon",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 409,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lee County",
-      "address": "Leesburg, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 325 · 247 rating 87 · Listed: IOL · 247 lists commitment: North Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/shavezz-dixon-46154743/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-111",
-    "name": "Bryson Hurt",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 410,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Gainesville",
-      "address": "Gainesville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 300 · 247 rating 87 · Listed: IOL · 247 lists commitment: NC State",
-    "links": {
-      "s247": "https://247sports.com/Player/bryson-hurt-46152642/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-112",
-    "name": "Aidan Ray",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 411,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Plano West",
-      "address": "Plano, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5.5 / 300 · 247 rating 87 · Listed: IOL · 247 lists commitment: UCLA",
-    "links": {
-      "s247": "https://247sports.com/Player/aidan-ray-46167108/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-113",
-    "name": "Stephan Hicks Jr.",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 412,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cibolo Steele",
-      "address": "Cibolo, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 295 · 247 rating 87 · Listed: IOL · 247 lists commitment: Duke",
-    "links": {
-      "s247": "https://247sports.com/Player/stephan-hicks-jr-46166032/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-114",
-    "name": "Reis Russell",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 413,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Valor Christian",
-      "address": "Littleton, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 290 · 247 rating 87 · Listed: IOL · 247 lists commitment: Washington",
-    "links": {
-      "s247": "https://247sports.com/Player/reis-russell-46145499/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-115",
-    "name": "Tristan Dare",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 414,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Southlake Carroll",
-      "address": "Southlake, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 290 · 247 rating 87 · Listed: IOL · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/tristan-dare-46146325/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-116",
-    "name": "Bryce Vigness",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 415,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Papillion-La Vista",
-      "address": "Papillion, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 285 · 247 rating 87 · Listed: IOL · 247 lists commitment: North Dakota State",
-    "links": {
-      "s247": "https://247sports.com/Player/bryce-vigness-46159815/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-117",
-    "name": "Nico Ramos",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 416,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "American Heritage",
-      "address": "Plantation, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5.5 / 320 · 247 rating 86 · Listed: IOL · 247 lists commitment: Syracuse",
-    "links": {
-      "s247": "https://247sports.com/Player/nico-ramos-46163809/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-118",
-    "name": "Luke Injaychock",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 417,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Nazareth Academy",
-      "address": "La Grange Park, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 285 · 247 rating 86 · Listed: IOL · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/luke-injaychock-46154262/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-119",
-    "name": "Jayden Mack",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 418,
-    "status": "OFFERED",
-    "school": {
-      "name": "Hutto",
-      "address": "Hutto, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 340 · 247 rating 86 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jayden-mack-46149670/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-120",
-    "name": "Jackson Cook",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 419,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Austin Westlake",
-      "address": "Austin, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 290 · 247 rating 86 · Listed: IOL · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/jackson-cook-46154645/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-121",
-    "name": "Will Endicott",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 420,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Prosper",
-      "address": "Prosper, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 275 · 247 rating 86 · Listed: IOL · 247 lists commitment: South Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/will-endicott-46160366/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-122",
-    "name": "Jordan Carraway",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 421,
-    "status": "OFFERED",
-    "school": {
-      "name": "Forney",
-      "address": "Forney, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 320 · 247 rating 84 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordan-carraway-46145097/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-123",
-    "name": "Abdus Kone",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 422,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Shore",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 315 · 247 rating 84 · Listed: IOL · 247 lists commitment: Maryland",
-    "links": {
-      "s247": "https://247sports.com/Player/abdus-kone-46159210/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-124",
-    "name": "Aiden Williams",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 423,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Duncanville",
-      "address": "Duncanville, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 290 · 247 rating 83 · Listed: IOL · 247 lists commitment: Texas State",
-    "links": {
-      "s247": "https://247sports.com/Player/aiden-williams-46145123/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-125",
-    "name": "Joshua Shaw Jr.",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 424,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Immaculate Conception",
-      "address": "Elmhurst, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 300 · unrated · Listed: IOL · 247 lists commitment: Northern Illinois",
-    "links": {
-      "s247": "https://247sports.com/Player/joshua-shaw-jr-46165358/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-126",
-    "name": "Wilder Brasher",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 425,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Rabun Gap-Nacoochee",
-      "address": "Rabun Gap, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 280 · unrated · Listed: IOL · 247 lists commitment: UConn",
-    "links": {
-      "s247": "https://247sports.com/Player/wilder-brasher-46146935/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-127",
-    "name": "David Folorunsho",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 426,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · 247 rating 94 · Listed: DL · 247 lists commitment: Notre Dame",
-    "links": {
-      "s247": "https://247sports.com/Player/david-folorunsho-46158874/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-128",
-    "name": "Zane Rowe",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 427,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 265 · 247 rating 92 · Listed: DL · 247 lists commitment: Oregon",
-    "links": {
-      "s247": "https://247sports.com/Player/zane-rowe-46139730/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-129",
-    "name": "Alifeleti Tuihalamaka",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 428,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 260 · 247 rating 91 · Listed: DL · 247 lists commitment: USC",
-    "links": {
-      "s247": "https://247sports.com/Player/alifeleti-tuihalamaka-46149194/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-130",
-    "name": "Sam LeJeune",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 429,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · 247 rating 91 · Listed: DL · 247 lists commitment: Florida State",
-    "links": {
-      "s247": "https://247sports.com/Player/sam-lejeune-46150692/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-131",
-    "name": "Luke Starcevic",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 430,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 250 · 247 rating 91 · Listed: DL · 247 lists commitment: Clemson",
-    "links": {
-      "s247": "https://247sports.com/Player/luke-starcevic-46149472/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-132",
-    "name": "Brayden Parks",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 431,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 305 · 247 rating 91 · Listed: DL · 247 lists commitment: Notre Dame",
-    "links": {
-      "s247": "https://247sports.com/Player/brayden-parks-46146752/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-133",
-    "name": "John Archer",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 432,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 315 · 247 rating 91 · Listed: DL · 247 lists commitment: South Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/john-archer-46146916/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-134",
-    "name": "Ezekiel Ayangbile",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 433,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 265 · 247 rating 90 · Listed: DL · 247 lists commitment: Miami",
-    "links": {
-      "s247": "https://247sports.com/Player/ezekiel-ayangbile-46146266/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-135",
-    "name": "Santana Harvey",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 434,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 230 · 247 rating 90 · Listed: DL · 247 lists commitment: Clemson",
-    "links": {
-      "s247": "https://247sports.com/Player/santana-harvey-46155183/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-136",
-    "name": "David Hill",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 435,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 300 · 247 rating 90 · Listed: DL · 247 lists commitment: Wisconsin",
-    "links": {
-      "s247": "https://247sports.com/Player/david-hill-46154801/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-137",
-    "name": "K'Adrian Redmond",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 436,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 305 · 247 rating 90 · Listed: DL · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/kadrian-redmond-46150263/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-138",
-    "name": "Eli Diane",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 437,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 275 · 247 rating 90 · Listed: DL · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/eli-diane-46155226/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-139",
-    "name": "Nehemiah Ombati",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 438,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 275 · 247 rating 89 · Listed: DL · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/nehemiah-ombati-46159743/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-140",
-    "name": "Antwan McKoy",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 439,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 295 · 247 rating 89 · Listed: DL · 247 lists commitment: Georgia",
-    "links": {
-      "s247": "https://247sports.com/Player/antwan-mckoy-46157504/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-141",
-    "name": "Jaderian Jones",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 440,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 300 · 247 rating 89 · Listed: DL · 247 lists commitment: California",
-    "links": {
-      "s247": "https://247sports.com/Player/jaderian-jones-46149545/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-142",
-    "name": "Dami Sowunmi",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 441,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 260 · 247 rating 89 · Listed: DL · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/dami-sowunmi-46158117/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-143",
-    "name": "Jason Johnson",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 442,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 280 · 247 rating 89 · Listed: DL · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/jason-johnson-46162588/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-144",
-    "name": "De'Voun Kendrick",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 443,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 275 · 247 rating 88 · Listed: DL · 247 lists commitment: Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/devoun-kendrick-46158317/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-145",
-    "name": "Maleek Lee",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 444,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 270 · 247 rating 88 · Listed: DL · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/maleek-lee-46159084/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-146",
-    "name": "Keilan Neal",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 445,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 280 · 247 rating 88 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/keilan-neal-46153392/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-147",
-    "name": "Marcellus Young Casario",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 446,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 260 · 247 rating 88 · Listed: DL · 247 lists commitment: Georgia",
-    "links": {
-      "s247": "https://247sports.com/Player/marcellus-young-casario-46159925/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-148",
-    "name": "Jesiah Fields",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 447,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 250 · 247 rating 87 · Listed: DL · 247 lists commitment: Louisville",
-    "links": {
-      "s247": "https://247sports.com/Player/jesiah-fields-46155882/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-149",
-    "name": "Khing Thibodeaux",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 448,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 260 · 247 rating 87 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/khing-thibodeaux-46148678/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-150",
-    "name": "Stevan Thornton III",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 449,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 200 · 247 rating 87 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/stevan-thornton-iii-46164070/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-151",
-    "name": "Markius Woods",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 450,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 305 · 247 rating 87 · Listed: DL · 247 lists commitment: Boston College",
-    "links": {
-      "s247": "https://247sports.com/Player/markius-woods-46165935/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-152",
-    "name": "Darrien Neal",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 451,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1.5 / 285 · 247 rating 86 · Listed: DL · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/darrien-neal-46148173/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-153",
-    "name": "Errol Demontagnac",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 452,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 290 · 247 rating 86 · Listed: DL · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/errol-demontagnac-46155802/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-154",
-    "name": "Khyren Haywood",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 453,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 260 · 247 rating 86 · Listed: DL · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/khyren-haywood-46142211/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-155",
-    "name": "Eli Thornton",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 454,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 315 · 247 rating 86 · Listed: DL · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/eli-thornton-46163675/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-156",
-    "name": "Corey Randolph",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 455,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 305 · 247 rating 86 · Listed: DL · 247 lists commitment: Boston College",
-    "links": {
-      "s247": "https://247sports.com/Player/corey-randolph-46159113/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-157",
-    "name": "Gage Geyer",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 456,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 270 · 247 rating 86 · Listed: DL · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/gage-geyer-46162137/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-158",
-    "name": "Charles Nance",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 457,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 280 · 247 rating 86 · Listed: DL · 247 lists commitment: Western Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/charles-nance-46161500/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-159",
-    "name": "Kaleb Exume",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 458,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 310 · 247 rating 85 · Listed: DL · 247 lists commitment: Boston College",
-    "links": {
-      "s247": "https://247sports.com/Player/kaleb-exume-46149458/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-160",
-    "name": "Zarius Matavao",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 459,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 297 · 247 rating 85 · Listed: DL · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/zarius-matavao-46167688/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-161",
-    "name": "Brenham Cherne",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 460,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 270 · 247 rating 84 · Listed: DL · 247 lists commitment: Wake Forest",
-    "links": {
-      "s247": "https://247sports.com/Player/brenham-cherne-46165509/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-162",
-    "name": "Johnnie Fitzgerald III",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 461,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 285 · 247 rating 83 · Listed: DL · 247 lists commitment: North Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/johnnie-fitzgerald-iii-46152066/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-163",
-    "name": "Seth Kidd",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 462,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 280 · 247 rating 83 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/seth-kidd-46169132/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-164",
-    "name": "Zion Thornton",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2027,
-    "grade": null,
-    "order": 463,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 290 · unrated · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zion-thornton-46161639/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-165",
-    "name": "Taccofah Lewis",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 464,
-    "status": "OFFERED",
-    "school": {
-      "name": "(HS not listed)",
-      "address": "--"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 288 · unrated · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/taccofah-lewis-46132860/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-166",
-    "name": "Cameron Hall",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 465,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mansfield Summit",
-      "address": "Arlington, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 235 · 247 rating 94 · Listed: Edge · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/cameron-hall-46157610/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-167",
-    "name": "Uhila Wolfgramm",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 466,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Maple Mountain",
-      "address": "Spanish Fork, UT"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 245 · 247 rating 93 · Listed: Edge · 247 lists commitment: BYU",
-    "links": {
-      "s247": "https://247sports.com/Player/uhila-wolfgramm-46152619/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-168",
-    "name": "Prince Goldsby",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 467,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Blue Springs South",
-      "address": "Blue Springs, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 205 · 247 rating 92 · Listed: Edge · 247 lists commitment: Ohio State",
-    "links": {
-      "s247": "https://247sports.com/Player/prince-goldsby-46162471/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-169",
-    "name": "Marvin Nguetsop",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 468,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Thomas More",
-      "address": "Oakdale, CT"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7.5 / 268 · 247 rating 90 · Listed: Edge · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/marvin-nguetsop-46159737/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-170",
-    "name": "Ifeanyi Emedobi",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 469,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Northrop",
-      "address": "Fort Wayne, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1.5 / 210 · 247 rating 89 · Listed: Edge · 247 lists commitment: Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/ifeanyi-emedobi-46162249/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-171",
-    "name": "Juelz Batiste",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 470,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Edna Karr",
-      "address": "New Orleans, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 230 · 247 rating 89 · Listed: Edge · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/juelz-batiste-46161309/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-172",
-    "name": "Tommy Riordan",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 471,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hinsdale Central",
-      "address": "Hinsdale, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 240 · 247 rating 89 · Listed: Edge · 247 lists commitment: Iowa",
-    "links": {
-      "s247": "https://247sports.com/Player/tommy-riordan-46154685/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-173",
-    "name": "T.K. Cunningham",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 472,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 230 · 247 rating 89 · Listed: Edge · 247 lists commitment: Purdue",
-    "links": {
-      "s247": "https://247sports.com/Player/tk-cunningham-46130530/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-174",
-    "name": "Keysan Taylor",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 473,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Guilford",
-      "address": "Rockford, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 230 · 247 rating 89 · Listed: Edge · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/keysan-taylor-46159687/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-175",
-    "name": "Chris Kasky",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 474,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Nazareth Academy",
-      "address": "La Grange Park, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 225 · 247 rating 89 · Listed: Edge · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/chris-kasky-46147938/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-176",
-    "name": "Clarence Johnson Jr.",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 475,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cretin Derham Hall",
-      "address": "Saint Paul, MN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 225 · 247 rating 89 · Listed: Edge · 247 lists commitment: Kansas",
-    "links": {
-      "s247": "https://247sports.com/Player/clarence-johnson-jr-46163112/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-177",
-    "name": "Jaylen Mercer",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 476,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Princeton",
-      "address": "Cincinnati, OH"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 230 · 247 rating 88 · Listed: Edge · 247 lists commitment: Kentucky",
-    "links": {
-      "s247": "https://247sports.com/Player/jaylen-mercer-46145741/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-178",
-    "name": "Jaxon Holly",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 477,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Roswell",
-      "address": "Roswell, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 225 · 247 rating 88 · Listed: Edge · 247 lists commitment: Florida State",
-    "links": {
-      "s247": "https://247sports.com/Player/jaxon-holly-46149514/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-179",
-    "name": "Adriel Rojas",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 478,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Forsyth",
-      "address": "Cumming, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 220 · 247 rating 88 · Listed: Edge · 247 lists commitment: Duke",
-    "links": {
-      "s247": "https://247sports.com/Player/adriel-rojas-46158454/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-180",
-    "name": "Samuel Nelson",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 479,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bryant",
-      "address": "Bryant, AR"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 225 · 247 rating 88 · Listed: Edge · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/samuel-nelson-46163732/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-181",
-    "name": "Troy Mailo",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 480,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mullen",
-      "address": "Denver, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 252 · 247 rating 88 · Listed: Edge · 247 lists commitment: Stanford",
-    "links": {
-      "s247": "https://247sports.com/Player/troy-mailo-46147113/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-182",
-    "name": "Darin Graham",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 481,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mount Carmel",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 218 · 247 rating 88 · Listed: Edge · 247 lists commitment: Wisconsin",
-    "links": {
-      "s247": "https://247sports.com/Player/darin-graham-46162053/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-183",
-    "name": "Brody Pfannenstiel",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 482,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Hoisington",
-      "address": "Hoisington, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 225 · 247 rating 87 · Listed: Edge · 247 lists commitment: Wisconsin",
-    "links": {
-      "s247": "https://247sports.com/Player/brody-pfannenstiel-46159291/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-184",
-    "name": "Ty Tautolo",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 483,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lake Stevens",
-      "address": "Lake Stevens, WA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 240 · 247 rating 87 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/ty-tautolo-46145956/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-185",
-    "name": "Bryson Phoenix",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 484,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Alexandria",
-      "address": "Alexandria, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 225 · 247 rating 87 · Listed: Edge · 247 lists commitment: Texas State",
-    "links": {
-      "s247": "https://247sports.com/Player/bryson-phoenix-46161501/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-186",
-    "name": "Dominic Letlow",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 485,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cardinal Mooney",
-      "address": "Youngstown, OH"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 230 · 247 rating 87 · Listed: Edge · 247 lists commitment: Pittsburgh",
-    "links": {
-      "s247": "https://247sports.com/Player/dominic-letlow-46149240/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-187",
-    "name": "Olayiwola Taiwo",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 486,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lovejoy",
-      "address": "Hampton, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 225 · 247 rating 87 · Listed: Edge · 247 lists commitment: Georgia",
-    "links": {
-      "s247": "https://247sports.com/Player/olayiwola-taiwo-46162419/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-188",
-    "name": "Brian DeMoss",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 487,
-    "status": "OFFERED",
-    "school": {
-      "name": "Simeon",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 210 · 247 rating 86 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/brian-demoss-46153531/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-189",
-    "name": "Owen Roberts",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 488,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "York",
-      "address": "Elmhurst, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 230 · 247 rating 86 · Listed: Edge · 247 lists commitment: Purdue",
-    "links": {
-      "s247": "https://247sports.com/Player/owen-roberts-46161919/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-190",
-    "name": "Caleb Jordan",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 489,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 220 · 247 rating 83 · Listed: Edge · 247 lists commitment: Nevada",
-    "links": {
-      "s247": "https://247sports.com/Player/caleb-jordan-46159788/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-191",
-    "name": "Xzavier Pfister",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2027,
-    "grade": null,
-    "order": 490,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Brookwood",
-      "address": "Snellville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 230 · unrated · Listed: Edge · 247 lists commitment: Arkansas State",
-    "links": {
-      "s247": "https://247sports.com/Player/xzavier-pfister-46164665/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-192",
-    "name": "Jhadyn Nelson",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 491,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Langham Creek",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 221 · 247 rating 94 · Listed: LB · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/jhadyn-nelson-46164194/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-193",
-    "name": "Roman Igwebuike",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 492,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mount Carmel",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 220 · 247 rating 91 · Listed: LB · 247 lists commitment: Notre Dame",
-    "links": {
-      "s247": "https://247sports.com/Player/roman-igwebuike-46154637/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-194",
-    "name": "Kobe Rhymes",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 493,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Kansas City",
-      "address": "Kansas City, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 220 · 247 rating 90 · Listed: LB · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/kobe-rhymes-46154822/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-195",
-    "name": "Tate Wallace",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 494,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Regina",
-      "address": "Iowa City, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 230 · 247 rating 90 · Listed: LB · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/tate-wallace-46144698/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-196",
-    "name": "Case Alexander",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 495,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Washington High",
-      "address": "Washington, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 215 · 247 rating 89 · Listed: LB · 247 lists commitment: Penn State",
-    "links": {
-      "s247": "https://247sports.com/Player/case-alexander-46152524/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-197",
-    "name": "David Parson",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 496,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Douglas County",
-      "address": "Douglasville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 225 · 247 rating 89 · Listed: LB · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/david-parson-46158397/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-198",
-    "name": "Gavin Stecker",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 497,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bettendorf",
-      "address": "Bettendorf, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 192 · 247 rating 89 · Listed: LB · 247 lists commitment: Iowa",
-    "links": {
-      "s247": "https://247sports.com/Player/gavin-stecker-46153320/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-199",
-    "name": "Keiran Govan",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 498,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Republic",
-      "address": "Republic, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 89 · Listed: LB · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/keiran-govan-46165447/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-200",
-    "name": "Aston Whiteside",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 499,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Burleson Centennial",
-      "address": "Burleson, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 205 · 247 rating 89 · Listed: LB · 247 lists commitment: Texas A&M",
-    "links": {
-      "s247": "https://247sports.com/Player/aston-whiteside-46157574/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-201",
-    "name": "Ellis McGaskin",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 500,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Williamson",
-      "address": "Mobile, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · 247 rating 88 · Listed: LB · 247 lists commitment: Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/ellis-mcgaskin-46144257/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-202",
-    "name": "Drew Williams",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 501,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Sequoyah",
-      "address": "Canton, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 88 · Listed: LB · 247 lists commitment: Kentucky",
-    "links": {
-      "s247": "https://247sports.com/Player/drew-williams-46159930/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-203",
-    "name": "Braylon Williams",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 502,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Arlington Lamar",
-      "address": "Arlington, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 220 · 247 rating 88 · Listed: LB · 247 lists commitment: SMU",
-    "links": {
-      "s247": "https://247sports.com/Player/braylon-williams-46144825/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-204",
-    "name": "Aaron Williams",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 503,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Fort Bend Ridge Point",
-      "address": "Missouri City, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 88 · Listed: LB · 247 lists commitment: North Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/aaron-williams-46157576/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-205",
-    "name": "Blake Betton",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 504,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Shakopee",
-      "address": "Shakopee, MN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 200 · 247 rating 88 · Listed: LB · 247 lists commitment: Penn State",
-    "links": {
-      "s247": "https://247sports.com/Player/blake-betton-46155301/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-206",
-    "name": "Cade Haug",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 505,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Katy",
-      "address": "Katy, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 220 · 247 rating 88 · Listed: LB · 247 lists commitment: SMU",
-    "links": {
-      "s247": "https://247sports.com/Player/cade-haug-46145106/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-207",
-    "name": "Theo Wilson",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 506,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Armwood",
-      "address": "Seffner, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 230 · 247 rating 88 · Listed: LB · 247 lists commitment: North Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/theo-wilson-46152659/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-208",
-    "name": "Jake Godfree",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 507,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Gwinnett",
-      "address": "Suwanee, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 218 · 247 rating 87 · Listed: LB · 247 lists commitment: NC State",
-    "links": {
-      "s247": "https://247sports.com/Player/jake-godfree-46147136/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-209",
-    "name": "Marshaun Ivy",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 508,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cardinal Ritter College Prep",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 215 · 247 rating 87 · Listed: LB · 247 lists commitment: Arizona State",
-    "links": {
-      "s247": "https://247sports.com/Player/marshaun-ivy-46149424/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-210",
-    "name": "Eli Harris",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 509,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 87 · Listed: LB · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/eli-harris-46152990/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-211",
-    "name": "Kason Clayborne",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 510,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Sioux City East",
-      "address": "Sioux City, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 225 · 247 rating 87 · Listed: LB · 247 lists commitment: Minnesota",
-    "links": {
-      "s247": "https://247sports.com/Player/kason-clayborne-46161151/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-212",
-    "name": "Noah Renes",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 511,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Niceville",
-      "address": "Niceville, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 225 · 247 rating 86 · Listed: LB · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/noah-renes-46149588/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-213",
-    "name": "Rome Ewell",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 512,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Springtown",
-      "address": "Springtown, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 210 · 247 rating 86 · Listed: LB · 247 lists commitment: Arizona",
-    "links": {
-      "s247": "https://247sports.com/Player/rome-ewell-46157683/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-214",
-    "name": "Bryce Breeden",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 513,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bridge City",
-      "address": "Bridge City, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · 247 rating 86 · Listed: LB · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/bryce-breeden-46157612/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-215",
-    "name": "Sean Rice",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 514,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Laurence",
-      "address": "Evergreen Park, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 210 · 247 rating 86 · Listed: LB · 247 lists commitment: Illinois",
-    "links": {
-      "s247": "https://247sports.com/Player/sean-rice-46162165/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-216",
-    "name": "Broncs Baker",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 515,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Stansbury",
-      "address": "Tooele, UT"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 215 · 247 rating 85 · Listed: LB · 247 lists commitment: West Virginia",
-    "links": {
-      "s247": "https://247sports.com/Player/broncs-baker-46155019/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-217",
-    "name": "Nathan Jones",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 516,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 230 · 247 rating 85 · Listed: LB · 247 lists commitment: Wisconsin",
-    "links": {
-      "s247": "https://247sports.com/Player/nathan-jones-46159165/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-218",
-    "name": "Kei'Shjuan Telfair",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 517,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Euclid",
-      "address": "Euclid, OH"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 160 · 247 rating 92 · Listed: CB · 247 lists commitment: Penn State",
-    "links": {
-      "s247": "https://247sports.com/Player/keishjuan-telfair-46153238/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-219",
-    "name": "Daniel Yebit",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 518,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Yukon",
-      "address": "Yukon, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 180 · 247 rating 91 · Listed: CB · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/daniel-yebit-46164727/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-220",
-    "name": "Kameron Roberson",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 519,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cy Springs",
-      "address": "Cypress, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 91 · Listed: CB · 247 lists commitment: Houston",
-    "links": {
-      "s247": "https://247sports.com/Player/kameron-roberson-46158879/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-221",
-    "name": "Jerry Outhouse Jr.",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 520,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Crowley",
-      "address": "Fort Worth, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0.5 / 180 · 247 rating 91 · Listed: CB · 247 lists commitment: UCLA",
-    "links": {
-      "s247": "https://247sports.com/Player/jerry-outhouse-jr-46145113/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-222",
-    "name": "Brandon Sherrard",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 521,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Shadow Creek",
-      "address": "Pearland, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 180 · 247 rating 90 · Listed: CB · 247 lists commitment: Texas",
-    "links": {
-      "s247": "https://247sports.com/Player/brandon-sherrard-46155809/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-223",
-    "name": "Evan Via",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 522,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Ladue Horton Watkins",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · 247 rating 90 · Listed: CB · 247 lists commitment: Stanford",
-    "links": {
-      "s247": "https://247sports.com/Player/evan-via-46159600/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-224",
-    "name": "Kamil Loud",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 523,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bishop Gorman",
+      "name": "Las Vegas Centennial",
       "address": "Las Vegas, NV"
     },
     "birthday": "",
@@ -6270,1896 +819,46 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0.5 / 170 · 247 rating 90 · Listed: CB · 247 lists commitment: California",
+    "miscNotes": "Committed 6/22/26 · 6-4 / 270 · 247 rating 86 · OT #114 · NV #13 · Listed: OT · 247 lists commitment: UNLV",
     "links": {
-      "s247": "https://247sports.com/Player/kamil-loud-46153753/"
+      "s247": "https://247sports.com/Player/laseth-bryant-46160867/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-225",
-    "name": "Montre Jackson",
+    "id": "bs27-34",
+    "name": "Clint Lundin",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 524,
+    "order": 133,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Garland Lakeview Centennial",
-      "address": "Garland, TX"
+      "name": "De La Salle",
+      "address": "Concord, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 90 · Listed: CB · 247 lists commitment: Texas",
+    "miscNotes": "Committed 5/1/26 · 6-6 / 295 · 247 rating 85 · OT #118 · CA #135 · Listed: OT · 247 lists commitment: Stanford",
     "links": {
-      "s247": "https://247sports.com/Player/montre-jackson-46147419/"
+      "s247": "https://247sports.com/Player/clint-lundin-46158853/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-226",
-    "name": "Taelyn Mayo",
+    "id": "bs27-35",
+    "name": "Sire Stewart",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 525,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lewisville",
-      "address": "Lewisville, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 185 · 247 rating 90 · Listed: CB · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/taelyn-mayo-46142231/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-227",
-    "name": "Blake Jenkins",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 526,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Katy Tompkins",
-      "address": "Katy, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1.5 / 185 · 247 rating 90 · Listed: CB · 247 lists commitment: Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/blake-jenkins-46160118/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-228",
-    "name": "Aidyn Wiggins",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 527,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Byrnes",
-      "address": "Duncan, SC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 183 · 247 rating 89 · Listed: CB · 247 lists commitment: Auburn",
-    "links": {
-      "s247": "https://247sports.com/Player/aidyn-wiggins-46165273/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-229",
-    "name": "Chase Johnson",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 528,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Emanuel County Institute",
-      "address": "Twin City, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 150 · 247 rating 89 · Listed: CB · 247 lists commitment: Virginia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/chase-johnson-46151739/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-230",
-    "name": "MJ Burnett",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 529,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Walton",
-      "address": "Marietta, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 202 · 247 rating 89 · Listed: CB · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/mj-burnett-46158522/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-231",
-    "name": "Bryce Woods",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 530,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Woodward Academy",
-      "address": "College Park, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 175 · 247 rating 88 · Listed: CB · 247 lists commitment: Virginia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/bryce-woods-46154505/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-232",
-    "name": "Kamauri Whitfield",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 531,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "The First Academy",
-      "address": "Orlando, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10.5 / 185 · 247 rating 88 · Listed: CB · 247 lists commitment: Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/kamauri-whitfield-46154635/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-233",
-    "name": "Mikyal Davis",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 532,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 170 · 247 rating 88 · Listed: CB · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/mikyal-davis-46149592/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-234",
-    "name": "Trenton Blaylock",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 533,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Atascocita",
-      "address": "Humble, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 175 · 247 rating 88 · Listed: CB · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/trenton-blaylock-46146999/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-235",
-    "name": "Elijajuan Houston",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 534,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Crowley",
-      "address": "Fort Worth, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · 247 rating 88 · Listed: CB · 247 lists commitment: Arizona State",
-    "links": {
-      "s247": "https://247sports.com/Player/elijajuan-houston-46152705/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-236",
-    "name": "Jaden Bibbs",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 535,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Coppell",
-      "address": "Coppell, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 165 · 247 rating 88 · Listed: CB · 247 lists commitment: Utah",
-    "links": {
-      "s247": "https://247sports.com/Player/jaden-bibbs-46160858/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-237",
-    "name": "Brandon Allen Jr.",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 536,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Westlake",
-      "address": "Atlanta, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 175 · 247 rating 88 · Listed: CB · 247 lists commitment: Mississippi State",
-    "links": {
-      "s247": "https://247sports.com/Player/brandon-allen-jr-46159628/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-238",
-    "name": "Dolph McDonald",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 537,
-    "status": "OFFERED",
-    "school": {
-      "name": "Morton",
-      "address": "Morton, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 160 · 247 rating 87 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/dolph-mcdonald-46148876/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-239",
-    "name": "Carl Jones Jr.",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 538,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Tampa Catholic",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 155 · 247 rating 87 · Listed: CB · 247 lists commitment: Wake Forest",
-    "links": {
-      "s247": "https://247sports.com/Player/carl-jones-jr-46162126/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-240",
-    "name": "Dhillon McGee",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 539,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "DeSoto",
-      "address": "DeSoto, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0.5 / 175 · 247 rating 87 · Listed: CB · 247 lists commitment: Penn State",
-    "links": {
-      "s247": "https://247sports.com/Player/dhillon-mcgee-46140684/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-241",
-    "name": "Noah Gillespie",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 540,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Broken Arrow",
-      "address": "Broken Arrow, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · 247 rating 87 · Listed: CB · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/noah-gillespie-46155580/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-242",
-    "name": "Silas Nuckles",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 541,
-    "status": "OFFERED",
-    "school": {
-      "name": "Buford",
-      "address": "Buford, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 87 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/silas-nuckles-46162214/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-243",
-    "name": "Nazir Pitchford",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 542,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Palmetto",
-      "address": "Palmetto, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 175 · 247 rating 86 · Listed: CB · 247 lists commitment: North Carolina",
-    "links": {
-      "s247": "https://247sports.com/Player/nazir-pitchford-46157930/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-244",
-    "name": "Otha Thomas IV",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 543,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pine Forest",
-      "address": "Pensacola, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 170 · 247 rating 86 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/otha-thomas-iv-46151891/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-245",
-    "name": "David Coleman Jr.",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 544,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Evans",
-      "address": "Orlando, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 165 · 247 rating 86 · Listed: CB · 247 lists commitment: Bowling Green",
-    "links": {
-      "s247": "https://247sports.com/Player/david-coleman-jr-46146582/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-246",
-    "name": "Logan Debose",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 545,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Houston St. Thomas",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · 247 rating 86 · Listed: CB · 247 lists commitment: Houston",
-    "links": {
-      "s247": "https://247sports.com/Player/logan-debose-46166541/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-247",
-    "name": "Alex Patton",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 546,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cibolo Steele",
-      "address": "Cibolo, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 165 · 247 rating 86 · Listed: CB · 247 lists commitment: Duke",
-    "links": {
-      "s247": "https://247sports.com/Player/alex-patton-46137071/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-248",
-    "name": "Cordaro Parham",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 547,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Jefferson",
-      "address": "Jefferson, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 178 · 247 rating 86 · Listed: CB · 247 lists commitment: Michigan State",
-    "links": {
-      "s247": "https://247sports.com/Player/cordaro-parham-46166948/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-249",
-    "name": "Kayden Battle",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 548,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "McEachern",
-      "address": "Powder Springs, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 170 · 247 rating 86 · Listed: CB · 247 lists commitment: Pittsburgh",
-    "links": {
-      "s247": "https://247sports.com/Player/kayden-battle-46165005/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-250",
-    "name": "Johnny McNeil",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 549,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "St. Pius X-St. Matthias Academy",
-      "address": "Downey, CA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 160 · 247 rating 86 · Listed: CB · 247 lists commitment: Oregon State",
-    "links": {
-      "s247": "https://247sports.com/Player/johnny-mcneil-46158457/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-251",
-    "name": "Jett Watson",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 550,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 160 · 247 rating 86 · Listed: CB · 247 lists commitment: Boston College",
-    "links": {
-      "s247": "https://247sports.com/Player/jett-watson-46149847/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-252",
-    "name": "Larry Morgan III",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 551,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "West Boca Raton",
-      "address": "Boca Raton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 165 · 247 rating 86 · Listed: CB · 247 lists commitment: South Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/larry-morgan-iii-46148056/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-253",
-    "name": "Jewellz Tapp",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 552,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "John Curtis",
-      "address": "River Ridge, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11.5 / 165 · 247 rating 86 · Listed: CB · 247 lists commitment: TCU",
-    "links": {
-      "s247": "https://247sports.com/Player/jewellz-tapp-46167367/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-254",
-    "name": "Shahariam Thurston",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 553,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Arlington Lamar",
-      "address": "Arlington, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 175 · 247 rating 85 · Listed: CB · 247 lists commitment: Iowa State",
-    "links": {
-      "s247": "https://247sports.com/Player/shahariam-thurston-46157580/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-255",
-    "name": "Nasim Eason",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 554,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Higley",
-      "address": "Gilbert, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 160 · 247 rating 85 · Listed: CB · 247 lists commitment: Arizona State",
-    "links": {
-      "s247": "https://247sports.com/Player/nasim-eason-46154554/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-256",
-    "name": "Rilee Drew",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 555,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 168 · 247 rating 85 · Listed: CB · 247 lists commitment: Wake Forest",
-    "links": {
-      "s247": "https://247sports.com/Player/rilee-drew-46150244/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-257",
-    "name": "Noah Willis",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 556,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Blessed Trinity Catholic",
-      "address": "Roswell, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 170 · 247 rating 85 · Listed: CB · 247 lists commitment: Cincinnati",
-    "links": {
-      "s247": "https://247sports.com/Player/noah-willis-46166432/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-258",
-    "name": "Raymon McKneely",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 557,
-    "status": "OFFERED",
-    "school": {
-      "name": "Hinds C.C.",
-      "address": "Raymond, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 185 · 247 rating 84 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/raymon-mckneely-46163838/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-259",
-    "name": "Bryson Ford",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 558,
-    "status": "OFFERED",
-    "school": {
-      "name": "North Gwinnett",
-      "address": "Suwanee, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 180 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/bryson-ford-46163824/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-260",
-    "name": "Cameron Goodwin",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 559,
-    "status": "OFFERED",
-    "school": {
-      "name": "McArthur",
-      "address": "Hollywood, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 175 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cameron-goodwin-46163518/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-261",
-    "name": "Tristan Anderson",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 560,
-    "status": "OFFERED",
-    "school": {
-      "name": "Mississippi Gulf Coast C.C.",
-      "address": "Perkinston, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 195 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/tristan-anderson-46141287/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-262",
-    "name": "Jonivan Edwards",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 561,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pearl River C.C.",
-      "address": "Poplarville, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 185 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jonivan-edwards-46169318/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-263",
-    "name": "Cooper Witten",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 562,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Liberty Christian",
-      "address": "Argyle, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1.5 / 220 · 247 rating 94 · Listed: S · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/cooper-witten-46150577/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-264",
-    "name": "Semaj Stanford",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 563,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Broken Arrow",
-      "address": "Broken Arrow, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 180 · 247 rating 94 · Listed: S · 247 lists commitment: Oregon",
-    "links": {
-      "s247": "https://247sports.com/Player/semaj-stanford-46146499/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-265",
-    "name": "Tory Pittman III",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 564,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Millard North",
-      "address": "Omaha, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 189 · 247 rating 93 · Listed: S · 247 lists commitment: Nebraska",
-    "links": {
-      "s247": "https://247sports.com/Player/tory-pittman-iii-46139694/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-266",
-    "name": "KJ Caldwell",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 565,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Parkview",
-      "address": "Lilburn, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 176 · 247 rating 91 · Listed: S · 247 lists commitment: NC State",
-    "links": {
-      "s247": "https://247sports.com/Player/kj-caldwell-46155996/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-267",
-    "name": "Tavares Harrington",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 566,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mount Carmel",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 175 · 247 rating 90 · Listed: S · 247 lists commitment: Michigan",
-    "links": {
-      "s247": "https://247sports.com/Player/tavares-harrington-46155142/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-268",
-    "name": "Jeremiah Proctor",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 567,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Gainesville",
-      "address": "Gainesville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 210 · 247 rating 90 · Listed: S · 247 lists commitment: Pittsburgh",
-    "links": {
-      "s247": "https://247sports.com/Player/jeremiah-proctor-46156908/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-269",
-    "name": "Darrell Mattison",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 568,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Morgan Park",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0.5 / 160 · 247 rating 90 · Listed: S · 247 lists commitment: Ole Miss",
-    "links": {
-      "s247": "https://247sports.com/Player/darrell-mattison-46158983/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-270",
-    "name": "Jaylen Scott",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 569,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Williamson",
-      "address": "Mobile, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 165 · 247 rating 90 · Listed: S · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/jaylen-scott-46154318/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-271",
-    "name": "Jayden Anding",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 570,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Ruston",
-      "address": "Ruston, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · 247 rating 90 · Listed: S · 247 lists commitment: LSU",
-    "links": {
-      "s247": "https://247sports.com/Player/jayden-anding-46152579/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-272",
-    "name": "Jalen Welch",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 571,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Grayson",
-      "address": "Loganville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 190 · 247 rating 89 · Listed: S · 247 lists commitment: Syracuse",
-    "links": {
-      "s247": "https://247sports.com/Player/jalen-welch-46160368/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-273",
-    "name": "Kailib Dillard",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 572,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Jenks",
-      "address": "Jenks, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 88 · Listed: S · 247 lists commitment: Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/kailib-dillard-46159825/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-274",
-    "name": "Kennedy Green",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 573,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Douglas County",
-      "address": "Douglasville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 195 · 247 rating 88 · Listed: S · 247 lists commitment: Mississippi State",
-    "links": {
-      "s247": "https://247sports.com/Player/kennedy-green-46153115/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-275",
-    "name": "Alex Scott",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 574,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Toombs County",
-      "address": "Lyons, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10.5 / 180 · 247 rating 88 · Listed: S · 247 lists commitment: NC State",
-    "links": {
-      "s247": "https://247sports.com/Player/alex-scott-46157719/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-276",
-    "name": "Charles Roberts",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 575,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 88 · Listed: S · 247 lists commitment: Maryland",
-    "links": {
-      "s247": "https://247sports.com/Player/charles-roberts-46143570/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-277",
-    "name": "Jaden Walk-Green",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 576,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Corona Centennial",
-      "address": "Corona, CA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 188 · 247 rating 88 · Listed: S · 247 lists commitment: Washington",
-    "links": {
-      "s247": "https://247sports.com/Player/jaden-walk-green-46154955/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-278",
-    "name": "Marvin Joseph",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 577,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Baton Rouge Central",
-      "address": "Baton Rouge, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 205 · 247 rating 87 · Listed: S · 247 lists commitment: Houston",
-    "links": {
-      "s247": "https://247sports.com/Player/marvin-joseph-46158643/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-279",
-    "name": "Jabarri Lofton",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 578,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "East St. Louis",
-      "address": "East St. Louis, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 200 · 247 rating 87 · Listed: S · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/jabarri-lofton-46159927/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-280",
-    "name": "James Roberson",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 579,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Allen",
-      "address": "Allen, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 195 · 247 rating 87 · Listed: S · 247 lists commitment: Wisconsin",
-    "links": {
-      "s247": "https://247sports.com/Player/james-roberson-46157609/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-281",
-    "name": "Braiden Graves",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 580,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Bridgeland",
-      "address": "Cypress, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · 247 rating 87 · Listed: S · 247 lists commitment: Kansas",
-    "links": {
-      "s247": "https://247sports.com/Player/braiden-graves-46157607/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-282",
-    "name": "Savoy Guidry",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 581,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Holy Cross",
-      "address": "New Orleans, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 87 · Listed: S · 247 lists commitment: Stanford",
-    "links": {
-      "s247": "https://247sports.com/Player/savoy-guidry-46157640/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-283",
-    "name": "Julian Elzey",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 582,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Brookwood",
-      "address": "Snellville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · 247 rating 87 · Listed: S · 247 lists commitment: Georgia Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/julian-elzey-46154562/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-284",
-    "name": "Jameer Cantrell",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 583,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Buford",
-      "address": "Buford, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 175 · 247 rating 87 · Listed: S · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/jameer-cantrell-46151806/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-285",
-    "name": "Tavon Bolden",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 584,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Atascocita",
-      "address": "Humble, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 190 · 247 rating 86 · Listed: S · 247 lists commitment: Houston",
-    "links": {
-      "s247": "https://247sports.com/Player/tavon-bolden-46161017/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-286",
-    "name": "Hayden Dixon",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 585,
-    "status": "OFFERED",
-    "school": {
-      "name": "Creekside",
-      "address": "Fairburn, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9.5 / 175 · 247 rating 85 · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/hayden-dixon-46158536/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-287",
-    "name": "Will Caston",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 586,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Fayetteville",
-      "address": "Fayetteville, AR"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · 247 rating 85 · Listed: S · 247 lists commitment: Arkansas",
-    "links": {
-      "s247": "https://247sports.com/Player/will-caston-46160190/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-288",
-    "name": "Luke Stevens",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 587,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Fort Worth Christian",
-      "address": "North Richland Hills, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 85 · Listed: S · 247 lists commitment: Arizona",
-    "links": {
-      "s247": "https://247sports.com/Player/luke-stevens-46166897/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-289",
-    "name": "Kesler Jenkins",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 588,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pearl River C.C.",
-      "address": "Poplarville, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 175 · unrated · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kesler-jenkins-46143429/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-290",
-    "name": "Tyler Bush",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 589,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "North Crowley",
-      "address": "Fort Worth, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 177 · unrated · Listed: S · 247 lists commitment: UTRGV",
-    "links": {
-      "s247": "https://247sports.com/Player/tyler-bush-46163585/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-291",
-    "name": "Trevionn Morton",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 590,
-    "status": "OFFERED",
-    "school": {
-      "name": "Hinds C.C.",
-      "address": "Raymond, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · unrated · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/trevionn-morton-46148215/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-292",
-    "name": "Gabriel Osborne Jr.",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 591,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Mustang",
-      "address": "Mustang, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 180 · 247 rating 98 · Listed: ATH · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/gabriel-osborne-jr-46159790/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-293",
-    "name": "A'mir Sears",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 592,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Miami Columbus",
-      "address": "Miami, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 178 · 247 rating 98 · Listed: ATH · 247 lists commitment: Miami",
-    "links": {
-      "s247": "https://247sports.com/Player/amir-sears-46151570/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-294",
-    "name": "Myson Johnson-Cook",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 593,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "East St. Louis",
-      "address": "East St. Louis, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 235 · 247 rating 94 · Listed: ATH · 247 lists commitment: Auburn",
-    "links": {
-      "s247": "https://247sports.com/Player/myson-johnson-cook-46143247/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-295",
-    "name": "Bode Sparrow",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 594,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Davis",
-      "address": "Kaysville, UT"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 195 · 247 rating 93 · Listed: ATH · 247 lists commitment: Oklahoma",
-    "links": {
-      "s247": "https://247sports.com/Player/bode-sparrow-46143770/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-296",
-    "name": "Israel Hammons",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2027,
-    "grade": null,
-    "order": 595,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Choctaw",
-      "address": "Choctaw, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 225 · 247 rating 91 · Listed: ATH · 247 lists commitment: Oklahoma State",
-    "links": {
-      "s247": "https://247sports.com/Player/israel-hammons-46164012/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-297",
-    "name": "Chris Harris Jr.",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 596,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lee's Summit West",
-      "address": "Lee's Summit, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 90 · Listed: ATH · 247 lists commitment: Missouri",
-    "links": {
-      "s247": "https://247sports.com/Player/chris-harris-jr-46161018/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-298",
-    "name": "Landon Blum",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 597,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Woodbine",
-      "address": "Woodbine, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 200 · 247 rating 90 · Listed: ATH · 247 lists commitment: Penn State",
-    "links": {
-      "s247": "https://247sports.com/Player/landon-blum-46149188/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-299",
-    "name": "Karece Hoyt",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 598,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Frisco Lone Star",
-      "address": "Frisco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 90 · Listed: ATH · 247 lists commitment: Baylor",
-    "links": {
-      "s247": "https://247sports.com/Player/karece-hoyt-46144142/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-300",
-    "name": "Jai Jones",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 599,
+    "order": 134,
     "status": "ELSEWHERE",
     "school": {
       "name": "Chandler",
@@ -8170,21 +869,371 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 175 · 247 rating 90 · Listed: ATH · 247 lists commitment: Wisconsin",
+    "miscNotes": "Committed 5/29/26 · 6-5 / 255 · 247 rating 85 · OT #122 · AZ #32 · Listed: OT · 247 lists commitment: Utah",
     "links": {
-      "s247": "https://247sports.com/Player/jai-jones-46150626/"
+      "s247": "https://247sports.com/Player/sire-stewart-46159321/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-301",
-    "name": "Krew Jones",
+    "id": "bs27-36",
+    "name": "Ben Rainwater",
     "jersey": "—",
-    "positionGroup": "ILB",
+    "positionGroup": "OL_SWING",
     "classYear": 2027,
     "grade": null,
-    "order": 600,
+    "order": 135,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Inglemoor",
+      "address": "Kenmore, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/22/26 · 6-6 / 280 · 247 rating 85 · OT #126 · WA #16 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/ben-rainwater-46164690/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-37",
+    "name": "Randolph Santiago",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2027,
+    "grade": null,
+    "order": 136,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Kailua",
+      "address": "Kailua, HI"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/29/26 · 6-6 / 275 · 247 rating 84 · OT #132 · HI #9 · Listed: OT · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/randolph-santiago-46163858/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-38",
+    "name": "Rashaun Lavata'i",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 137,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Curtis",
+      "address": "University Place, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/23/26 · 6-6.5 / 265 · 247 rating 87 · IOL #67 · WA #10 · Listed: IOL · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/rashaun-lavatai-46155595/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-39",
+    "name": "Will Endicott",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 138,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Prosper",
+      "address": "Prosper, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 4/27/26 · 6-3 / 275 · 247 rating 86 · IOL #86 · TX #166 · Listed: IOL · 247 lists commitment: South Carolina",
+    "links": {
+      "s247": "https://247sports.com/Player/will-endicott-46160366/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-40",
+    "name": "Phoenix Pollard",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 139,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Coronado",
+      "address": "Henderson, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-6 / 348 · 247 rating 85 · IOL #105 · NV #15 · Listed: IOL · 247 lists commitment: UNLV",
+    "links": {
+      "s247": "https://247sports.com/Player/phoenix-pollard-46157532/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-41",
+    "name": "Gage Esty",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 140,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Placer",
+      "address": "Auburn, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/8/26 · 6-3 / 270 · 247 rating 85 · IOL #115 · CA #145 · Listed: IOL · 247 lists commitment: UCLA",
+    "links": {
+      "s247": "https://247sports.com/Player/gage-esty-46164078/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-42",
+    "name": "Lauifi Tosi",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 141,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Millennium",
+      "address": "Goodyear, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 7/6/26 · 6-4 / 325 · 247 rating 85 · IOL #120 · AZ #34 · Listed: IOL · 247 lists commitment: Stanford",
+    "links": {
+      "s247": "https://247sports.com/Player/lauifi-tosi-46164842/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-43",
+    "name": "Elias Fineanganofo",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 142,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bingham",
+      "address": "South Jordan, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 300 · 247 rating 83 · IOL #151 · UT #37 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/elias-fineanganofo-46156775/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-44",
+    "name": "Titus Lopati",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 143,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 295 · 247 rating 83 · IOL #157 · UT #39 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/titus-lopati-46159662/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-45",
+    "name": "David Kauvaka",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 144,
+    "status": "OFFERED",
+    "school": {
+      "name": "Mater Dei",
+      "address": "Santa Ana, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 305 · 247 rating 82 · IOL #173 · CA #227 · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/david-kauvaka-46158772/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-46",
+    "name": "Saik Fiataugaluia",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 145,
+    "status": "OFFERED",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 365 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/saik-fiataugaluia-46158589/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-47",
+    "name": "Kacyn Page",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 146,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lehi",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 325 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/kacyn-page-46153453/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-48",
+    "name": "Deshaun Jackson",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 147,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Liberty Ranch",
+      "address": "Galt, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/29/26 · 6-5 / 270 · 247 rating NA · Listed: IOL · 247 lists commitment: Nevada",
+    "links": {
+      "s247": "https://247sports.com/Player/deshaun-jackson-46164739/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-49",
+    "name": "Uhila Wolfgramm",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 148,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Maple Mountain",
+      "address": "Spanish Fork, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 7/2/26 · 6-3 / 245 · 247 rating 93 · Natl #104 · Edge #13 · UT #2 · Listed: Edge · 247 lists commitment: BYU",
+    "links": {
+      "s247": "https://247sports.com/Player/uhila-wolfgramm-46152619/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-50",
+    "name": "Krew Jones",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 149,
     "status": "ELSEWHERE",
     "school": {
       "name": "Orem",
@@ -8195,2497 +1244,1147 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 233 · 247 rating 90 · Listed: ATH · 247 lists commitment: Oklahoma",
+    "miscNotes": "Committed 11/29/25 · 6-4.5 / 233 · 247 rating 90 · Edge #22 · UT #3 · Listed: Edge · 247 lists commitment: Oklahoma",
     "links": {
       "s247": "https://247sports.com/Player/krew-jones-46143771/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-302",
-    "name": "Lawrence Britt",
+    "id": "bs27-51",
+    "name": "Manase Brown",
     "jersey": "—",
-    "positionGroup": "SAF",
+    "positionGroup": "EDGE",
     "classYear": 2027,
     "grade": null,
-    "order": 601,
+    "order": 150,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Lausanne Collegiate School",
-      "address": "Memphis, TN"
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 178 · 247 rating 90 · Listed: ATH · 247 lists commitment: Missouri",
+    "miscNotes": "Committed 7/2/26 · 6-6 / 265 · 247 rating 89 · Edge #40 · UT #5 · Listed: Edge · 247 lists commitment: Fresno State",
     "links": {
-      "s247": "https://247sports.com/Player/lawrence-britt-46154473/"
+      "s247": "https://247sports.com/Player/manase-brown-46160918/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-303",
-    "name": "JJ Brown",
+    "id": "bs27-52",
+    "name": "Godschoice Eboigbodin",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 151,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "JSerra Catholic",
+      "address": "San Juan Capistrano, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/29/26 · 6-5 / 260 · 247 rating 89 · Edge #40 · CA #31 · Listed: Edge · 247 lists commitment: UCLA",
+    "links": {
+      "s247": "https://247sports.com/Player/godschoice-eboigbodin-46159650/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-53",
+    "name": "Beaux Sauve",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 152,
+    "status": "COMMITTED",
+    "school": {
+      "name": "College of San Mateo",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/6/26 · 6-4 / 235 · 247 rating 89 · Natl #3 · Edge #1 · CA #2 · Listed: Edge · JUCO",
+    "links": {
+      "s247": "https://247sports.com/Player/beaux-sauve-46137676/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-54",
+    "name": "Achilles Reyna",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 153,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Rainier Beach",
+      "address": "Seattle, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/8/26 · 6-8 / 250 · 247 rating 88 · Edge #85 · WA #6 · Listed: Edge · 247 lists commitment: Oregon",
+    "links": {
+      "s247": "https://247sports.com/Player/achilles-reyna-46154487/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-55",
+    "name": "Troy Mailo",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 154,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Mullen",
+      "address": "Denver, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-3 / 252 · 247 rating 88 · Edge #53 · CO #3 · Listed: Edge · 247 lists commitment: Stanford",
+    "links": {
+      "s247": "https://247sports.com/Player/troy-mailo-46147113/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-56",
+    "name": "Cameron Saunders",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 155,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Valley Christian",
+      "address": "San Jose, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/9/26 · 6-4.5 / 245 · 247 rating 88 · Edge #92 · CA #58 · Listed: Edge · 247 lists commitment: Minnesota",
+    "links": {
+      "s247": "https://247sports.com/Player/cameron-saunders-46159373/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-57",
+    "name": "Josh Christensen",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 156,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Lake Oswego",
+      "address": "Lake Oswego, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-6 / 250 · 247 rating 88 · Edge #63 · OR #2 · Listed: Edge · 247 lists commitment: Oregon",
+    "links": {
+      "s247": "https://247sports.com/Player/josh-christensen-46155573/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-58",
+    "name": "Fui Vakapuna",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 157,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Timpview",
+      "address": "Provo, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-1.5 / 225 · 247 rating 87 · Edge #64 · UT #9 · Listed: Edge · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/fui-vakapuna-46162507/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-59",
+    "name": "Lawrence Kanneh",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 158,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Whitehall Yearling",
+      "address": "Columbus, OH"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-3 / 220 · 247 rating 87 · Edge #67 · OH #35 · Listed: Edge · 247 lists commitment: Michigan State",
+    "links": {
+      "s247": "https://247sports.com/Player/lawrence-kanneh-46166428/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-60",
+    "name": "Monson Tukuafu",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 159,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Bingham",
+      "address": "South Jordan, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-3 / 230 · 247 rating 87 · Edge #70 · UT #10 · Listed: Edge · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/monson-tukuafu-46161675/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-61",
+    "name": "Roy Price",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 160,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Newark",
+      "address": "Newark, OH"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/2/26 · 6-3 / 205 · 247 rating 87 · Edge #71 · OH #36 · Listed: Edge · 247 lists commitment: Minnesota",
+    "links": {
+      "s247": "https://247sports.com/Player/roy-price-46155058/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-62",
+    "name": "Alexander Coey",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 161,
+    "status": "OFFERED",
+    "school": {
+      "name": "Conroe",
+      "address": "Conroe, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 235 · 247 rating 87 · Edge #78 · TX #117 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/alexander-coey-46155780/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-63",
+    "name": "Jackson West",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 162,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Corner Canyon",
+      "address": "Draper, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-4 / 250 · 247 rating 87 · Edge #81 · UT #14 · Listed: Edge · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/jackson-west-46160922/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-64",
+    "name": "Parker Bagley",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 163,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Lewiston",
+      "address": "Lewiston, ID"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/7/26 · 6-4 / 265 · 247 rating 87 · Edge #88 · ID #1 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/parker-bagley-46162764/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-65",
+    "name": "Grayson Kazmouz",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 164,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Laguna Beach",
+      "address": "Laguna Beach, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/30/26 · 6-5 / 210 · 247 rating 86 · Edge #97 · CA #104 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/grayson-kazmouz-46165299/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-66",
+    "name": "Ma'atoe Moe",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 165,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Timpview",
+      "address": "Provo, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/7/26 · 6-3 / 240 · 247 rating 86 · Edge #106 · UT #18 · Listed: Edge · 247 lists commitment: Nebraska",
+    "links": {
+      "s247": "https://247sports.com/Player/maatoe-moe-46163147/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-67",
+    "name": "Jag Ioane",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 166,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Orem",
+      "address": "Orem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 7/18/26 · 6-2.5 / 185 · 247 rating 85 · Edge #112 · UT #21 · Listed: Edge · 247 lists commitment: BYU",
+    "links": {
+      "s247": "https://247sports.com/Player/jag-ioane-46152618/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-68",
+    "name": "Sonasi Maka II",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 167,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Deer Valley",
+      "address": "Antioch, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/29/26 · 6-2.5 / 245 · 247 rating 85 · Edge #118 · CA #136 · Listed: Edge · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/sonasi-maka-ii-46158742/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-69",
+    "name": "Dieter Lotulelei",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 168,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-3 / 225 · 247 rating 84 · Edge #132 · UT #30 · Listed: Edge · 247 lists commitment: Arizona",
+    "links": {
+      "s247": "https://247sports.com/Player/dieter-lotulelei-46157221/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-70",
+    "name": "Kemper Castro",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 169,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Herriman",
+      "address": "Herriman, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/2/26 · 6-4 / 235 · 247 rating 84 · Edge #133 · UT #31 · Listed: Edge · 247 lists commitment: San Diego State",
+    "links": {
+      "s247": "https://247sports.com/Player/kemper-castro-46159261/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-71",
+    "name": "Tautai Meredith",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 170,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Lehi",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-3 / 260 · 247 rating 84 · Edge #203 · UT #32 · Listed: Edge · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/tautai-meredith-46154796/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-72",
+    "name": "Colton Richter",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 171,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Shadow Ridge",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-3 / 235 · 247 rating 83 · Edge #146 · NV #20 · Listed: Edge · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/colton-richter-46159742/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-73",
+    "name": "Drenden Knaevelsrud",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 172,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Mount Si",
+      "address": "Snoqualmie, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/5/26 · 6-4 / 215 · 247 rating 83 · Edge #184 · WA #23 · Listed: Edge · 247 lists commitment: San Diego State",
+    "links": {
+      "s247": "https://247sports.com/Player/drenden-knaevelsrud-46157384/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-74",
+    "name": "Finn Walker",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 173,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Conroe Oak Ridge",
+      "address": "Conroe, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/24/26 · 6-6 / 245 · 247 rating 88 · DL #88 · TX #85 · Listed: DL · 247 lists commitment: Kansas State",
+    "links": {
+      "s247": "https://247sports.com/Player/finn-walker-46159175/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-75",
+    "name": "Ahzan Bacote",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 174,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Cornerstone Christian",
+      "address": "San Antonio, TX"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/2/26 · 6-2 / 260 · 247 rating 87 · DL #109 · TX #113 · Listed: DL · 247 lists commitment: Arizona",
+    "links": {
+      "s247": "https://247sports.com/Player/ahzan-bacote-46161695/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-76",
+    "name": "Maa'imoa Havili",
     "jersey": "—",
     "positionGroup": "DT",
     "classYear": 2027,
     "grade": null,
-    "order": 602,
+    "order": 175,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Parkview",
-      "address": "Lilburn, GA"
+      "name": "Granger",
+      "address": "Salt Lake City, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 300 · 247 rating 90 · Listed: ATH · 247 lists commitment: Clemson",
+    "miscNotes": "Committed 5/20/26 · 6-3 / 290 · 247 rating 87 · DL #118 · UT #11 · Listed: DL · 247 lists commitment: BYU",
     "links": {
-      "s247": "https://247sports.com/Player/jj-brown-46161034/"
+      "s247": "https://247sports.com/Player/maaimoa-havili-46167045/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-304",
-    "name": "Brayden Tyson",
+    "id": "bs27-77",
+    "name": "Aniti Paiva",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 176,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Skyline",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/22/26 · 6-2 / 315 · 247 rating 87 · DL #120 · UT #13 · Listed: DL · 247 lists commitment: Penn State",
+    "links": {
+      "s247": "https://247sports.com/Player/aniti-paiva-46161730/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-78",
+    "name": "Lemani Fehoko",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 177,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-1 / 275 · 247 rating 86 · DL #122 · CA #81 · Listed: DL · 247 lists commitment: Minnesota",
+    "links": {
+      "s247": "https://247sports.com/Player/lemani-fehoko-46140961/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-79",
+    "name": "Kekoa Peko",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 178,
+    "status": "COMMITTED",
+    "school": {
+      "name": "St. John Bosco",
+      "address": "Bellflower, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/31/26 · 6-2 / 280 · 247 rating 86 · DL #129 · CA #86 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/kekoa-peko-46142061/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-80",
+    "name": "Charles Nance",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 179,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Dooly County",
+      "address": "Vienna, GA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/20/26 · 6-2 / 280 · 247 rating 86 · DL #157 · GA #154 · Listed: DL · 247 lists commitment: Western Michigan",
+    "links": {
+      "s247": "https://247sports.com/Player/charles-nance-46161500/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-81",
+    "name": "Magic Haynes",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 180,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Compton Centennial",
+      "address": "Compton, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-5 / 270 · 247 rating 86 · DL #163 · CA #114 · Listed: DL · 247 lists commitment: Arizona State",
+    "links": {
+      "s247": "https://247sports.com/Player/magic-haynes-46167306/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-82",
+    "name": "Hunter Eligon",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2027,
+    "grade": null,
+    "order": 181,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Anaheim Western",
+      "address": "Anaheim, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-3 / 285 · 247 rating 84 · DL #198 · CA #168 · Listed: DL · 247 lists commitment: Vanderbilt",
+    "links": {
+      "s247": "https://247sports.com/Player/hunter-eligon-46158103/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-83",
+    "name": "Ilivai Taiese",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 182,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 8/5/26 · 6-3 / 265 · 247 rating NA · Listed: DL · 247 lists commitment: San Jose State",
+    "links": {
+      "s247": "https://247sports.com/Player/ilivai-taiese-46161022/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-84",
+    "name": "Augustine Irek",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2027,
+    "grade": null,
+    "order": 183,
+    "status": "OFFERED",
+    "school": {
+      "name": "NFL Academy",
+      "address": "London, EN"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-7 / 260 · 247 rating NA · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/augustine-irek-46161970/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-85",
+    "name": "Toa Satele",
     "jersey": "—",
     "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 603,
+    "order": 184,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Brookwood",
-      "address": "Snellville, GA"
+      "name": "Mililani",
+      "address": "Mililani, HI"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 235 · 247 rating 90 · Listed: ATH · 247 lists commitment: South Carolina",
+    "miscNotes": "Committed 6/3/26 · 6-3 / 200 · 247 rating 93 · Natl #84 · LB #6 · HI #1 · Listed: LB · 247 lists commitment: Oregon",
     "links": {
-      "s247": "https://247sports.com/Player/brayden-tyson-46141748/"
+      "s247": "https://247sports.com/Player/toa-satele-46145646/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-305",
-    "name": "Davion Crumitie",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 604,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Rickards",
-      "address": "Tallahassee, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 150 · 247 rating 89 · Listed: ATH · 247 lists commitment: Vanderbilt",
-    "links": {
-      "s247": "https://247sports.com/Player/davion-crumitie-46157280/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-306",
-    "name": "Cristian Mbamarah",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 605,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Cherokee Trail",
-      "address": "Aurora, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 175 · 247 rating 89 · Listed: ATH · 247 lists commitment: Northwestern",
-    "links": {
-      "s247": "https://247sports.com/Player/cristian-mbamarah-46158483/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-307",
-    "name": "Brayden Booth",
+    "id": "bs27-86",
+    "name": "Sam Ngata",
     "jersey": "—",
     "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 606,
+    "order": 185,
     "status": "ELSEWHERE",
     "school": {
-      "name": "South San Antonio",
-      "address": "San Antonio, TX"
+      "name": "Olympus",
+      "address": "Salt Lake City, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 220 · 247 rating 89 · Listed: ATH · 247 lists commitment: North Carolina",
+    "miscNotes": "Committed 1/24/26 · 6-3.5 / 215 · 247 rating 87 · LB #84 · UT #12 · Listed: LB · 247 lists commitment: Oregon",
     "links": {
-      "s247": "https://247sports.com/Player/brayden-booth-46152717/"
+      "s247": "https://247sports.com/Player/sam-ngata-46157095/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-308",
-    "name": "Ronnie Gomiller",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 607,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "East St. Louis",
-      "address": "East St. Louis, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 187 · 247 rating 89 · Listed: ATH · 247 lists commitment: Cincinnati",
-    "links": {
-      "s247": "https://247sports.com/Player/ronnie-gomiller-46145803/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-309",
-    "name": "Kaston Lewis",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 608,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Iowa",
-      "address": "Iowa, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 89 · Listed: ATH · 247 lists commitment: Texas Tech",
-    "links": {
-      "s247": "https://247sports.com/Player/kaston-lewis-46163162/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-310",
-    "name": "Brian Dillard",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 609,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Evans",
-      "address": "Orlando, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 165 · 247 rating 88 · Listed: ATH · 247 lists commitment: South Florida",
-    "links": {
-      "s247": "https://247sports.com/Player/brian-dillard-46154732/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-311",
-    "name": "Kaneilius Purdy",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2027,
-    "grade": null,
-    "order": 610,
-    "status": "ELSEWHERE",
-    "school": {
-      "name": "Lake Wales",
-      "address": "Lake Wales, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 190 · 247 rating 88 · Listed: ATH · 247 lists commitment: UCF",
-    "links": {
-      "s247": "https://247sports.com/Player/kaneilius-purdy-46146570/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of27-312",
-    "name": "Jaxx DeJean",
+    "id": "bs27-87",
+    "name": "Jeremy Davis",
     "jersey": "—",
     "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 611,
+    "order": 186,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Odebolt-Arthur",
-      "address": "Odebolt, IA"
+      "name": "Helix",
+      "address": "La Mesa, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 233 · 247 rating 87 · Listed: ATH · 247 lists commitment: Iowa",
+    "miscNotes": "Committed 5/29/26 · 6-1 / 205 · 247 rating 86 · LB #103 · CA #96 · Listed: LB · 247 lists commitment: Fresno State",
     "links": {
-      "s247": "https://247sports.com/Player/jaxx-dejean-46148046/"
+      "s247": "https://247sports.com/Player/jeremy-davis-46164728/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-313",
-    "name": "Stanley Smart",
+    "id": "bs27-88",
+    "name": "Linkin Apana",
     "jersey": "—",
-    "positionGroup": "SAF",
+    "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 612,
+    "order": 187,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Benedictine Military School",
-      "address": "Savannah, GA"
+      "name": "Kamehameha Kapalama",
+      "address": "Honolulu, HI"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 200 · 247 rating 87 · Listed: ATH · 247 lists commitment: Virginia Tech",
+    "miscNotes": "Committed 6/19/26 · 6-1 / 207 · 247 rating 86 · LB #107 · HI #4 · Listed: LB · 247 lists commitment: TCU",
     "links": {
-      "s247": "https://247sports.com/Player/stanley-smart-46151805/"
+      "s247": "https://247sports.com/Player/linkin-apana-46157846/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-314",
-    "name": "Kevin Jackson",
+    "id": "bs27-89",
+    "name": "Broncs Baker",
     "jersey": "—",
-    "positionGroup": "SAF",
+    "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 613,
+    "order": 188,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Shadow Creek",
-      "address": "Pearland, TX"
+      "name": "Stansbury",
+      "address": "Tooele, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-11.5 / 185 · 247 rating 84 · Listed: ATH · 247 lists commitment: Maryland",
+    "miscNotes": "Committed 4/10/26 · 6-1 / 215 · 247 rating 85 · LB #135 · UT #22 · Listed: LB · 247 lists commitment: West Virginia",
     "links": {
-      "s247": "https://247sports.com/Player/kevin-jackson-46146944/"
+      "s247": "https://247sports.com/Player/broncs-baker-46155019/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of27-315",
-    "name": "Brooklyn Bailey",
+    "id": "bs27-90",
+    "name": "Kawai Chamberlin",
     "jersey": "—",
-    "positionGroup": "SAF",
+    "positionGroup": "ILB",
     "classYear": 2027,
     "grade": null,
-    "order": 614,
+    "order": 189,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Mountain Vista",
-      "address": "Littleton, CO"
+      "name": "Willamette",
+      "address": "Eugene, OR"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 162 · 247 rating 84 · Listed: ATH · 247 lists commitment: San Diego State",
+    "miscNotes": "Committed 6/16/26 · 6-2 / 217 · 247 rating 84 · LB #164 · OR #8 · Listed: LB · 247 lists commitment: Oregon State",
     "links": {
-      "s247": "https://247sports.com/Player/brooklyn-bailey-46159384/"
+      "s247": "https://247sports.com/Player/kawai-chamberlin-46150513/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-001",
-    "name": "Jayden Wade",
+    "id": "bs27-91",
+    "name": "Almasi Glenn",
     "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
+    "positionGroup": "ILB",
+    "classYear": 2027,
     "grade": null,
-    "order": 700,
+    "order": 190,
     "status": "ELSEWHERE",
     "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
+      "name": "Williams Field",
+      "address": "Gilbert, AZ"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 190 · 247 rating 96 · Listed: QB · 247 lists commitment: Georgia",
+    "miscNotes": "Committed 6/17/26 · 6-2.5 / 195 · 247 rating 84 · LB #168 · AZ #44 · Listed: LB · 247 lists commitment: Yale",
     "links": {
-      "s247": "https://247sports.com/Player/jayden-wade-46131982/"
+      "s247": "https://247sports.com/Player/almasi-glenn-46159900/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-002",
-    "name": "Titus Huard",
+    "id": "bs27-92",
+    "name": "Philip Wilson III",
     "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
+    "positionGroup": "ILB",
+    "classYear": 2027,
     "grade": null,
-    "order": 701,
+    "order": 191,
     "status": "OFFERED",
     "school": {
-      "name": "Valor Christian",
-      "address": "Littleton, CO"
+      "name": "Oxnard Pacifica",
+      "address": "Oxnard, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 205 · 247 rating 90 · Listed: QB · uncommitted",
+    "miscNotes": "6-0 / 205 · 247 rating 83 · LB #175 · CA #196 · Listed: LB",
     "links": {
-      "s247": "https://247sports.com/Player/titus-huard-46152644/"
+      "s247": "https://247sports.com/Player/philip-wilson-iii-46151737/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-003",
-    "name": "Nash Henry",
+    "id": "bs27-93",
+    "name": "TJ Alualu",
     "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
+    "positionGroup": "ILB",
+    "classYear": 2027,
     "grade": null,
-    "order": 702,
+    "order": 192,
     "status": "OFFERED",
     "school": {
-      "name": "Norman North",
-      "address": "Norman, OK"
+      "name": "St. Louis",
+      "address": "Honolulu, HI"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 210 · 247 rating 90 · Listed: QB · uncommitted",
+    "miscNotes": "5-11 / 200 · 247 rating 83 · LB #178 · HI #13 · Listed: LB",
     "links": {
-      "s247": "https://247sports.com/Player/nash-henry-46161094/"
+      "s247": "https://247sports.com/Player/tj-alualu-46151275/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-004",
-    "name": "Luke Rubley",
+    "id": "bs27-94",
+    "name": "Hayden Stepp",
     "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 703,
-    "status": "OFFERED",
-    "school": {
-      "name": "Regis Jesuit",
-      "address": "Aurora, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 180 · 247 rating 89 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/luke-rubley-46150861/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-005",
-    "name": "Matthew Lee",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 704,
-    "status": "OFFERED",
-    "school": {
-      "name": "Loyola Academy",
-      "address": "Wilmette, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 200 · 247 rating 88 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/matthew-lee-46159666/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-006",
-    "name": "Trey Wright",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 705,
-    "status": "OFFERED",
-    "school": {
-      "name": "Frisco Lone Star",
-      "address": "Frisco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9.5 / 175 · 247 rating 88 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/trey-wright-46156668/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-007",
-    "name": "Oscar Sloan",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 706,
-    "status": "OFFERED",
-    "school": {
-      "name": "Center Grove",
-      "address": "Greenwood, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 190 · 247 rating 87 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/oscar-sloan-46150827/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-008",
-    "name": "Carter Morgan",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 707,
-    "status": "OFFERED",
-    "school": {
-      "name": "Denton Guyer",
-      "address": "Denton, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 200 · 247 rating 87 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/carter-morgan-46159601/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-009",
-    "name": "Tristan Johnson",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 708,
-    "status": "OFFERED",
-    "school": {
-      "name": "Rockhurst",
-      "address": "Kansas City, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10.5 / 175 · 247 rating 86 · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/tristan-johnson-46165933/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-010",
-    "name": "Chase Grove",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 709,
-    "status": "OFFERED",
-    "school": {
-      "name": "North Central",
-      "address": "Indianapolis, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 184 · unrated · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/chase-grove-46155304/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-011",
-    "name": "Zealand Danielson",
-    "jersey": "—",
-    "positionGroup": "QB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 710,
-    "status": "OFFERED",
-    "school": {
-      "name": "Yukon",
-      "address": "Yukon, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 205 · unrated · Listed: QB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zealand-danielson-46159020/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-012",
-    "name": "Jayshawn Mitchell",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 711,
-    "status": "OFFERED",
-    "school": {
-      "name": "San Antonio Brennan",
-      "address": "San Antonio, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 180 · 247 rating 90 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jayshawn-mitchell-46166449/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-013",
-    "name": "Elijah Cromwell",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 712,
-    "status": "OFFERED",
-    "school": {
-      "name": "Cherry Creek",
-      "address": "Englewood, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 180 · 247 rating 90 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/elijah-cromwell-46153247/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-014",
-    "name": "Zachary Belyeu",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 713,
-    "status": "OFFERED",
-    "school": {
-      "name": "North Cobb",
-      "address": "Kennesaw, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 210 · 247 rating 88 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zachary-belyeu-46153083/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-015",
-    "name": "Jeremiah Tabor",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 714,
-    "status": "OFFERED",
-    "school": {
-      "name": "Melissa",
-      "address": "Melissa, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 220 · 247 rating 88 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jeremiah-tabor-46153261/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-016",
-    "name": "Jhaheem Brown",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 715,
-    "status": "OFFERED",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-8 / 170 · 247 rating 87 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jhaheem-brown-46161349/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-017",
-    "name": "Kason Williams",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 716,
-    "status": "OFFERED",
-    "school": {
-      "name": "Alexandria",
-      "address": "Alexandria, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 190 · 247 rating 87 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kason-williams-46161517/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-018",
-    "name": "Byron Brandon",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 717,
-    "status": "OFFERED",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 185 · 247 rating 86 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/byron-brandon-46155695/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-019",
-    "name": "Kai Robinson",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 718,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lutheran North",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 175 · 247 rating 85 · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kai-robinson-46165791/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-020",
-    "name": "Darrik Ward Jr.",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 719,
-    "status": "OFFERED",
-    "school": {
-      "name": "Crandall",
-      "address": "Crandall, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 180 · unrated · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/darrik-ward-jr-46161997/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-021",
-    "name": "Chrystian Ervin",
-    "jersey": "—",
-    "positionGroup": "RB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 720,
-    "status": "OFFERED",
-    "school": {
-      "name": "Saguaro",
-      "address": "Scottsdale, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 205 · unrated · Listed: RB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/chrystian-ervin-46167766/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-022",
-    "name": "Braylon Clark",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 721,
-    "status": "OFFERED",
-    "school": {
-      "name": "Providence Day School",
-      "address": "Charlotte, NC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 188 · 247 rating 91 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/braylon-clark-46151079/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-023",
-    "name": "Jaelyn Easterling-Flores",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 722,
-    "status": "OFFERED",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 180 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jaelyn-easterling-flores-46151182/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-024",
-    "name": "Jaden Hurndon",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 723,
-    "status": "OFFERED",
-    "school": {
-      "name": "Longview",
-      "address": "Longview, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jaden-hurndon-46155044/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-025",
-    "name": "Derrell Hines Jr.",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 724,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carrollwood Day",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 170 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/derrell-hines-jr-46158469/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-026",
-    "name": "Joshua Parker",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 725,
-    "status": "OFFERED",
-    "school": {
-      "name": "Brandon",
-      "address": "Brandon, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 185 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/joshua-parker-46163286/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-027",
-    "name": "Carter St. Junious",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 726,
-    "status": "OFFERED",
-    "school": {
-      "name": "Manvel",
-      "address": "Manvel, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 185 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/carter-st-junious-46160123/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-028",
-    "name": "Ryan Richmond-McDavis",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 727,
-    "status": "OFFERED",
-    "school": {
-      "name": "Cardinal Ritter College Prep",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 160 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/ryan-richmond-mcdavis-46158604/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-029",
-    "name": "Baron Marshall",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 728,
-    "status": "OFFERED",
-    "school": {
-      "name": "Blue Valley Northwest",
-      "address": "Overland Park, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 175 · 247 rating 90 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/baron-marshall-46152068/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-030",
-    "name": "David Thomas",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 729,
-    "status": "OFFERED",
-    "school": {
-      "name": "Knoxville Catholic",
-      "address": "Knoxville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 161 · 247 rating 88 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/david-thomas-46154575/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-031",
-    "name": "Corderro Bennett",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 730,
-    "status": "OFFERED",
-    "school": {
-      "name": "Morton",
-      "address": "Hammond, IN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 190 · 247 rating 88 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/corderro-bennett-46161865/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-032",
-    "name": "Gabriel Cabell",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 731,
-    "status": "OFFERED",
-    "school": {
-      "name": "Christ Presbyterian Academy",
-      "address": "Nashville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 200 · 247 rating 87 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/gabriel-cabell-46161230/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-033",
-    "name": "Cameron Fuse",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 732,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lakeland",
-      "address": "Lakeland, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 173 · 247 rating 86 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cameron-fuse-46150881/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-034",
-    "name": "Antron Branch",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 733,
-    "status": "OFFERED",
-    "school": {
-      "name": "McArthur",
-      "address": "Hollywood, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 165 · 247 rating 86 · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/antron-branch-46161361/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-035",
-    "name": "Jordyn Murray",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 734,
-    "status": "OFFERED",
-    "school": {
-      "name": "Tampa Bay Tech",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 180 · unrated · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordyn-murray-46165496/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-036",
-    "name": "Doyle Morrison",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 735,
-    "status": "OFFERED",
-    "school": {
-      "name": "Gainesville",
-      "address": "Gainesville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 173 · unrated · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/doyle-morrison-46166919/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-037",
-    "name": "Hayden Green",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 736,
-    "status": "OFFERED",
-    "school": {
-      "name": "North Crowley",
-      "address": "Fort Worth, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 205 · unrated · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/hayden-green-46161364/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-038",
-    "name": "Camarre Palmer",
-    "jersey": "—",
-    "positionGroup": "WR_OUT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 737,
-    "status": "OFFERED",
-    "school": {
-      "name": "Langham Creek",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 195 · unrated · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/camarre-palmer-46165458/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-039",
-    "name": "Chase Hancock",
-    "jersey": "—",
-    "positionGroup": "WR_SLOT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 738,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pulaski Academy",
-      "address": "Little Rock, AR"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 160 · unrated · Listed: WR · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/chase-hancock-46158451/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-040",
-    "name": "Israel Johnigan",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 739,
-    "status": "OFFERED",
-    "school": {
-      "name": "Center",
-      "address": "Kansas City, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 220 · 247 rating 90 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/israel-johnigan-46166488/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-041",
-    "name": "Connor Arant",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 740,
-    "status": "OFFERED",
-    "school": {
-      "name": "Bixby",
-      "address": "Bixby, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 225 · 247 rating 90 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/connor-arant-46161620/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-042",
-    "name": "Jack McNamara",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 741,
-    "status": "OFFERED",
-    "school": {
-      "name": "Brother Rice",
-      "address": "Oak Lawn, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 235 · 247 rating 89 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jack-mcnamara-46158061/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-043",
-    "name": "Breck Brady",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 742,
-    "status": "OFFERED",
-    "school": {
-      "name": "Mustang",
-      "address": "Mustang, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 245 · 247 rating 89 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/breck-brady-46162331/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-044",
-    "name": "Jordan McKinley",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 743,
-    "status": "OFFERED",
-    "school": {
-      "name": "Loyola Academy",
-      "address": "Wilmette, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 220 · 247 rating 88 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordan-mckinley-46155318/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-045",
-    "name": "Max Jones",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 744,
-    "status": "OFFERED",
-    "school": {
-      "name": "Parkway West",
-      "address": "Ballwin, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 210 · 247 rating 88 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/max-jones-46165579/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-046",
-    "name": "Bennett Conyers",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 745,
-    "status": "OFFERED",
-    "school": {
-      "name": "Montgomery Bell Academy",
-      "address": "Nashville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 215 · 247 rating 87 · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/bennett-conyers-46163975/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-047",
-    "name": "Kemarion Jordan",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 746,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pine Forest",
-      "address": "Pensacola, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 236 · unrated · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kemarion-jordan-46166673/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-048",
-    "name": "Koleman Hendrix",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 747,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lubbock-Cooper Liberty",
-      "address": "Lubbock, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 225 · unrated · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/koleman-hendrix-46161747/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-049",
-    "name": "AJ Criss",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 748,
-    "status": "OFFERED",
-    "school": {
-      "name": "Krum",
-      "address": "Krum, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 205 · unrated · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/aj-criss-46168939/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-050",
-    "name": "Sloan Blackwell",
-    "jersey": "—",
-    "positionGroup": "TE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 749,
-    "status": "OFFERED",
-    "school": {
-      "name": "Waco Midway",
-      "address": "Waco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 225 · unrated · Listed: TE · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/sloan-blackwell-46166606/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-051",
-    "name": "R'Monie Edwards",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 750,
-    "status": "OFFERED",
-    "school": {
-      "name": "Cy Ranch",
-      "address": "Cypress, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 310 · 247 rating 91 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/rmonie-edwards-46153244/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-052",
-    "name": "Wyatt VanBoening",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 751,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carmel Catholic",
-      "address": "Mundelein, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 280 · 247 rating 90 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/wyatt-vanboening-46163620/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-053",
-    "name": "Cannon Zubeck",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 752,
-    "status": "OFFERED",
-    "school": {
-      "name": "Shawnee Mission East",
-      "address": "Prairie Village, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 270 · 247 rating 90 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cannon-zubeck-46162138/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-054",
-    "name": "Carter Barrett",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 753,
-    "status": "OFFERED",
-    "school": {
-      "name": "Dowling Catholic",
-      "address": "West Des Moines, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 305 · 247 rating 90 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/carter-barrett-46152199/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-055",
-    "name": "Liam Davis",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 754,
-    "status": "OFFERED",
-    "school": {
-      "name": "Hallsville",
-      "address": "Hallsville, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5.5 / 305 · 247 rating 90 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/liam-davis-46165581/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-056",
-    "name": "King Pitts",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 755,
-    "status": "OFFERED",
-    "school": {
-      "name": "Kapa'a",
-      "address": "Kapa'a, HI"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 270 · 247 rating 89 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/king-pitts-46150208/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-057",
-    "name": "Reece Wilmes",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 756,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lawrence Free State",
-      "address": "Lawrence, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 285 · 247 rating 89 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/reece-wilmes-46159544/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-058",
-    "name": "Declan Heying",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 757,
-    "status": "OFFERED",
-    "school": {
-      "name": "Des Moines Christian School",
-      "address": "Des Moines, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 270 · 247 rating 88 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/declan-heying-46160784/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-059",
-    "name": "Ryan Rodgers",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 758,
-    "status": "OFFERED",
-    "school": {
-      "name": "Calvary Baptist Academy",
-      "address": "Shreveport, LA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 280 · 247 rating 87 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/ryan-rodgers-46165895/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-060",
-    "name": "Hayden Shannon",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 759,
-    "status": "OFFERED",
-    "school": {
-      "name": "PCM",
-      "address": "Monroe, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 275 · 247 rating 87 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/hayden-shannon-46157325/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-061",
-    "name": "Darrius Smiley",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 760,
-    "status": "OFFERED",
-    "school": {
-      "name": "St. Mary's",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 290 · 247 rating 86 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/darrius-smiley-46152820/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-062",
-    "name": "Gerrit DeWaard",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 761,
-    "status": "OFFERED",
-    "school": {
-      "name": "Malcolm",
-      "address": "Malcolm, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-7 / 300 · 247 rating 86 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/gerrit-dewaard-46166186/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-063",
-    "name": "Cooper Clark",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 762,
-    "status": "OFFERED",
-    "school": {
-      "name": "Mustang",
-      "address": "Mustang, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 260 · 247 rating 86 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cooper-clark-46166947/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-064",
-    "name": "Sean Sherman",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 763,
-    "status": "OFFERED",
-    "school": {
-      "name": "Anna",
-      "address": "Anna, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 340 · 247 rating 85 · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/sean-sherman-46163910/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-065",
-    "name": "Thomas Inkelaar",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 764,
-    "status": "OFFERED",
-    "school": {
-      "name": "Andover Central",
-      "address": "Andover, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 330 · unrated · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/thomas-inkelaar-46166279/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-066",
-    "name": "Chase Mayes",
-    "jersey": "—",
-    "positionGroup": "OL_SWING",
-    "classYear": 2028,
-    "grade": null,
-    "order": 765,
-    "status": "OFFERED",
-    "school": {
-      "name": "Cy Lakes",
-      "address": "Katy, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 270 · unrated · Listed: OT · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/chase-mayes-46165424/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-067",
-    "name": "Gavin Wilson",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 766,
-    "status": "OFFERED",
-    "school": {
-      "name": "Bixby",
-      "address": "Bixby, OK"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 266 · 247 rating 90 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/gavin-wilson-46167624/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-068",
-    "name": "Ty Hathaway",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 767,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lipscomb Academy",
-      "address": "Nashville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 265 · 247 rating 89 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/ty-hathaway-46166594/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-069",
-    "name": "PJ Evans",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 768,
-    "status": "OFFERED",
-    "school": {
-      "name": "Jackson Academy",
-      "address": "Jackson, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3.5 / 310 · 247 rating 87 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/pj-evans-46152518/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-070",
-    "name": "Jude Womack",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 769,
-    "status": "OFFERED",
-    "school": {
-      "name": "Legacy Christian Academy",
-      "address": "Frisco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 315 · 247 rating 86 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jude-womack-46164725/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-071",
-    "name": "Colton Ott",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 770,
-    "status": "OFFERED",
-    "school": {
-      "name": "Fairview",
-      "address": "Boulder, CO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 310 · 247 rating 85 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/colton-ott-46159830/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-072",
-    "name": "Ashton Coles",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 771,
-    "status": "OFFERED",
-    "school": {
-      "name": "Ensworth",
-      "address": "Nashville, TN"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 325 · 247 rating 85 · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/ashton-coles-46166595/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-073",
-    "name": "Kendrick Morgan",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 772,
-    "status": "OFFERED",
-    "school": {
-      "name": "Frisco Lone Star",
-      "address": "Frisco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · unrated · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kendrick-morgan-46154282/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-074",
-    "name": "Abram Bengard",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 773,
-    "status": "OFFERED",
-    "school": {
-      "name": "Frisco Lone Star",
-      "address": "Frisco, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 280 · unrated · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/abram-bengard-46151168/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-075",
-    "name": "Carl Noisette",
-    "jersey": "—",
-    "positionGroup": "OL_INT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 774,
-    "status": "OFFERED",
-    "school": {
-      "name": "Gainesville",
-      "address": "Gainesville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 270 · unrated · Listed: IOL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/carl-noisette-46151909/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-076",
-    "name": "Kameron McGee",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 775,
-    "status": "OFFERED",
-    "school": {
-      "name": "Brother Rice",
-      "address": "Oak Lawn, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 245 · 247 rating 98 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kameron-mcgee-46154559/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-077",
-    "name": "Darieon Prescott",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 776,
+    "order": 193,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Bolingbrook",
-      "address": "Bolingbrook, IL"
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 255 · 247 rating 95 · Listed: Edge · 247 lists commitment: Notre Dame",
+    "miscNotes": "Committed 7/1/26 · 6-3.5 / 185 · 247 rating 94 · Natl #61 · CB #5 · NV #1 · Listed: CB · 247 lists commitment: Oregon",
     "links": {
-      "s247": "https://247sports.com/Player/darieon-prescott-46154828/"
+      "s247": "https://247sports.com/Player/hayden-stepp-46147446/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-078",
-    "name": "Antonio Thomas Jr.",
+    "id": "bs27-95",
+    "name": "Kamil Loud",
     "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 777,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carrollwood Day",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 240 · 247 rating 93 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/antonio-thomas-jr-46155485/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-079",
-    "name": "Landen Wade",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 778,
-    "status": "OFFERED",
-    "school": {
-      "name": "Basha",
-      "address": "Chandler, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 250 · 247 rating 91 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/landen-wade-46150755/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-080",
-    "name": "Jevyn Severson",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 779,
-    "status": "OFFERED",
-    "school": {
-      "name": "Madrid",
-      "address": "Madrid, IA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 230 · 247 rating 91 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jevyn-severson-46158003/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-081",
-    "name": "Jalanie George",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 780,
-    "status": "OFFERED",
-    "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4.5 / 245 · 247 rating 90 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jalanie-george-46151179/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-082",
-    "name": "Keoni Snipes",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 781,
-    "status": "OFFERED",
-    "school": {
-      "name": "Saraland",
-      "address": "Saraland, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 245 · 247 rating 90 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/keoni-snipes-46158544/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-083",
-    "name": "Tristian Henderson",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 782,
-    "status": "OFFERED",
-    "school": {
-      "name": "Pine Forest",
-      "address": "Pensacola, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 225 · 247 rating 90 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/tristian-henderson-46158796/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-084",
-    "name": "Steven McClendon",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 783,
-    "status": "OFFERED",
-    "school": {
-      "name": "Douglas County",
-      "address": "Douglasville, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 215 · 247 rating 90 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/steven-mcclendon-46162815/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-085",
-    "name": "Chance Archangel",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 784,
+    "order": 194,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Westgate",
-      "address": "New Iberia, LA"
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 240 · 247 rating 89 · Listed: Edge · 247 lists commitment: Texas A&M",
+    "miscNotes": "Committed 6/12/26 · 6-0.5 / 170 · 247 rating 90 · Natl #211 · CB #25 · NV #2 · Listed: CB · 247 lists commitment: California",
     "links": {
-      "s247": "https://247sports.com/Player/chance-archangel-46157646/"
+      "s247": "https://247sports.com/Player/kamil-loud-46153753/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-086",
-    "name": "Nasir Walker",
+    "id": "bs27-96",
+    "name": "Evan Mack",
     "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 785,
-    "status": "OFFERED",
+    "order": 195,
+    "status": "ELSEWHERE",
     "school": {
       "name": "Crean Lutheran",
       "address": "Irvine, CA"
@@ -10695,449 +2394,49 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-6 / 230 · 247 rating 89 · Listed: Edge · uncommitted",
+    "miscNotes": "Committed 7/2/26 · 6-3 / 175 · 247 rating 88 · CB #49 · CA #34 · Listed: CB · 247 lists commitment: Arizona",
     "links": {
-      "s247": "https://247sports.com/Player/nasir-walker-46161471/"
+      "s247": "https://247sports.com/Player/evan-mack-46154204/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-087",
-    "name": "DeMarcus Dale-Brown",
+    "id": "bs27-97",
+    "name": "Jernaro Gilford Jr.",
     "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 786,
+    "order": 196,
     "status": "OFFERED",
     "school": {
-      "name": "Williamson",
-      "address": "Mobile, AL"
+      "name": "Saline",
+      "address": "Saline, MI"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 230 · 247 rating 88 · Listed: Edge · uncommitted",
+    "miscNotes": "6-1 / 170 · 247 rating 88 · CB #53 · MI #11 · Listed: CB",
     "links": {
-      "s247": "https://247sports.com/Player/demarcus-dale-brown-46158391/"
+      "s247": "https://247sports.com/Player/jernaro-gilford-jr-46147364/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-088",
-    "name": "Jaylen Johnson",
+    "id": "bs27-98",
+    "name": "John Catlin IV",
     "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 787,
-    "status": "OFFERED",
-    "school": {
-      "name": "Bishop Miege",
-      "address": "Mission, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 210 · 247 rating 88 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jaylen-johnson-46164765/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-089",
-    "name": "Remington Merlau",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 788,
-    "status": "OFFERED",
-    "school": {
-      "name": "Rose Hill",
-      "address": "Rose Hill, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 235 · 247 rating 87 · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/remington-merlau-46159564/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-090",
-    "name": "LeRoi Kamtio",
-    "jersey": "—",
-    "positionGroup": "EDGE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 789,
-    "status": "OFFERED",
-    "school": {
-      "name": "Gardner Edgerton",
-      "address": "Gardner, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 230 · unrated · Listed: Edge · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/leroi-kamtio-46168067/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-091",
-    "name": "Jameer Whyce",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 790,
+    "order": 197,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Trotwood-Madison",
-      "address": "Dayton, OH"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 270 · 247 rating 91 · Listed: DL · 247 lists commitment: Ohio State",
-    "links": {
-      "s247": "https://247sports.com/Player/jameer-whyce-46149358/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-092",
-    "name": "RJ Wyms",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 791,
-    "status": "OFFERED",
-    "school": {
-      "name": "College Park",
-      "address": "The Woodlands, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 255 · 247 rating 91 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/rj-wyms-46161279/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-093",
-    "name": "David Dotson",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 792,
-    "status": "OFFERED",
-    "school": {
-      "name": "Atascocita",
-      "address": "Humble, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 240 · 247 rating 91 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/david-dotson-46165795/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-094",
-    "name": "Myles Tate",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 793,
-    "status": "OFFERED",
-    "school": {
-      "name": "Woodward Academy",
-      "address": "College Park, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 225 · 247 rating 90 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/myles-tate-46158244/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-095",
-    "name": "Caleb Tucker",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 794,
-    "status": "OFFERED",
-    "school": {
-      "name": "Mount Carmel",
-      "address": "Chicago, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 355 · 247 rating 90 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/caleb-tucker-46154032/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-096",
-    "name": "Zylen Little",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 795,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carrollwood Day",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1.5 / 290 · 247 rating 90 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zylen-little-46155261/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-097",
-    "name": "Zayre Thomas",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 796,
-    "status": "OFFERED",
-    "school": {
-      "name": "Raytown South",
-      "address": "Kansas City, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 240 · 247 rating 89 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zayre-thomas-46158415/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-098",
-    "name": "Tory Clark",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 797,
-    "status": "OFFERED",
-    "school": {
-      "name": "Woodward Academy",
-      "address": "College Park, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 275 · 247 rating 89 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/tory-clark-46160342/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-099",
-    "name": "Chase Foster II",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 798,
-    "status": "OFFERED",
-    "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 260 · 247 rating 89 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/chase-foster-ii-46151610/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-100",
-    "name": "Andrae Maddox",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 799,
-    "status": "OFFERED",
-    "school": {
-      "name": "Oxford",
-      "address": "Oxford, MS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 280 · 247 rating 89 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/andrae-maddox-46142017/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-101",
-    "name": "Isaac Kalubi Lukuni",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 800,
-    "status": "OFFERED",
-    "school": {
-      "name": "Rabun Gap-Nacoochee",
-      "address": "Rabun Gap, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · 247 rating 89 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/isaac-kalubi-lukuni-46165880/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-102",
-    "name": "Savon Jamison",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 801,
-    "status": "OFFERED",
-    "school": {
-      "name": "Joliet West",
-      "address": "Joliet, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 250 · 247 rating 88 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/savon-jamison-46167374/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-103",
-    "name": "Micah Santiago",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 802,
-    "status": "OFFERED",
-    "school": {
-      "name": "Omaha Westside",
-      "address": "Omaha, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 295 · 247 rating 88 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/micah-santiago-46159187/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-104",
-    "name": "Logan Lokey",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 803,
-    "status": "OFFERED",
-    "school": {
-      "name": "Denton Guyer",
+      "name": "Denton Ryan",
       "address": "Denton, TX"
     },
     "birthday": "",
@@ -11145,821 +2444,946 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 250 · 247 rating 88 · Listed: DL · uncommitted",
+    "miscNotes": "Committed 6/13/26 · 5-11 / 167 · 247 rating 87 · CB #70 · TX #93 · Listed: CB · 247 lists commitment: Arkansas",
     "links": {
-      "s247": "https://247sports.com/Player/logan-lokey-46150622/"
+      "s247": "https://247sports.com/Player/john-catlin-iv-46161841/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-105",
-    "name": "Antonio Flowers",
+    "id": "bs27-99",
+    "name": "Dylin Bruce",
     "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
+    "positionGroup": "CB",
+    "classYear": 2027,
     "grade": null,
-    "order": 804,
-    "status": "OFFERED",
-    "school": {
-      "name": "Chambers",
-      "address": "Charlotte, NC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 300 · 247 rating 88 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/antonio-flowers-46166813/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-106",
-    "name": "Charles Ibe",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 805,
-    "status": "OFFERED",
-    "school": {
-      "name": "Providence Day School",
-      "address": "Charlotte, NC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 290 · 247 rating 87 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/charles-ibe-46148117/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-107",
-    "name": "Noah Ross",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 806,
-    "status": "OFFERED",
-    "school": {
-      "name": "Richardson",
-      "address": "Richardson, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 295 · 247 rating 86 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/noah-ross-46155470/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-108",
-    "name": "Bajani Jones",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 807,
-    "status": "OFFERED",
-    "school": {
-      "name": "Lanier",
-      "address": "Buford, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 305 · 247 rating 86 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/bajani-jones-46158610/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-109",
-    "name": "Aaron Snell",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 808,
-    "status": "OFFERED",
-    "school": {
-      "name": "Waxahachie",
-      "address": "Waxahachie, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 265 · 247 rating 84 · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/aaron-snell-46158725/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-110",
-    "name": "Jordyn Grant",
-    "jersey": "—",
-    "positionGroup": "DT",
-    "classYear": 2028,
-    "grade": null,
-    "order": 809,
-    "status": "OFFERED",
-    "school": {
-      "name": "College Park",
-      "address": "The Woodlands, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 300 · unrated · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordyn-grant-46164723/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-111",
-    "name": "Max Farmer",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 810,
-    "status": "OFFERED",
-    "school": {
-      "name": "Klein Oak",
-      "address": "Spring, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 280 · unrated · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/max-farmer-46165412/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-112",
-    "name": "Jayln Smith",
-    "jersey": "—",
-    "positionGroup": "DE",
-    "classYear": 2028,
-    "grade": null,
-    "order": 811,
-    "status": "OFFERED",
-    "school": {
-      "name": "South Oak Cliff",
-      "address": "Dallas, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 280 · unrated · Listed: DL · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jayln-smith-46168884/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-113",
-    "name": "Jameer Miles",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 812,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carmel Catholic",
-      "address": "Mundelein, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 192 · 247 rating 91 · Listed: LB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jameer-miles-46162585/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-114",
-    "name": "Blake Nesbitt",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 813,
-    "status": "OFFERED",
-    "school": {
-      "name": "Kirksville",
-      "address": "Kirksville, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2.5 / 220 · 247 rating 90 · Listed: LB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/blake-nesbitt-46155036/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-115",
-    "name": "Deshawn Simmons",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 814,
-    "status": "OFFERED",
-    "school": {
-      "name": "San Antonio Harlan",
-      "address": "San Antonio, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 215 · 247 rating 90 · Listed: LB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/deshawn-simmons-46159192/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-116",
-    "name": "Cale Britt",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 815,
+    "order": 198,
     "status": "ELSEWHERE",
     "school": {
-      "name": "Bishop Moore Catholic",
-      "address": "Orlando, FL"
+      "name": "Huntington Beach",
+      "address": "Huntington Beach, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 209 · 247 rating 89 · Listed: LB · 247 lists commitment: Wisconsin",
+    "miscNotes": "Committed 6/7/26 · 6-0 / 170 · 247 rating 87 · CB #87 · CA #77 · Listed: CB · 247 lists commitment: Arizona State",
     "links": {
-      "s247": "https://247sports.com/Player/cale-britt-46162068/"
+      "s247": "https://247sports.com/Player/dylin-bruce-46155369/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-117",
-    "name": "Travion Washington",
+    "id": "bs27-100",
+    "name": "Nathaniel Mensah",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 199,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Rancho Cucamonga",
+      "address": "Rancho Cucamonga, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-0.5 / 160 · 247 rating 86 · CB #110 · CA #89 · Listed: CB · 247 lists commitment: Oregon State",
+    "links": {
+      "s247": "https://247sports.com/Player/nathaniel-mensah-46154894/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-101",
+    "name": "Johnny McNeil",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 200,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "St. Pius X-St. Matthias Academy",
+      "address": "Downey, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-0 / 160 · 247 rating 86 · CB #119 · CA #100 · Listed: CB · 247 lists commitment: Oregon State",
+    "links": {
+      "s247": "https://247sports.com/Player/johnny-mcneil-46158457/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-102",
+    "name": "Hassan Smith",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 201,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Desert Mountain",
+      "address": "Scottsdale, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/7/26 · 5-11 / 165 · 247 rating 86 · CB #122 · AZ #25 · Listed: CB",
+    "links": {
+      "s247": "https://247sports.com/Player/hassan-smith-46162805/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-103",
+    "name": "Noah Clark",
+    "jersey": "—",
+    "positionGroup": "CB",
+    "classYear": 2027,
+    "grade": null,
+    "order": 202,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Inglewood",
+      "address": "Inglewood, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/10/26 · 5-11.5 / 175 · 247 rating 83 · CB #160 · CA #204 · Listed: CB · 247 lists commitment: Washington State",
+    "links": {
+      "s247": "https://247sports.com/Player/noah-clark-46157739/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-104",
+    "name": "Pole Moala",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 203,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "Gardena, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 4/12/26 · 6-0 / 185 · 247 rating 90 · Natl #171 · S #13 · CA #15 · Listed: S · 247 lists commitment: UCLA",
+    "links": {
+      "s247": "https://247sports.com/Player/pole-moala-46154623/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-105",
+    "name": "Jaden Walk-Green",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 204,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/20/26 · 5-11 / 188 · 247 rating 88 · S #54 · CA #46 · Listed: S · 247 lists commitment: Washington",
+    "links": {
+      "s247": "https://247sports.com/Player/jaden-walk-green-46154955/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-106",
+    "name": "Kaleb Hall",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 205,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Syracuse",
+      "address": "Syracuse, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 6-2 / 185 · 247 rating 86 · S #118 · UT #16 · Listed: S · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/kaleb-hall-46164678/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-107",
+    "name": "Jayden Bradley",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 206,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Eaglecrest",
+      "address": "Aurora, CO"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/22/26 · 6-1 / 170 · 247 rating 86 · S #142 · CO #9 · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/jayden-bradley-46167312/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-108",
+    "name": "Caysen Badawi",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 207,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Valencia",
+      "address": "Valencia, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/27/26 · 6-1 / 165 · 247 rating 86 · S #144 · CA #117 · Listed: S · 247 lists commitment: San Diego State",
+    "links": {
+      "s247": "https://247sports.com/Player/caysen-badawi-46165006/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-109",
+    "name": "Kye Cooper",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 208,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "San Diego",
+      "address": "San Diego, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/4/26 · 6-1 / 180 · 247 rating 85 · S #160 · CA #126 · Listed: S · 247 lists commitment: San Diego State",
+    "links": {
+      "s247": "https://247sports.com/Player/kye-cooper-46151871/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-110",
+    "name": "Brett Smith",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 209,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Corona Centennial",
+      "address": "Corona, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-1 / 170 · 247 rating 84 · S #182 · CA #166 · Listed: S · 247 lists commitment: UNLV",
+    "links": {
+      "s247": "https://247sports.com/Player/brett-smith-46154957/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-111",
+    "name": "Grant Moser",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 210,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Buchanan",
+      "address": "Clovis, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/14/26 · 6-4 / 200 · 247 rating 84 · S #183 · CA #179 · Listed: S · 247 lists commitment: Fresno State",
+    "links": {
+      "s247": "https://247sports.com/Player/grant-moser-46159612/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-112",
+    "name": "Uatesoni Pifeleti",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 211,
+    "status": "OFFERED",
+    "school": {
+      "name": "St. Francis",
+      "address": "Mountain View, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 190 · 247 rating NA · Listed: S",
+    "links": {
+      "s247": "https://247sports.com/Player/uatesoni-pifeleti-46161714/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-113",
+    "name": "George Richards",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 212,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "St. Thomas More",
+      "address": "Oakdale, CT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/21/26 · 6-1 / 205 · 247 rating NA · Listed: S · 247 lists commitment: James Madison",
+    "links": {
+      "s247": "https://247sports.com/Player/george-richards-46167105/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-114",
+    "name": "Bode Sparrow",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 213,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Davis",
+      "address": "Kaysville, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/26/26 · 6-2 / 195 · 247 rating 93 · Natl #82 · ATH #8 · UT #1 · Listed: ATH · 247 lists commitment: Oklahoma",
+    "links": {
+      "s247": "https://247sports.com/Player/bode-sparrow-46143770/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-115",
+    "name": "Jaxton Itaaehau",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 214,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Davis",
+      "address": "Kaysville, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/19/26 · 5-11 / 185 · 247 rating 90 · ATH #18 · UT #4 · Listed: ATH · 247 lists commitment: Utah",
+    "links": {
+      "s247": "https://247sports.com/Player/jaxton-itaaehau-46160892/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-116",
+    "name": "Maurice Williams",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 215,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Timberline",
+      "address": "Lacey, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 12/24/25 · 6-1 / 180 · 247 rating 88 · ATH #60 · WA #7 · Listed: ATH · 247 lists commitment: Washington",
+    "links": {
+      "s247": "https://247sports.com/Player/maurice-williams-46142087/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-117",
+    "name": "Maxwell Miles",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 216,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Las Vegas Centennial",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 5/31/26 · 6-2 / 190 · 247 rating 88 · ATH #70 · NV #7 · Listed: ATH · 247 lists commitment: Minnesota",
+    "links": {
+      "s247": "https://247sports.com/Player/maxwell-miles-46149471/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-118",
+    "name": "J'Isaiah Mitchell",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 217,
+    "status": "COMMITTED",
+    "school": {
+      "name": "Puyallup",
+      "address": "Puyallup, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/2/26 · 6-5 / 180 · 247 rating 87 · ATH #75 · WA #9 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/jisaiah-mitchell-46147310/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-119",
+    "name": "Peyton Higginson",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 218,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Salem Hills",
+      "address": "Salem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 7/6/26 · 6-3 / 181 · 247 rating 86 · ATH #90 · UT #15 · Listed: ATH · 247 lists commitment: BYU",
+    "links": {
+      "s247": "https://247sports.com/Player/peyton-higginson-46149856/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-120",
+    "name": "Jaxson Rex",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 219,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "San Clemente",
+      "address": "San Clemente, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/18/26 · 6-1 / 190 · 247 rating 85 · ATH #115 · CA #143 · Listed: ATH · 247 lists commitment: BYU",
+    "links": {
+      "s247": "https://247sports.com/Player/jaxson-rex-46158844/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-121",
+    "name": "Jaylen Fitzgerald",
     "jersey": "—",
     "positionGroup": "ILB",
-    "classYear": 2028,
+    "classYear": 2027,
     "grade": null,
-    "order": 816,
-    "status": "OFFERED",
+    "order": 220,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "Brandon",
-      "address": "Brandon, MS"
+      "name": "Shakopee",
+      "address": "Shakopee, MN"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · 247 rating 88 · Listed: LB · uncommitted",
+    "miscNotes": "Committed 6/19/26 · 6-3 / 215 · 247 rating 85 · ATH #82 · MN #13 · Listed: ATH · 247 lists commitment: UNLV",
     "links": {
-      "s247": "https://247sports.com/Player/travion-washington-46154903/"
+      "s247": "https://247sports.com/Player/jaylen-fitzgerald-46155725/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-118",
-    "name": "Israel Samuel",
+    "id": "bs27-122",
+    "name": "Tytan DeJong",
     "jersey": "—",
     "positionGroup": "ILB",
-    "classYear": 2028,
+    "classYear": 2027,
     "grade": null,
-    "order": 817,
-    "status": "OFFERED",
+    "order": 221,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "Lake Highlands",
-      "address": "Dallas, TX"
+      "name": "Mountain Ridge",
+      "address": "Herriman, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 195 · 247 rating 88 · Listed: LB · uncommitted",
+    "miscNotes": "Committed 3/30/26 · 6-2 / 215 · 247 rating 84 · ATH #126 · UT #29 · Listed: ATH · 247 lists commitment: BYU",
     "links": {
-      "s247": "https://247sports.com/Player/israel-samuel-46166376/"
+      "s247": "https://247sports.com/Player/tytan-dejong-46147761/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-119",
-    "name": "Reginald Ward",
+    "id": "bs27-123",
+    "name": "Jeovanni Henley",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 222,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Junipero Serra",
+      "address": "San Mateo, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/12/26 · 6-0 / 165 · 247 rating 84 · ATH #130 · CA #162 · Listed: ATH · 247 lists commitment: California",
+    "links": {
+      "s247": "https://247sports.com/Player/jeovanni-henley-46148322/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-124",
+    "name": "Kingston Anetema",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 223,
+    "status": "ELSEWHERE",
+    "school": {
+      "name": "Mesa",
+      "address": "Mesa, AZ"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "Committed 6/13/26 · 6-1 / 175 · 247 rating 84 · ATH #135 · AZ #45 · Listed: ATH · 247 lists commitment: Arizona State",
+    "links": {
+      "s247": "https://247sports.com/Player/kingston-anetema-46147996/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-125",
+    "name": "Houston Lillard Jr.",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2027,
+    "grade": null,
+    "order": 224,
+    "status": "OFFERED",
+    "school": {
+      "name": "Tualatin",
+      "address": "Tualatin, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-9 / 155 · 247 rating NA · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/houston-lillard-jr-46164729/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs27-126",
+    "name": "Mose Kalepo",
     "jersey": "—",
     "positionGroup": "ILB",
-    "classYear": 2028,
+    "classYear": 2027,
     "grade": null,
-    "order": 818,
+    "order": 225,
     "status": "OFFERED",
     "school": {
-      "name": "Williamson",
-      "address": "Mobile, AL"
+      "name": "Bellevue",
+      "address": "Bellevue, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 200 · 247 rating 87 · Listed: LB · uncommitted",
+    "miscNotes": "6-2 / 215 · 247 rating NA · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/reginald-ward-46164781/"
+      "s247": "https://247sports.com/Player/mose-kalepo-46164043/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-120",
-    "name": "Anthony Busby",
+    "id": "bs27-127",
+    "name": "Elijah Carney",
     "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
+    "positionGroup": "SAF",
+    "classYear": 2027,
     "grade": null,
-    "order": 819,
-    "status": "OFFERED",
+    "order": 226,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "St. Louis University",
-      "address": "St. Louis, MO"
+      "name": "Lincoln",
+      "address": "Tacoma, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 210 · unrated · Listed: LB · uncommitted",
+    "miscNotes": "Committed 7/2/26 · 6-1.5 / 175 · 247 rating NA · Listed: ATH · 247 lists commitment: Eastern Washington",
     "links": {
-      "s247": "https://247sports.com/Player/anthony-busby-46161307/"
+      "s247": "https://247sports.com/Player/elijah-carney-46149890/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-121",
-    "name": "Dallas Gray",
+    "id": "bs27-128",
+    "name": "Ben Wiepert",
     "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
+    "positionGroup": "SAF",
+    "classYear": 2027,
     "grade": null,
-    "order": 820,
-    "status": "OFFERED",
+    "order": 227,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "Wichita Northwest",
-      "address": "Wichita, KS"
+      "name": "Wilsonville",
+      "address": "Wilsonville, OR"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 207 · unrated · Listed: LB · uncommitted",
+    "miscNotes": "Committed 6/23/26 · 6-2 / 205 · 247 rating NA · Listed: ATH · 247 lists commitment: New Mexico",
     "links": {
-      "s247": "https://247sports.com/Player/dallas-gray-46166278/"
+      "s247": "https://247sports.com/Player/ben-wiepert-46164484/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-122",
-    "name": "Tyce Payne",
+    "id": "bs27-129",
+    "name": "Kolton Prox",
     "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
+    "positionGroup": "SAF",
+    "classYear": 2027,
     "grade": null,
-    "order": 821,
-    "status": "OFFERED",
+    "order": 228,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "Vernon",
-      "address": "Vernon, TX"
+      "name": "Grand Saline",
+      "address": "Grand Saline, TX"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 205 · unrated · Listed: LB · uncommitted",
+    "miscNotes": "Committed 6/12/26 · 6-3 / 170 · 247 rating NA · Listed: ATH · 247 lists commitment: North Texas",
     "links": {
-      "s247": "https://247sports.com/Player/tyce-payne-46167521/"
+      "s247": "https://247sports.com/Player/kolton-prox-46156714/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-123",
-    "name": "Jason Catchings",
+    "id": "bs27-130",
+    "name": "Peyton Shaw",
     "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
+    "positionGroup": "SAF",
+    "classYear": 2027,
     "grade": null,
-    "order": 822,
+    "order": 229,
     "status": "OFFERED",
     "school": {
-      "name": "Richardson",
-      "address": "Richardson, TX"
+      "name": "Mansfield",
+      "address": "Mansfield, TX"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 210 · unrated · Listed: LB · uncommitted",
+    "miscNotes": "5-10 / 160 · 247 rating NA · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/jason-catchings-46168076/"
+      "s247": "https://247sports.com/Player/peyton-shaw-46157578/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-124",
-    "name": "Nekhi Lambeth",
+    "id": "bs27-131",
+    "name": "Jackson Spitz",
     "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
+    "positionGroup": "P",
+    "classYear": 2027,
     "grade": null,
-    "order": 823,
-    "status": "OFFERED",
+    "order": 230,
+    "status": "ELSEWHERE",
     "school": {
-      "name": "Desert Edge",
-      "address": "Goodyear, AZ"
+      "name": "Lewis & Clark",
+      "address": "Spokane, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 175 · 247 rating 90 · Listed: CB · uncommitted",
+    "miscNotes": "Committed 6/26/26 · 6-1 / 215 · 247 rating NA · Listed: P · 247 lists commitment: Montana",
     "links": {
-      "s247": "https://247sports.com/Player/nekhi-lambeth-46151180/"
+      "s247": "https://247sports.com/Player/jackson-spitz-46168350/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-125",
-    "name": "Man Robinson",
+    "id": "bs28-01",
+    "name": "Hunter Fujikawa",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "QB",
     "classYear": 2028,
     "grade": null,
-    "order": 824,
+    "order": 300,
     "status": "OFFERED",
     "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
+      "name": "Mililani",
+      "address": "Mililani, HI"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 178 · 247 rating 89 · Listed: CB · uncommitted",
+    "miscNotes": "6-2 / 200 · 247 rating 90 · Natl #234 · QB #13 · HI #2 · Listed: QB",
     "links": {
-      "s247": "https://247sports.com/Player/man-robinson-46151818/"
+      "s247": "https://247sports.com/Player/hunter-fujikawa-46151384/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-126",
-    "name": "Dale Perry",
+    "id": "bs28-02",
+    "name": "Zeke Thomas",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "QB",
     "classYear": 2028,
     "grade": null,
-    "order": 825,
-    "status": "OFFERED",
+    "order": 301,
+    "status": "COMMITTED",
     "school": {
-      "name": "Langston Hughes",
-      "address": "Fairburn, GA"
+      "name": "Willamette",
+      "address": "Eugene, OR"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 170 · 247 rating 89 · Listed: CB · uncommitted",
+    "miscNotes": "Committed 3/16/26 · 6-0.5 / 185 · 247 rating 86 · QB #47 · OR #3 · Listed: QB",
     "links": {
-      "s247": "https://247sports.com/Player/dale-perry-46164404/"
+      "s247": "https://247sports.com/Player/zeke-thomas-46151666/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-127",
-    "name": "Bryce Willingham",
+    "id": "bs28-03",
+    "name": "Brodie Scheinberg",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "QB",
     "classYear": 2028,
     "grade": null,
-    "order": 826,
+    "order": 302,
     "status": "OFFERED",
     "school": {
-      "name": "North Atlanta",
-      "address": "Atlanta, GA"
+      "name": "Davis",
+      "address": "Kaysville, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 180 · 247 rating 88 · Listed: CB · uncommitted",
+    "miscNotes": "6-5 / 195 · 247 rating 86 · QB #48 · UT #13 · Listed: QB",
     "links": {
-      "s247": "https://247sports.com/Player/bryce-willingham-46158521/"
+      "s247": "https://247sports.com/Player/brodie-scheinberg-46151030/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-128",
-    "name": "Kahmaree Crumity",
+    "id": "bs28-04",
+    "name": "Ace Amina",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "QB",
     "classYear": 2028,
     "grade": null,
-    "order": 827,
+    "order": 303,
     "status": "OFFERED",
     "school": {
-      "name": "Tallahassee Lincoln",
-      "address": "Tallahassee, FL"
+      "name": "Bishop Gorman",
+      "address": "Las Vegas, NV"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-9.5 / 173 · 247 rating 88 · Listed: CB · uncommitted",
+    "miscNotes": "6-0 / 180 · 247 rating 85 · QB #63 · NV #8 · Listed: QB",
     "links": {
-      "s247": "https://247sports.com/Player/kahmaree-crumity-46159419/"
+      "s247": "https://247sports.com/Player/ace-amina-46150781/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-129",
-    "name": "Quinn Pollock",
+    "id": "bs28-05",
+    "name": "Micah Rhodes",
     "jersey": "—",
-    "positionGroup": "CB",
+    "positionGroup": "RB",
     "classYear": 2028,
     "grade": null,
-    "order": 828,
-    "status": "OFFERED",
-    "school": {
-      "name": "McEachern",
-      "address": "Powder Springs, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 88 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/quinn-pollock-46165886/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-130",
-    "name": "Zamfir Dailey Jr.",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 829,
-    "status": "OFFERED",
-    "school": {
-      "name": "De Smet Jesuit",
-      "address": "St. Louis, MO"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 165 · 247 rating 88 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/zamfir-dailey-jr-46167070/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-131",
-    "name": "Jordan Hall",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 830,
-    "status": "OFFERED",
-    "school": {
-      "name": "Aledo",
-      "address": "Aledo, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9.5 / 165 · 247 rating 87 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordan-hall-46153279/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-132",
-    "name": "Sean Sigler",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 831,
-    "status": "OFFERED",
-    "school": {
-      "name": "Thompson",
-      "address": "Alabaster, AL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 195 · 247 rating 87 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/sean-sigler-46165537/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-133",
-    "name": "Brendon Davis",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 832,
-    "status": "OFFERED",
-    "school": {
-      "name": "Buford",
-      "address": "Buford, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 173 · 247 rating 87 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/brendon-davis-46162763/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-134",
-    "name": "Khristian Anderson",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 833,
-    "status": "OFFERED",
-    "school": {
-      "name": "American Heritage",
-      "address": "Plantation, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 180 · 247 rating 84 · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/khristian-anderson-46160927/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-135",
-    "name": "Cordey Sherman",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 834,
-    "status": "OFFERED",
-    "school": {
-      "name": "C.E. King",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 160 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cordey-sherman-46155288/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-136",
-    "name": "Marco Munoz",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 835,
-    "status": "OFFERED",
-    "school": {
-      "name": "San Antonio Brandeis",
-      "address": "San Antonio, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 170 · unrated · Listed: CB · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/marco-munoz-46168415/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-137",
-    "name": "Antonio Dural",
-    "jersey": "—",
-    "positionGroup": "CB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 836,
+    "order": 304,
     "status": "OFFERED",
     "school": {
       "name": "Klein Oak",
@@ -11970,562 +3394,462 @@ const _SEED_PROSPECTS = [
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 170 · unrated · Listed: CB · uncommitted",
+    "miscNotes": "5-9.5 / 180 · 247 rating 90 · Natl #135 · RB #8 · TX #18 · Listed: RB",
     "links": {
-      "s247": "https://247sports.com/Player/antonio-dural-46157351/"
+      "s247": "https://247sports.com/Player/micah-rhodes-46147811/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-138",
-    "name": "Derek Templeton",
+    "id": "bs28-06",
+    "name": "Quincey Clay",
+    "jersey": "—",
+    "positionGroup": "WR_SLOT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 305,
+    "status": "OFFERED",
+    "school": {
+      "name": "Capital",
+      "address": "Boise, ID"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "5-11 / 170 · 247 rating 90 · Natl #152 · WR #22 · ID #1 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/quincey-clay-46162489/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-07",
+    "name": "Eli Mortensen",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 306,
+    "status": "OFFERED",
+    "school": {
+      "name": "Skyridge",
+      "address": "Lehi, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 180 · 247 rating 88 · WR #42 · UT #8 · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/eli-mortensen-46160974/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-08",
+    "name": "Monson Vaenuku",
+    "jersey": "—",
+    "positionGroup": "WR_OUT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 307,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-3 / 200 · 247 rating NA · Listed: WR",
+    "links": {
+      "s247": "https://247sports.com/Player/monson-vaenuku-46157180/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-09",
+    "name": "Presley DeLance",
+    "jersey": "—",
+    "positionGroup": "TE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 308,
+    "status": "OFFERED",
+    "school": {
+      "name": "Lake Oswego",
+      "address": "Lake Oswego, OR"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 230 · 247 rating 90 · Natl #85 · TE #4 · OR #1 · Listed: TE",
+    "links": {
+      "s247": "https://247sports.com/Player/presley-delance-46167008/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-10",
+    "name": "Samiu Taukiuvea",
+    "jersey": "—",
+    "positionGroup": "OL_SWING",
+    "classYear": 2028,
+    "grade": null,
+    "order": 309,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5 / 270 · 247 rating 90 · Natl #112 · OT #14 · UT #5 · Listed: OT",
+    "links": {
+      "s247": "https://247sports.com/Player/samiu-taukiuvea-46156375/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-11",
+    "name": "Kaisen Garrett",
+    "jersey": "—",
+    "positionGroup": "OL_INT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 310,
+    "status": "OFFERED",
+    "school": {
+      "name": "Las Vegas Centennial",
+      "address": "Las Vegas, NV"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-4 / 260 · 247 rating NA · Listed: IOL",
+    "links": {
+      "s247": "https://247sports.com/Player/kaisen-garrett-46164153/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-12",
+    "name": "Major Stokes",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 311,
+    "status": "OFFERED",
+    "school": {
+      "name": "Orem",
+      "address": "Orem, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-5.5 / 240 · 247 rating 91 · Natl #32 · Edge #8 · UT #3 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/major-stokes-46151043/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-13",
+    "name": "Takeshi Savery",
+    "jersey": "—",
+    "positionGroup": "EDGE",
+    "classYear": 2028,
+    "grade": null,
+    "order": 312,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-2 / 245 · 247 rating 87 · Edge #49 · UT #12 · Listed: Edge",
+    "links": {
+      "s247": "https://247sports.com/Player/takeshi-savery-46157220/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-14",
+    "name": "Samuel Chien-Tauvao",
+    "jersey": "—",
+    "positionGroup": "DT",
+    "classYear": 2028,
+    "grade": null,
+    "order": 313,
+    "status": "OFFERED",
+    "school": {
+      "name": "West",
+      "address": "Salt Lake City, UT"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 290 · 247 rating 88 · DL #51 · UT #9 · Listed: DL",
+    "links": {
+      "s247": "https://247sports.com/Player/samuel-chien-tauvao-46157718/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-15",
+    "name": "Julian Bruno",
+    "jersey": "—",
+    "positionGroup": "ILB",
+    "classYear": 2028,
+    "grade": null,
+    "order": 314,
+    "status": "OFFERED",
+    "school": {
+      "name": "Grant Union",
+      "address": "Sacramento, CA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-1 / 220 · 247 rating 88 · LB #30 · CA #37 · Listed: LB",
+    "links": {
+      "s247": "https://247sports.com/Player/julian-bruno-46156479/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-16",
+    "name": "Jordan Slye Jr.",
     "jersey": "—",
     "positionGroup": "CB",
     "classYear": 2028,
     "grade": null,
-    "order": 837,
+    "order": 315,
     "status": "OFFERED",
     "school": {
-      "name": "Jones",
-      "address": "Jones, OK"
+      "name": "Bishop Mora Salesian",
+      "address": "Los Angeles, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 170 · unrated · Listed: CB · uncommitted",
+    "miscNotes": "6-1 / 170 · 247 rating 87 · CB #55 · CA #42 · Listed: CB",
     "links": {
-      "s247": "https://247sports.com/Player/derek-templeton-46169390/"
+      "s247": "https://247sports.com/Player/jordan-slye-jr-46153205/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-139",
-    "name": "Jackson Parker",
+    "id": "bs28-17",
+    "name": "Markel Newell",
     "jersey": "—",
     "positionGroup": "SAF",
     "classYear": 2028,
     "grade": null,
-    "order": 838,
+    "order": 316,
     "status": "OFFERED",
     "school": {
-      "name": "Garces Memorial",
-      "address": "Bakersfield, CA"
+      "name": "Puyallup",
+      "address": "Puyallup, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 185 · 247 rating 91 · Listed: S · uncommitted",
+    "miscNotes": "5-9.5 / 190 · 247 rating 86 · S #46 · WA #9 · Listed: S",
     "links": {
-      "s247": "https://247sports.com/Player/jackson-parker-46165254/"
+      "s247": "https://247sports.com/Player/markel-newell-46153829/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-140",
-    "name": "Braylen Bedford",
+    "id": "bs28-18",
+    "name": "Jayden Cumbee",
     "jersey": "—",
     "positionGroup": "SAF",
     "classYear": 2028,
     "grade": null,
-    "order": 839,
+    "order": 317,
     "status": "OFFERED",
     "school": {
-      "name": "Brentwood Academy",
-      "address": "Brentwood, TN"
+      "name": "Bingham",
+      "address": "South Jordan, UT"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-10.5 / 170 · 247 rating 90 · Listed: S · uncommitted",
+    "miscNotes": "6-2 / 185 · 247 rating 86 · S #51 · UT #14 · Listed: S",
     "links": {
-      "s247": "https://247sports.com/Player/braylen-bedford-46139764/"
+      "s247": "https://247sports.com/Player/jayden-cumbee-46159597/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-141",
-    "name": "Kentrell Gaddis II",
+    "id": "bs28-19",
+    "name": "Gaige Weddle",
     "jersey": "—",
     "positionGroup": "SAF",
     "classYear": 2028,
     "grade": null,
-    "order": 840,
+    "order": 318,
     "status": "OFFERED",
     "school": {
-      "name": "Choctaw",
-      "address": "Choctaw, OK"
+      "name": "Rancho Bernardo",
+      "address": "San Diego, CA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 5-11 / 165 · 247 rating 90 · Listed: S · uncommitted",
+    "miscNotes": "6-2 / 175 · 247 rating 90 · Natl #189 · ATH #10 · CA #14 · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/kentrell-gaddis-ii-46166373/"
+      "s247": "https://247sports.com/Player/gaige-weddle-46153692/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-142",
-    "name": "Drae Simmons",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 841,
-    "status": "OFFERED",
-    "school": {
-      "name": "Atlanta",
-      "address": "Atlanta, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 180 · 247 rating 90 · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/drae-simmons-46167112/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-143",
-    "name": "Jarvious Owens Jr.",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 842,
-    "status": "OFFERED",
-    "school": {
-      "name": "Langham Creek",
-      "address": "Houston, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 175 · 247 rating 89 · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jarvious-owens-jr-46164489/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-144",
-    "name": "Bryce Hayes-Roberts",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 843,
-    "status": "OFFERED",
-    "school": {
-      "name": "IMG Academy",
-      "address": "Bradenton, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 89 · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/bryce-hayes-roberts-46165800/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-145",
-    "name": "Desiray Christian",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 844,
-    "status": "OFFERED",
-    "school": {
-      "name": "Emerald",
-      "address": "Greenwood, SC"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-0 / 190 · unrated · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/desiray-christian-46165083/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-146",
-    "name": "Cooper Cranston",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 845,
-    "status": "OFFERED",
-    "school": {
-      "name": "Holcomb",
-      "address": "Holcomb, KS"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 195 · unrated · Listed: S · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cooper-cranston-46167716/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-147",
-    "name": "Isaiah Taylor",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 846,
-    "status": "OFFERED",
-    "school": {
-      "name": "Keller Central",
-      "address": "Keller, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 170 · 247 rating 94 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/isaiah-taylor-46160186/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-148",
-    "name": "Grant Bowen",
+    "id": "bs28-20",
+    "name": "Kaicen Carter",
     "jersey": "—",
     "positionGroup": "ILB",
     "classYear": 2028,
     "grade": null,
-    "order": 847,
+    "order": 319,
     "status": "OFFERED",
     "school": {
-      "name": "Immaculate Conception",
-      "address": "Elmhurst, IL"
+      "name": "Federal Way",
+      "address": "Federal Way, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-4 / 220 · 247 rating 90 · Listed: ATH · uncommitted",
+    "miscNotes": "6-2 / 220 · 247 rating 88 · ATH #33 · WA #6 · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/grant-bowen-46161719/"
+      "s247": "https://247sports.com/Player/kaicen-carter-46155175/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-149",
-    "name": "Ridge Janes",
+    "id": "bs28-21",
+    "name": "RJ Ward",
+    "jersey": "—",
+    "positionGroup": "SAF",
+    "classYear": 2028,
+    "grade": null,
+    "order": 320,
+    "status": "OFFERED",
+    "school": {
+      "name": "Bellevue",
+      "address": "Bellevue, WA"
+    },
+    "birthday": "",
+    "cell": "",
+    "homeAddress": "",
+    "parents": [],
+    "callLog": [],
+    "miscNotes": "6-0.5 / 200 · 247 rating 86 · ATH #56 · WA #10 · Listed: ATH",
+    "links": {
+      "s247": "https://247sports.com/Player/rj-ward-46155902/"
+    },
+    "updatedBy": "247 import",
+    "updatedAt": "Aug 21, 2026"
+  },
+  {
+    "id": "bs28-22",
+    "name": "Leofatu Filipe",
     "jersey": "—",
     "positionGroup": "ILB",
     "classYear": 2028,
     "grade": null,
-    "order": 848,
+    "order": 321,
     "status": "OFFERED",
     "school": {
-      "name": "De Smet Jesuit",
-      "address": "St. Louis, MO"
+      "name": "Thurston",
+      "address": "Springfield, OR"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-5 / 225 · 247 rating 90 · Listed: ATH · uncommitted",
+    "miscNotes": "6-5 / 230 · 247 rating 86 · ATH #63 · OR #5 · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/ridge-janes-46150287/"
+      "s247": "https://247sports.com/Player/leofatu-filipe-46168360/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   },
   {
-    "id": "of28-150",
-    "name": "Owen Price",
-    "jersey": "—",
-    "positionGroup": "ILB",
-    "classYear": 2028,
-    "grade": null,
-    "order": 849,
-    "status": "OFFERED",
-    "school": {
-      "name": "Central Catholic",
-      "address": "Grand Island, NE"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 210 · 247 rating 90 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/owen-price-46167717/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-151",
-    "name": "Brayden Bonik",
+    "id": "bs28-23",
+    "name": "Amosa Masaniai",
     "jersey": "—",
     "positionGroup": "SAF",
     "classYear": 2028,
     "grade": null,
-    "order": 850,
+    "order": 322,
     "status": "OFFERED",
     "school": {
-      "name": "Fort Bend Ridge Point",
-      "address": "Missouri City, TX"
+      "name": "Emerald Ridge",
+      "address": "Puyallup, WA"
     },
     "birthday": "",
     "cell": "",
     "homeAddress": "",
     "parents": [],
     "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 195 · 247 rating 89 · Listed: ATH · uncommitted",
+    "miscNotes": "6-0 / 200 · 247 rating NA · Listed: ATH",
     "links": {
-      "s247": "https://247sports.com/Player/brayden-bonik-46150522/"
+      "s247": "https://247sports.com/Player/amosa-masaniai-46158501/"
     },
     "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-152",
-    "name": "Cole Pollock",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 851,
-    "status": "OFFERED",
-    "school": {
-      "name": "McEachern",
-      "address": "Powder Springs, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 185 · 247 rating 88 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/cole-pollock-46159227/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-153",
-    "name": "Kameron Battle",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 852,
-    "status": "OFFERED",
-    "school": {
-      "name": "Carrollwood Day",
-      "address": "Tampa, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-8.5 / 183 · 247 rating 87 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kameron-battle-46158257/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-154",
-    "name": "Sharad Haire",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 853,
-    "status": "OFFERED",
-    "school": {
-      "name": "Jones",
-      "address": "Orlando, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 165 · 247 rating 85 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/sharad-haire-46159965/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-155",
-    "name": "Trey Finney",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 854,
-    "status": "OFFERED",
-    "school": {
-      "name": "Willis",
-      "address": "Willis, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-9 / 165 · 247 rating 85 · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/trey-finney-46139954/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-156",
-    "name": "Jordan Moore",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 855,
-    "status": "OFFERED",
-    "school": {
-      "name": "Brother Rice",
-      "address": "Oak Lawn, IL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-3 / 185 · unrated · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/jordan-moore-46156797/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-157",
-    "name": "De'Jay Davenport",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 856,
-    "status": "OFFERED",
-    "school": {
-      "name": "Bay",
-      "address": "Panama City, FL"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-1 / 190 · unrated · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/dejay-davenport-46165535/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-158",
-    "name": "Langston Hakeem",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 857,
-    "status": "OFFERED",
-    "school": {
-      "name": "Woodward Academy",
-      "address": "College Park, GA"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 5-10 / 175 · unrated · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/langston-hakeem-46161647/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
-  },
-  {
-    "id": "of28-159",
-    "name": "Kipton Neighbors",
-    "jersey": "—",
-    "positionGroup": "SAF",
-    "classYear": 2028,
-    "grade": null,
-    "order": 858,
-    "status": "OFFERED",
-    "school": {
-      "name": "Gilmer",
-      "address": "Gilmer, TX"
-    },
-    "birthday": "",
-    "cell": "",
-    "homeAddress": "",
-    "parents": [],
-    "callLog": [],
-    "miscNotes": "247 offer board · 6-2 / 195 · unrated · Listed: ATH · uncommitted",
-    "links": {
-      "s247": "https://247sports.com/Player/kipton-neighbors-46159196/"
-    },
-    "updatedBy": "247 import",
-    "updatedAt": "Aug 14, 2026"
+    "updatedAt": "Aug 21, 2026"
   }
 ];
 
@@ -12533,246 +3857,277 @@ const _STAFF_GROUPS = [
   {
     label: "Coaches",
     members: [
-      "Klein HC", "Gleeson OC", "Peterson DC", "Woodson Co-DC", "Weber STC",
-      "Ward AHC/WR", "DeRuyter AHC Def", "Ellsworth QB", "Patterson RB",
-      "Buford IR", "Lepak TE", "Schmidt OL", "Johnson DB", "Toth LB",
-      "Mason OLB", "Wyatt DL", "Dove DT",
+      "Danielson HC", "Collins AHC/STC/LB", "Chinander DC", "Potter OC",
+      "Brown Co-DC", "Hill Co-OC", "Frazier Edge", "Keane OL", "Whitted WR",
+      "Killings CB", "Maile DL", "Montgomery RB", "Udy TE",
     ],
   },
   {
-    label: "Assistants & Performance",
+    label: "Assistants & Analysts",
     members: [
-      "Maguire Asst QB", "Ohara Asst RB", "Liddle Asst OL", "Emmanuel OL Analyst",
-      "Kardulis Asst S", "Fowler ST QC", "Linton Def Analyst",
-      "Jacobs S&C", "Reid Assoc S&C", "Carter Asst S&C", "Porter Asst S&C",
-      "Young Asst S&C",
+      "McMahen Asst DB", "Pope Asst WR", "Satterlee Asst LB", "Washington Asst DL",
+      "Koetter Sr Analyst", "Strausser Off Analyst", "McPeek ST Analyst",
+      "Zamberlin Off QC", "Holmes Off QC",
     ],
   },
   {
-    label: "Support Staff",
+    label: "Personnel & Operations",
     members: [
-      "Trey Scott GM",
-      "Taylor Braet Dir PP/HS Relations",
-      "Greg Svarczkopf Dir Recruiting",
-      "Maddi Gage Dir Player Engagement",
-      "Kelsie Johnson Dir On-Campus Recruiting",
-      "Zac Cox Asst Dir Scouting",
-      "Preston Ellsworth Asst Dir Recruiting",
-      "Hank Jacobs Asst Dir Recruiting",
-      "Adrian Manning Asst Dir Scouting",
+      "Brandon Jones GM", "Kenny Macklin FB Ops", "Shauny Fisk Dir Recruiting",
+      "Landan Yount Player Personnel", "Charlotte Siegel Chief of Staff",
+    ],
+  },
+  {
+    label: "Performance & Medical",
+    members: [
+      "Benjamin Hilgart S&C", "Marques White S&C", "Collin McKelvey S&C",
+      "Josh Price S&C", "Tom Keay S&C",
+      "Jeremy Busch AT", "McKenna Drevno AT", "Brandon Voigt AT", "Michael Fanning AT",
     ],
   },
 ];
 
 window.BOARD_CONFIG = {
   school: {
-    id: "kansas-state",
-    name: "Kansas State Football",
-    short: "K-STATE",
-    primary: "#512888", // K-State Royal Purple
-    accent: "#D1D1D1",  // K-State silver
+    id: "boise-state",
+    name: "Boise State Football",
+    short: "BOISE STATE",
+    primary: "#0033A0", // Bronco blue
+    accent: "#D64309",  // Bronco orange
+  },
+  /* app logo mark on the board (ESPN CDN id lives in the template) */
+  logoSchool: "Boise State",
+  /* HS Prospect Rankings — the program's 7-tier grading scale (board lanes,
+     profile dropdown, feed chips). Colors match the printed scale sheet.
+       RARE               Premier/Elite — impact starter 3-4 yrs, win FOR player
+       ALL-LEAGUE         Difference maker — build around, win WITH player
+       MULTI-YEAR STARTER Functional starter w/ limitations — Year 2 contributor
+       STARTER            Solid backup — projected starter in career, Year 3
+       PROGRAM            Contributor — high-ceiling project / ST depth, Year 4
+       NOT GOOD ENOUGH    Camp prospect — walk-on candidate, scout team
+       BUST               Not a fit. Do not take. Avoid.
+     The Ungraded lane is appended automatically. */
+  grades: [
+    { id: "RARE", label: "Rare", color: "#0B0B0D", text: "#FFFFFF", tint: "rgba(0,0,0,0.35)" },
+    { id: "ALL_LEAGUE", label: "All-League", color: "#C9A227", text: "#14181F", tint: "rgba(201,162,39,0.10)" },
+    { id: "MULTI_YEAR", label: "Multi-Year Starter", color: "#2E5488", text: "#FFFFFF", tint: "rgba(46,84,136,0.16)" },
+    { id: "STARTER", label: "Starter", color: "#5B8BD5", text: "#FFFFFF", tint: "rgba(91,139,213,0.12)" },
+    { id: "PROGRAM", label: "Program", color: "#3BE8E8", text: "#14181F", tint: "rgba(59,232,232,0.08)" },
+    { id: "NGE", label: "Not Good Enough", color: "#F4F01A", text: "#14181F", tint: "rgba(244,240,26,0.06)" },
+    { id: "BUST", label: "Bust", color: "#E02B20", text: "#FFFFFF", tint: "rgba(224,43,32,0.10)" },
+  ],
+  /* Position groups — Boise State board layout (X/F/Z receiver system).
+     Ids reuse template defaults wherever the meaning matches, so existing
+     player data stays valid and only the labels change; WR_Z is the one new
+     id. Removed groups (DE/NT/NICKEL-only-renames): sub-275 DL types live in
+     EDGE, interior in DT. Specialists keep the template default (K/P/LS). */
+  positions: {
+    offense: [
+      { id: "QB", label: "QB" },
+      { id: "RB", label: "RB" },
+      { id: "WR_OUT", label: "X WR" },
+      { id: "WR_SLOT", label: "F WR" },
+      { id: "WR_Z", label: "Z WR" },
+      { id: "TE", label: "TE" },
+      { id: "OL_INT", label: "IOL" },
+      { id: "OL_SWING", label: "OT" },
+    ],
+    defense: [
+      { id: "EDGE", label: "EDGE" },
+      { id: "DT", label: "DT" },
+      { id: "ILB", label: "LB" },
+      { id: "CB", label: "CB" },
+      { id: "SAF", label: "SAF" },
+      { id: "NICKEL", label: "NICKEL" },
+    ],
   },
   staffGroups: _STAFF_GROUPS,
-  /* 2026 schedule (announced Jan 21, 2026). Shown on the calendar view.
-     Times CT; TBA games get times as the Big 12 announces them. */
+  /* 2026 schedule — first Pac-12 season. Times MT; TBA games get times as
+     the league announces them. Week 13 opponent TBA (add when scheduled). */
   games: [
-    { date: "2026-09-05", opponent: "Nicholls",                              home: true,  time: "6:00 PM CT" },
-    { date: "2026-09-12", opponent: "Washington State", short: "Wash St",    home: true,  time: "11:00 AM CT" },
-    { date: "2026-09-19", opponent: "Tulane",                                home: true,  time: "11:00 AM CT" },
-    { date: "2026-09-26", opponent: "Cincinnati",                            home: false },
-    { date: "2026-10-10", opponent: "Houston",                               home: true },
-    { date: "2026-10-17", opponent: "Kansas",                                home: true },
-    { date: "2026-10-24", opponent: "Arizona State",   short: "Arizona St",  home: false },
-    { date: "2026-10-31", opponent: "Colorado",                              home: false },
-    { date: "2026-11-07", opponent: "Oklahoma State",  short: "Okla St",     home: true },
-    { date: "2026-11-14", opponent: "TCU",                                   home: false },
-    { date: "2026-11-21", opponent: "Arizona",                               home: true },
-    { date: "2026-11-28", opponent: "Iowa State",      short: "Iowa St",     home: false },
+    { date: "2026-09-05", opponent: "Oregon",                                home: false, time: "1:30 PM MT",  tv: "CBS" },
+    { date: "2026-09-12", opponent: "Memphis",                               home: true,  time: "4:00 PM MT",  tv: "USA" },
+    { date: "2026-09-19", opponent: "South Dakota",   short: "S Dakota",     home: true,  time: "8:00 PM MT",  tv: "CBSSN" },
+    { date: "2026-09-26", opponent: "Western Michigan", short: "W Michigan", home: false },
+    { date: "2026-10-03", opponent: "Utah State",     short: "Utah St",      home: true,  time: "5:30 PM MT",  tv: "CBSSN" },
+    { date: "2026-10-10", opponent: "Fresno State",   short: "Fresno St",    home: false, time: "8:30 PM MT",  tv: "The CW" },
+    { date: "2026-10-24", opponent: "Washington State", short: "Wash St",    home: false, time: "8:00 PM MT",  tv: "USA" },
+    { date: "2026-10-31", opponent: "Texas State",    short: "Texas St",     home: true,  time: "4:00 PM MT",  tv: "The CW" },
+    { date: "2026-11-07", opponent: "Colorado State", short: "Colorado St",  home: false, time: "4:00 PM MT",  tv: "USA" },
+    { date: "2026-11-14", opponent: "Oregon State",   short: "Oregon St",    home: true,  time: "4:00 PM MT",  tv: "USA" },
+    { date: "2026-11-21", opponent: "San Diego State", short: "SDSU",        home: true,  time: "7:30 PM MT",  tv: "USA" },
   ],
-  /* Board admins — the only people who can stack the MAIN board and view
-     every staffer's personal board. Names must match staffGroups exactly.
-     Everyone else gets the main board view-only plus their own board.
-     (Player info, call logs, evals, and photos stay editable by all staff.)
-     K-State equivalents of HC / Chief of Staff / GM: */
-  boardAdmins: ["Klein HC", "Trey Scott GM", "Greg Svarczkopf Dir Recruiting"],
+  /* Board admins — HC + GM to start (same pattern as the other schools;
+     one-line change to add a Chief-of-Staff equivalent or testers). */
+  boardAdmins: ["Danielson HC", "Brandon Jones GM"],
   seedProspects: _SEED_PROSPECTS,
   staffPassword: "Recruit26", // legacy fallback — unused while staffAuth is set
-  /* Shared cloud board — live multi-user sync (boards, evals, calls, notes,
-     passwords, deactivations) across every device. Publishable key is safe
-     to ship; RLS + schema live in template/schema.sql. */
+  /* Shared cloud board — same Supabase project as the other schools; data is
+     namespaced per school so nothing crosses over. */
   supabase: {
     url: "https://suodahhxtahzqoerpkjg.supabase.co",
     anonKey: "sb_publishable_2jpfy4aDZ1B41CmLOLzQrg_KlrfCGA0",
   },
   // Compliance calendar: template ships the 2026-27 FBS calendar. Override
-  // any date without a template change via recruitingCalendar: {...} — same
-  // shape as DEFAULT_CALENDAR in the app (periods / portalWindows / keyDates).
+  // any date without a template change via recruitingCalendar: {...}.
 };
 
 /* == staffAuth (generated by scripts/gen_credentials.py — do not hand-edit) == */
 window.BOARD_CONFIG.staffAuth = {
-  "Adrian Manning Asst Dir Scouting": {
-    "h": "64ef2369bdbb928b1c42b54a7fbc865415ed638376f274c29770874b3a0d9dfe",
-    "s": "cefcd55fdfcdabbcf81dc4dd"
+  "App Owner — Admin": {
+    "h": "d816736306babbc1253efaa562b1d8b1828961df28b82aaf4b88be4d1f176629",
+    "s": "a9af2cf4a7930fcf81c1a03d"
   },
-  "App Owner \u2014 Admin": {
-    "h": "5d701e683c85bffd219d1a2b97de3edf34a39c8146546782895487bdbeaae455",
-    "s": "37216c3a6309ee8c2d2e58c4"
+  "App Owner — Staff View": {
+    "h": "305b6e56d1f0a5114c6cd99f4a7cd0e8bea5b1a82411b73e6b5e655a32d4ed7d",
+    "s": "d0162329d6ad6501b84ed54e"
   },
-  "App Owner \u2014 Staff View": {
-    "h": "4dec7c4375f827753ab54fe71ef3680b9e3e9266f152432574849cdddf462bec",
-    "s": "58d4fa19a9ab1fd5c5d6bb28"
+  "Benjamin Hilgart S&C": {
+    "h": "11653a2fd4dd501969efbf921757855ff2f73d35ac2bcb8fe24f3ab31ee0cab3",
+    "s": "ceb82714eee6440c4445d200"
   },
-  "Buford IR": {
-    "h": "f994f3e4733552d0a27c3f6933f43be3339311d799f236bce1f84b113570ab0b",
-    "s": "6fd6cb6ae8cba0050b34451d"
+  "Brandon Jones GM": {
+    "h": "b65dcdc11b0e6173b79104e507ef4d14eb7c4ee62c9b6abe651d716e63931157",
+    "s": "05c0ab17925d348009740dd5"
   },
-  "Carter Asst S&C": {
-    "h": "a5cc47cdad06ad2e61eb8d745cc101d0591d3a333d18cd758ac5d8709a19b4f7",
-    "s": "bab76f80a35e665a75bee8a2"
+  "Brandon Voigt AT": {
+    "h": "b1c5c6b51531b3542bfb37196ab6e1508f2ee522ff75f7e98395b87cca9b1431",
+    "s": "455d8c662c78c90e677acc96"
   },
-  "DeRuyter AHC Def": {
-    "h": "e8bb82a92d785130b82f4e274bd6800e14669e34c1f4116c6f5e1d7b7fd0685e",
-    "s": "19c228210b772406d66782b0"
+  "Brown Co-DC": {
+    "h": "86c03d159ff994458e20f5ca78997c58d0fccb8ccb5280e16106c6e7a982b014",
+    "s": "786e6f71833be5a208fa83bb"
   },
-  "Dove DT": {
-    "h": "cda216b1d75d936695604093aa20fe605c2bdbbe27badfd48178daccff1d5471",
-    "s": "f5065f0105dee9eed8aa2bbf"
+  "Charlotte Siegel Chief of Staff": {
+    "h": "6f80857a1a36ae48079769daa6c17515f765b4f91af0c5887b2866e60ccb65a9",
+    "s": "910fecfb5af857cecf58e8e9"
   },
-  "Ellsworth QB": {
-    "h": "4db0d1fd9ddfbb72f2610091a6327671474235aade963c6b2b11e2f0cf40db66",
-    "s": "75b4c8b7314b316cf354e838"
+  "Chinander DC": {
+    "h": "11e06a3204d01cd45a93b909a12388d9bac9b87fe5ec6bce7836c86d02be45dd",
+    "s": "9b8f59bb7bc6f6fbc4ad5ffd"
   },
-  "Emmanuel OL Analyst": {
-    "h": "0b612af3674a9e6a0730f817ea6b9f9fb02f527305110a24dcfb1df5188273d8",
-    "s": "2fa1dae2e5ba2887aa6a72e7"
+  "Collin McKelvey S&C": {
+    "h": "23f9c0cc9ad5dad33f220083a81f4973eaf3aa86ba5ceaea5c101b90e3f010cc",
+    "s": "345f6fc68719f57b6d125f0d"
   },
-  "Fowler ST QC": {
-    "h": "07e38964dac56db6fa1195c08e078b0677628f5ccb8a07adb3e2b17677a4b57e",
-    "s": "15a063963b6b136e472999fe"
+  "Collins AHC/STC/LB": {
+    "h": "3f483a78504e1163eeaad5ec634d2e0dcd2180ed7e33252f78b7c89b32a3d459",
+    "s": "d6ae946e3bcce05ece1444dd"
   },
-  "Gleeson OC": {
-    "h": "0e905d4c7862925ec32536124d12d46e435116f55029f3eef7fa739dcec46456",
-    "s": "ff6e02f93c13430a0a85959f"
+  "Danielson HC": {
+    "h": "44a2b81e7f562fe878b012cacfe585e914e52f3f415a7f726466df64576724fb",
+    "s": "54754b23c979319843e735c5"
   },
-  "Greg Svarczkopf Dir Recruiting": {
-    "h": "7559252e154201a42f0460c0193b9e4ab5ca5ff58744feae9cba79f2dff0c5e7",
-    "s": "5a06bc3056b670998c7b16a3"
+  "Frazier Edge": {
+    "h": "392c8be547a0c0947433692d0ea8a2d97fb9da20603b43c6e686cbb2e2d148d9",
+    "s": "27b68c0835f0e73a133933f9"
   },
-  "Hank Jacobs Asst Dir Recruiting": {
-    "h": "a5e1425dad4bc9acd7024d7f84d069b93d21a00d699f26a8b7ffb2c682cde2f9",
-    "s": "6b58d0121a1719194a876817"
+  "Hill Co-OC": {
+    "h": "9ed2a7f3cb16c19dd1aff5bd67524ae36beb6a0bc5cdee92099e96c08780592c",
+    "s": "b824bf93728cfc802ca5c258"
   },
-  "Jacobs S&C": {
-    "h": "54fad4930c2be3abff170c0dabe7abd9523d2c8f48d760ae2f61e28b547fa222",
-    "s": "8aaf6f3d769d0df10fcf7105"
+  "Holmes Off QC": {
+    "h": "7626dde5b137c9135d82fcaf01e97080ab047fef1757a1baac6210d1704e68f8",
+    "s": "7925a34874c3f8f1d74db1d1"
   },
-  "Johnson DB": {
-    "h": "c8aa86f77b3ae52a81e55885716dc963d50943b759163c8fad27f5a7c6fa66e8",
-    "s": "9334338604bbd46b80f34c5e"
+  "Jeremy Busch AT": {
+    "h": "c0632c9cb3002808c38a73645f4465b88bc0a9b80cb3586f4af7d8008f91e158",
+    "s": "e29d0b9168b1d52246f8f7a3"
   },
-  "Kardulis Asst S": {
-    "h": "cfbc43bc4e68f53ec29d4d17955d0680cb886aa3d6c96de7945c10f955d10a5e",
-    "s": "9e028dcb84f6ae82fd93c65e"
+  "Josh Price S&C": {
+    "h": "95aef0142d1951e65f7becf8607afd624e110bdf7587d7eb8a3013324219db5b",
+    "s": "f9a71affb0340910a414834c"
   },
-  "Kelsie Johnson Dir On-Campus Recruiting": {
-    "h": "b046bf2829f696018a9b8c60857d0ef774c084fefd428004e04c2d92528268b9",
-    "s": "382509c89335ff163b2bb126"
+  "Keane OL": {
+    "h": "89f248d5621308cd7759cc39b69ece28b241d368d9a803e6f21a327a60627e7e",
+    "s": "a291d5694bd911e2723c5989"
   },
-  "Klein HC": {
-    "h": "8015ad4b1b362b61eadc353d1cb553f952cf384a1f12888cca92a712680ac278",
-    "s": "173ebbc7a06ac21bf080564f"
+  "Kenny Macklin FB Ops": {
+    "h": "574eb8023a26ea3aab889cff85059bed9e11dc143b867e0cb5a7d2ca2e26ccbd",
+    "s": "ed9732704c97021933293830"
   },
-  "Lepak TE": {
-    "h": "f5733d379bfd2d4a98b42b88c290c423226f7d926e893cbccd903ca3cc9b2568",
-    "s": "4552807e9282beface4fdbde"
+  "Killings CB": {
+    "h": "bb6c6fe8c0d170831203b826ef741f8b8b8c1058bbdb8edf1799522aaee268de",
+    "s": "be5eb5f6fdd4d8aa7d0eb250"
   },
-  "Liddle Asst OL": {
-    "h": "234276891618b5ad3bfa5325c04cba163d536860fa280c6778b33574bb85d279",
-    "s": "a34d02b3628d997d8973e30c"
+  "Koetter Sr Analyst": {
+    "h": "13efb5beb98b2c8a6a0a15c289f349f48084a63dd619cc94c3a3be5ea48e039f",
+    "s": "3b4fc0a2799f0e8ddc59942d"
   },
-  "Linton Def Analyst": {
-    "h": "f5029e6881ee9e3f15ad9e18536d20787e3ec5cfc9e9cf8f5d8b1b3bf01c51cb",
-    "s": "fd91959c431c80e23c30a6ef"
+  "Landan Yount Player Personnel": {
+    "h": "17de961fea1d7aa611b682fadf20feb41b6df4ee095790b48ac7993060e27a87",
+    "s": "cd01730a4a67a7601946c74e"
   },
-  "Maddi Gage Dir Player Engagement": {
-    "h": "4ecf0660ed5696f660c4a3dd0d8dd504cc991d3c026ea8993e49e517805990ea",
-    "s": "3bf73d230ae6e576a95ff273"
+  "Maile DL": {
+    "h": "dea1cf646790ab9fee921d9ffc8daa063ce9d32c9c8ca35f98c393f0f2b88528",
+    "s": "73405d96b5d5efabd5b40682"
   },
-  "Maguire Asst QB": {
-    "h": "549cfda4278c1e9dd27c6e061c15c40c154dc785b044f6c6848e426da8bd7669",
-    "s": "8dc6f75e9f79794d87dac2c0"
+  "Marques White S&C": {
+    "h": "92e42e200ed55f55b64b88031e5cf03f53ed3b55cf175713318b2fa978828462",
+    "s": "eeb7b4c6ffc73b3464e28c99"
   },
-  "Mason OLB": {
-    "h": "e7b6691d52c4a98ad7e746cad228b95e103819fea82288320685e0cb49b23868",
-    "s": "6b5384298b2513061d6d454e"
+  "McKenna Drevno AT": {
+    "h": "6ff86ee01ddf30fd1f33c64587e3abfd9ac01115df0ddd90592294b5e3f37a62",
+    "s": "ac78bb76044fb0b1aa042820"
   },
-  "Ohara Asst RB": {
-    "h": "f49cf2658e3d97f6d76244abdafaf136e1736510b7454f951fd7ade4c93f0578",
-    "s": "2370e620783af6824ada08c9"
+  "McMahen Asst DB": {
+    "h": "512d6cfc76c6dea943d21227004216f62df2147ecd8f33ea7e4572a6969732e4",
+    "s": "a1387c70a46dabcac318c0dd"
   },
-  "Patterson RB": {
-    "h": "6734b2d96c3b595eecb0bbfe43bdc6025e6dd24ec126e7f2323626a2bcec5329",
-    "s": "5b26d00b2e654531af300597"
+  "McPeek ST Analyst": {
+    "h": "55862f7b3a3b088066c0a914f2e41777ea34d32def83a35a1e0b5dd96eeeb9ed",
+    "s": "8bc30459b7e6cb0b3006f121"
   },
-  "Peterson DC": {
-    "h": "7aed354b5a639c125f7c52a8a06496057801586d00f8eb6f5b49c9f965a3ff28",
-    "s": "77755a04a32d3515f02c1dc3"
+  "Michael Fanning AT": {
+    "h": "77e7bfe865c4de61b7245fbb420a72cc49092cff1a70421f5ce751c5e7b596e9",
+    "s": "2e3f3f89c3ae65ee5f659b31"
   },
-  "Porter Asst S&C": {
-    "h": "5953cd91a82e0df932f141fe23f1f73268a98726542ddb648b0fda95b8809512",
-    "s": "7e15717c970c1b7404330c85"
+  "Montgomery RB": {
+    "h": "14a4f4d1f213d66c2305d1e58fdffe7f7a2107aad2eac87424bf596900ed6ce8",
+    "s": "814dd5d844ddd827ee932e17"
   },
-  "Preston Ellsworth Asst Dir Recruiting": {
-    "h": "6f0a48e22e564ca8b142f998a7d0ff9efec170735a780c63373a16712ed4f3af",
-    "s": "ae6021d23b308671567ce10a"
+  "Pope Asst WR": {
+    "h": "e175138f4fbb69b63dbb05a0ac178da884475b53a05665ccc2c2df0ccd1cb2ba",
+    "s": "690e77f961b3633e819accc1"
   },
-  "Reid Assoc S&C": {
-    "h": "6bf10993e6b52213ea6092e25d64a80777a5be88c50f5788443e8f7f2613d91b",
-    "s": "52f069b8f0f128b6c847613e"
+  "Potter OC": {
+    "h": "1446f7a3f234a2848f068836e7aed8e290ad6b561f300f859da97f2a3e6f65c6",
+    "s": "ba2aa39f5fe8e69df9adf79e"
   },
-  "Schmidt OL": {
-    "h": "9ab26cddda2c8eaf440bf204de1289a7e7967b1764e842e45eeca60d2d395a82",
-    "s": "79316070313491b6c6944b42"
+  "Satterlee Asst LB": {
+    "h": "d49ab02e0e70648f594f58d15906f6c99c180f57c1e5d2865a78d03024697d1e",
+    "s": "936624150227fc5397e80b3c"
   },
-  "Taylor Braet Dir PP/HS Relations": {
-    "h": "1f50b1a2506d1cc9273a9dba5d87bb7020567230d717cb479dbae0fcf3d0d9f6",
-    "s": "f81e6a49314cd074c9f40d8b"
+  "Shauny Fisk Dir Recruiting": {
+    "h": "21a1f72c4ba2dcec5f362e3f3baf2c291add9cde9122a0ed87cf5872566f095f",
+    "s": "347a8489e21e94dd51f46562"
   },
-  "Toth LB": {
-    "h": "eb12b9fe977f93d3510dbe535d82f3551236c176514cce33be3e906f85ae7519",
-    "s": "c37ffc24e38f076338ef7369"
+  "Strausser Off Analyst": {
+    "h": "aa2bc409133917be8cefab93ac5c1df5fef86d85bac070f8542a8bca27a3145e",
+    "s": "a730ae753749690a4c216088"
   },
-  "Trey Scott GM": {
-    "h": "46def1be79fd957f8ab192c87ca98bed55e49482ffec20a89ffdb2689a39a8aa",
-    "s": "f51c17a52a8ca1815c0d258a"
+  "Tom Keay S&C": {
+    "h": "2a6588d67bdd26043e103027e60e15fb27457b0f30c8ebfad21d466dc5c95e06",
+    "s": "e4c3b3befe4ac981fe6cbcb6"
   },
-  "Ward AHC/WR": {
-    "h": "e36bef4fe6f34ea489d257e8f250c789db5334b34716a8dc5eff58c0f5bfdd00",
-    "s": "34b5fae77b12262a52629c42"
+  "Udy TE": {
+    "h": "35c09a9f6f704a44d0ced9e25c2a9da69a7d00b99d09a8d8135ef722f9c1f100",
+    "s": "585f578350d551b3dd14d541"
   },
-  "Weber STC": {
-    "h": "c64574d4f59e9ce25ea13e07f627a05c0598ec000392dda446787d11d8e231a7",
-    "s": "27b1b2a2cc0a3d35e148b1b3"
+  "Washington Asst DL": {
+    "h": "c9b7a1f993a1d60c773e269e8d06729cc6543d27c1cdcfa3fd2ea29cba8324b0",
+    "s": "68b180946e3cebd2aacc8089"
   },
-  "Woodson Co-DC": {
-    "h": "d4b94af3b4fdef0a72cb266d17f1a29f3940c033e45229fea9169ca6e1051c29",
-    "s": "1ef9808f3fa8abc1b75109dd"
+  "Whitted WR": {
+    "h": "ff9ad29da27db4d64537f3c1aceebf974010284b376e7c73dcbbd31fb882863b",
+    "s": "37f429bfaf674abdfb449c76"
   },
-  "Wyatt DL": {
-    "h": "73cfc5445f5cf8fbf1a134f9b0c6277902d0c70c18c3af69a2c9e93bffeb8368",
-    "s": "b931f2bbc3765f195d5239eb"
-  },
-  "Young Asst S&C": {
-    "h": "7533be8c27cc83b65df7ed2f4302c4459aa58aff621156e02f87c14939a72a3d",
-    "s": "55499df00ae2d795dfa0147b"
-  },
-  "Zac Cox Asst Dir Scouting": {
-    "h": "110bf59355185527fb3b1308791fcab954fb2c71582ac7b1f05bd228c8f7784e",
-    "s": "e580a1219d75dbe54e295307"
+  "Zamberlin Off QC": {
+    "h": "17af77a197da957cefe513b6c3ee6bb3a8993d403c8fc4770b1a8251da827434",
+    "s": "7f0a0dba83d6c150e5efa0e2"
   }
 };
 /* == end staffAuth == */
 
 /* generated by build_school.py */
-window.BOARD_CONFIG.iconDataUrl = "data:image/png;base64,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";
+window.BOARD_CONFIG.iconDataUrl = "data:image/png;base64,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";

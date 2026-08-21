@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Board — position-group cloud repair</title>
+<style>
+  body { margin:0; background:#12161D; color:#E8ECF2; font:15px/1.55 'Inter',-apple-system,'Segoe UI',sans-serif; }
+  .wrap { max-width:640px; margin:0 auto; padding:40px 20px 60px; }
+  h1 { font:700 22px/1.2 'Oswald','Arial Narrow',sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  h1 span { color:#D64309; }
+  .card { background:#1A2029; border:1px solid #2A323E; border-radius:12px; padding:18px 20px; margin-top:16px; }
+  button { background:#F2F4F8; color:#12161D; border:0; border-radius:8px; padding:12px 22px; margin-top:14px;
+           font:600 14px 'Oswald',sans-serif; letter-spacing:.1em; text-transform:uppercase; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .ok { color:#2EA043; } .err { color:#F1948A; } .dim { color:#8B95A5; font-size:13px; }
+  #log div { padding:3px 0; border-bottom:1px solid #20272F; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The Board — <span>Position Repair</span></h1>
+  <p class="dim">One-time fix after the Boise State board moved to the X/F/Z + EDGE/DT/LB/CB/SAF/NICKEL
+  position groups: remaps any player or personal-board entry still sitting in a retired group
+  (DE → EDGE, NT → DT) so nobody disappears from the board. Self-contained — run from any folder.
+  Safe to run more than once. Delete afterwards.</p>
+  <div class="card">
+    <div id="status">Ready.</div>
+    <button id="go">Repair position groups in the cloud board</button>
+    <div id="log" style="margin-top:12px"></div>
+  </div>
+</div>
+<script>
+(function () {
+  var SUPA = { url: "https://suodahhxtahzqoerpkjg.supabase.co", anonKey: "sb_publishable_2jpfy4aDZ1B41CmLOLzQrg_KlrfCGA0" };
+  var SID = "boise-state";
+  var REMAP = { DE: "EDGE", NT: "DT" };
+  var logEl = document.getElementById("log"), btn = document.getElementById("go");
+  var log = function (m, c) { var d = document.createElement("div"); if (c) d.className = c; d.textContent = m; logEl.appendChild(d); };
+  var base = SUPA.url + "/rest/v1/boards";
+  var headers = { apikey: SUPA.anonKey };
+
+  btn.onclick = function () {
+    btn.disabled = true;
+    // players doc + every personal-board stack doc in one query
+    var q = base + "?or=(key.eq.board-" + SID + "-players,key.like.board-" + SID + "-stack::*)&select=key,value";
+    fetch(q, { headers: headers })
+      .then(function (r) { if (!r.ok) throw new Error("cloud read failed (" + r.status + ")"); return r.json(); })
+      .then(function (rows) {
+        if (!rows.length) { log("Cloud is empty — nothing to repair.", "ok"); return; }
+        var writes = [];
+        rows.forEach(function (row) {
+          var v = JSON.parse(row.value), changed = 0;
+          if (row.key.indexOf("-players") !== -1) {
+            v = v.map(function (p) {
+              if (REMAP[p.positionGroup]) { changed++; return Object.assign({}, p, { positionGroup: REMAP[p.positionGroup], _ts: Date.now() }); }
+              return p;
+            });
+          } else { // stack overlay: { [pid]: { g, o, pg } }
+            Object.keys(v).forEach(function (pid) {
+              if (v[pid] && REMAP[v[pid].pg]) { v[pid].pg = REMAP[v[pid].pg]; changed++; }
+            });
+          }
+          if (changed) writes.push({ key: row.key, value: JSON.stringify(v), updated_at: new Date().toISOString(), n: changed });
+        });
+        if (!writes.length) { log("Nothing to change — no retired group ids found in " + rows.length + " cloud docs.", "ok"); return; }
+        return Promise.all(writes.map(function (w) {
+          var n = w.n; delete w.n;
+          return fetch(base, {
+            method: "POST",
+            headers: { apikey: SUPA.anonKey, "Content-Type": "application/json", Prefer: "resolution=merge-duplicates" },
+            body: JSON.stringify(w),
+          }).then(function (r) {
+            if (!r.ok) throw new Error("write failed for " + w.key + " (" + r.status + ")");
+            log(w.key.replace("board-" + SID + "-", "") + ": " + n + " entr" + (n === 1 ? "y" : "ies") + " remapped.", "ok");
+          });
+        })).then(function () { log("Done. Hit ⟳ Refresh in the app — everyone shows in their new group. Delete this file afterwards.", "dim"); });
+      })
+      .catch(function (e) { log("ERROR: " + e.message, "err"); btn.disabled = false; });
+  };
+})();
+</script>
+</body>
+</html>
