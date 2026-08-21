@@ -4,7 +4,7 @@ const _STAFF_GROUPS = [
   {
     label: "Coaches",
     members: [
-      "Danielson HC", "Collins AHC/STC", "Chinander DC", "Potter OC",
+      "Danielson HC", "Collins AHC/STC/LB", "Chinander DC", "Potter OC",
       "Brown Co-DC", "Hill Co-OC", "Frazier Edge", "Keane OL", "Whitted WR",
       "Killings CB", "Maile DL", "Montgomery RB", "Udy TE",
     ],
@@ -132,7 +132,7 @@ window.BOARD_CONFIG.staffAuth = {
     "h": "23f9c0cc9ad5dad33f220083a81f4973eaf3aa86ba5ceaea5c101b90e3f010cc",
     "s": "345f6fc68719f57b6d125f0d"
   },
-  "Collins AHC/STC": {
+  "Collins AHC/STC/LB": {
     "h": "3f483a78504e1163eeaad5ec634d2e0dcd2180ed7e33252f78b7c89b32a3d459",
     "s": "d6ae946e3bcce05ece1444dd"
   },
