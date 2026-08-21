@@ -21,6 +21,15 @@ const _STAFF_GROUPS = [
     label: "Personnel & Operations",
     members: [
       "Brandon Jones GM", "Kenny Macklin FB Ops", "Shauny Fisk Dir Recruiting",
+      "Landan Yount Player Personnel", "Charlotte Siegel Chief of Staff",
+    ],
+  },
+  {
+    label: "Performance & Medical",
+    members: [
+      "Benjamin Hilgart S&C", "Marques White S&C", "Collin McKelvey S&C",
+      "Josh Price S&C", "Tom Keay S&C",
+      "Jeremy Busch AT", "McKenna Drevno AT", "Brandon Voigt AT", "Michael Fanning AT",
     ],
   },
 ];
@@ -95,17 +104,33 @@ window.BOARD_CONFIG.staffAuth = {
     "h": "305b6e56d1f0a5114c6cd99f4a7cd0e8bea5b1a82411b73e6b5e655a32d4ed7d",
     "s": "d0162329d6ad6501b84ed54e"
   },
+  "Benjamin Hilgart S&C": {
+    "h": "11653a2fd4dd501969efbf921757855ff2f73d35ac2bcb8fe24f3ab31ee0cab3",
+    "s": "ceb82714eee6440c4445d200"
+  },
   "Brandon Jones GM": {
     "h": "b65dcdc11b0e6173b79104e507ef4d14eb7c4ee62c9b6abe651d716e63931157",
     "s": "05c0ab17925d348009740dd5"
+  },
+  "Brandon Voigt AT": {
+    "h": "b1c5c6b51531b3542bfb37196ab6e1508f2ee522ff75f7e98395b87cca9b1431",
+    "s": "455d8c662c78c90e677acc96"
   },
   "Brown Co-DC": {
     "h": "86c03d159ff994458e20f5ca78997c58d0fccb8ccb5280e16106c6e7a982b014",
     "s": "786e6f71833be5a208fa83bb"
   },
+  "Charlotte Siegel Chief of Staff": {
+    "h": "6f80857a1a36ae48079769daa6c17515f765b4f91af0c5887b2866e60ccb65a9",
+    "s": "910fecfb5af857cecf58e8e9"
+  },
   "Chinander DC": {
     "h": "11e06a3204d01cd45a93b909a12388d9bac9b87fe5ec6bce7836c86d02be45dd",
     "s": "9b8f59bb7bc6f6fbc4ad5ffd"
+  },
+  "Collin McKelvey S&C": {
+    "h": "23f9c0cc9ad5dad33f220083a81f4973eaf3aa86ba5ceaea5c101b90e3f010cc",
+    "s": "345f6fc68719f57b6d125f0d"
   },
   "Collins AHC/STC": {
     "h": "3f483a78504e1163eeaad5ec634d2e0dcd2180ed7e33252f78b7c89b32a3d459",
@@ -127,6 +152,14 @@ window.BOARD_CONFIG.staffAuth = {
     "h": "7626dde5b137c9135d82fcaf01e97080ab047fef1757a1baac6210d1704e68f8",
     "s": "7925a34874c3f8f1d74db1d1"
   },
+  "Jeremy Busch AT": {
+    "h": "c0632c9cb3002808c38a73645f4465b88bc0a9b80cb3586f4af7d8008f91e158",
+    "s": "e29d0b9168b1d52246f8f7a3"
+  },
+  "Josh Price S&C": {
+    "h": "95aef0142d1951e65f7becf8607afd624e110bdf7587d7eb8a3013324219db5b",
+    "s": "f9a71affb0340910a414834c"
+  },
   "Keane OL": {
     "h": "89f248d5621308cd7759cc39b69ece28b241d368d9a803e6f21a327a60627e7e",
     "s": "a291d5694bd911e2723c5989"
@@ -143,9 +176,21 @@ window.BOARD_CONFIG.staffAuth = {
     "h": "13efb5beb98b2c8a6a0a15c289f349f48084a63dd619cc94c3a3be5ea48e039f",
     "s": "3b4fc0a2799f0e8ddc59942d"
   },
+  "Landan Yount Player Personnel": {
+    "h": "17de961fea1d7aa611b682fadf20feb41b6df4ee095790b48ac7993060e27a87",
+    "s": "cd01730a4a67a7601946c74e"
+  },
   "Maile DL": {
     "h": "dea1cf646790ab9fee921d9ffc8daa063ce9d32c9c8ca35f98c393f0f2b88528",
     "s": "73405d96b5d5efabd5b40682"
+  },
+  "Marques White S&C": {
+    "h": "92e42e200ed55f55b64b88031e5cf03f53ed3b55cf175713318b2fa978828462",
+    "s": "eeb7b4c6ffc73b3464e28c99"
+  },
+  "McKenna Drevno AT": {
+    "h": "6ff86ee01ddf30fd1f33c64587e3abfd9ac01115df0ddd90592294b5e3f37a62",
+    "s": "ac78bb76044fb0b1aa042820"
   },
   "McMahen Asst DB": {
     "h": "512d6cfc76c6dea943d21227004216f62df2147ecd8f33ea7e4572a6969732e4",
@@ -154,6 +199,10 @@ window.BOARD_CONFIG.staffAuth = {
   "McPeek ST Analyst": {
     "h": "55862f7b3a3b088066c0a914f2e41777ea34d32def83a35a1e0b5dd96eeeb9ed",
     "s": "8bc30459b7e6cb0b3006f121"
+  },
+  "Michael Fanning AT": {
+    "h": "77e7bfe865c4de61b7245fbb420a72cc49092cff1a70421f5ce751c5e7b596e9",
+    "s": "2e3f3f89c3ae65ee5f659b31"
   },
   "Montgomery RB": {
     "h": "14a4f4d1f213d66c2305d1e58fdffe7f7a2107aad2eac87424bf596900ed6ce8",
@@ -178,6 +227,10 @@ window.BOARD_CONFIG.staffAuth = {
   "Strausser Off Analyst": {
     "h": "aa2bc409133917be8cefab93ac5c1df5fef86d85bac070f8542a8bca27a3145e",
     "s": "a730ae753749690a4c216088"
+  },
+  "Tom Keay S&C": {
+    "h": "2a6588d67bdd26043e103027e60e15fb27457b0f30c8ebfad21d466dc5c95e06",
+    "s": "e4c3b3befe4ac981fe6cbcb6"
   },
   "Udy TE": {
     "h": "35c09a9f6f704a44d0ced9e25c2a9da69a7d00b99d09a8d8135ef722f9c1f100",
