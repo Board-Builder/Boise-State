@@ -1,5 +1,5 @@
 /* Minimal offline shell. Bump CACHE_VERSION when you deploy app changes. */
-const CACHE_VERSION = "board-boise-state-6f09e2af6b";
+const CACHE_VERSION = "board-boise-state-eb77e00d21";
 const SHELL = ["./", "./index.html", "./app.js", "./config.js", "./manifest.json", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE_VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
